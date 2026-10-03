@@ -7,7 +7,7 @@ Sep 29, 2026 · @Lloyd
 | Field | Value |
 | --- | --- |
 | Document ID | SOP-005 |
-| Version | 0.1 (Draft) |
+| Version | 0.2 (Draft) |
 | Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
 | Milestone | Subnetting & VLANs |
 | Review cycle | Every 6 months, or after any switch platform or IOS upgrade |
@@ -20,7 +20,7 @@ This SOP defines a repeatable, change-controlled process for creating VLANs and 
 
 **In scope:** Cisco IOS / IOS-XE managed access switches at a generic small office. Other vendors follow the same steps with their own syntax.
 
-**Out of scope:** inter-VLAN routing and firewall rules.
+**Out of scope:** inter-VLAN routing, DHCP, and firewall rules, which live on the router or firewall. This SOP assumes the router already has a gateway interface and a DHCP scope for each VLAN in Section 3.
 
 ## 3. VLAN Plan
 
@@ -30,7 +30,10 @@ This SOP defines a repeatable, change-controlled process for creating VLANs and 
 | 20 | SERVERS | 10.10.20.0/24 | Internal servers |
 | 30 | VOICE | 10.10.30.0/24 | IP phones |
 | 99 | MGMT | 10.10.99.0/24 | Switch and AP management |
-| 999 | BLACKHOLE | none | Unused ports and native VLAN |
+| 998 | NATIVE | none | Trunk native VLAN only. No access ports and no hosts |
+| 999 | BLACKHOLE | none | Parking VLAN for unused ports. Never allowed on any trunk |
+
+The native VLAN and the parking VLAN are kept separate. If unused ports were parked in the native VLAN, a device plugged into one of them would share a VLAN with untagged trunk traffic.
 
 ## 4. Procedure A: Change Preparation
 
@@ -51,6 +54,8 @@ vlan 30
  name VOICE
 vlan 99
  name MGMT
+vlan 998
+ name NATIVE
 vlan 999
  name BLACKHOLE
 exit
@@ -64,15 +69,16 @@ interface range gigabitEthernet1/0/1 - 20
  switchport access vlan 10
  switchport voice vlan 30
  spanning-tree portfast
+ spanning-tree bpduguard enable
 exit
 ```
 
-3. Configure the uplink trunk with an explicit allowed list and an unused native VLAN. On platforms that also support ISL, add `switchport trunk encapsulation dot1q` before `switchport mode trunk`.
+3. Configure the uplink trunk with an explicit allowed list and the dedicated native VLAN. On platforms that also support ISL, add `switchport trunk encapsulation dot1q` before `switchport mode trunk`.
 
 ```
 interface gigabitEthernet1/0/48
  switchport mode trunk
- switchport trunk native vlan 999
+ switchport trunk native vlan 998
  switchport trunk allowed vlan 10,20,30,99
  switchport nonegotiate
 exit
@@ -88,14 +94,39 @@ interface range gigabitEthernet1/0/21 - 47
 exit
 ```
 
-5. Save the configuration: `copy running-config startup-config`.
+5. Move switch management to VLAN 99 and restrict who can reach it. SSH must already be enabled (hostname, domain name, RSA key, and a local or AAA login). If it is not, enable it first, or `transport input ssh` will cut off remote management.
+
+```
+interface vlan 99
+ ip address 10.10.99.2 255.255.255.0
+ no shutdown
+exit
+ip default-gateway 10.10.99.1
+interface vlan 1
+ shutdown
+exit
+ip access-list standard MGMT-ONLY
+ permit 10.10.99.0 0.0.0.255
+ deny any log
+exit
+line vty 0 15
+ access-class MGMT-ONLY in
+ transport input ssh
+exit
+```
+
+`ip default-gateway` applies to a layer 2 switch with IP routing disabled. On a layer 3 switch, use a default route instead.
+
+6. Save the configuration: `copy running-config startup-config`.
 
 ## 6. Verification
 
 - [ ] `show vlan brief` lists every VLAN with the expected ports
-- [ ] `show interfaces trunk` shows only VLANs 10, 20, 30, and 99 allowed, with native VLAN 999
-- [ ] `show interfaces status` shows unused ports disabled
-- [ ] A host in each VLAN gets the expected address and reaches its gateway
+- [ ] `show interfaces trunk` shows only VLANs 10, 20, 30, and 99 allowed, with native VLAN 998
+- [ ] `show interfaces status` shows unused ports disabled and in VLAN 999
+- [ ] A test host on a port in each VLAN receives an address in that VLAN's subnet from the router's DHCP scope
+- [ ] SSH to 10.10.99.2 succeeds from a host in VLAN 99 and is refused from a host in VLAN 10
+- [ ] Telnet to 10.10.99.2 is refused from every VLAN
 - [ ] Before and after configs and verification output are attached to the change ticket
 - [ ] The network diagram and VLAN/IP plan are updated
 
@@ -114,7 +145,8 @@ Verify each reference against the published text before changing status to Revie
 | Procedure step | NIST SP 800-53 Rev 5 | AICPA SOC 2 (TSC 2017) |
 | --- | --- | --- |
 | Separate VLANs by trust level (Section 3) | SC-7 Boundary Protection | CC6.1 Logical access security |
-| Trunk allowed list, parked unused ports (Procedure B) | AC-4 Information Flow Enforcement | CC6.6 Protection against threats from outside system boundaries |
+| Trunk allowed list, parked unused ports (Procedure B) | AC-4 Information Flow Enforcement | CC6.1 Logical access security |
+| Management restricted to VLAN 99 over SSH only (Procedure B, step 5) | AC-3 Access Enforcement; SC-8 Transmission Confidentiality and Integrity | CC6.1 Logical access security |
 | Approved change with backup and rollback (Procedure A) | CM-3 Configuration Change Control | CC8.1 Change management |
 | Updated diagram and VLAN plan (Section 6) | CM-2 Baseline Configuration | CC8.1 Change management |
 
@@ -123,3 +155,4 @@ Verify each reference against the published text before changing status to Revie
 | Version | Date | Change |
 | --- | --- | --- |
 | 0.1 | 2026-09-29 | Initial AI-assisted draft; not yet fact-checked |
+| 0.2 | 2026-10-03 | Separated the native VLAN (998) from the parking VLAN (999). Added management interface and SSH access restriction on VLAN 99. Added BPDU guard on access ports. Verification now matches the layer 2 scope. Remapped trunk controls from CC6.6 to CC6.1 |

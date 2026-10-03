@@ -7,7 +7,7 @@ Sep 29, 2026 · @Lloyd
 | Field | Value |
 | --- | --- |
 | Document ID | SOP-003 |
-| Version | 0.1 (Draft) |
+| Version | 0.2 (Draft) |
 | Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
 | Milestone | Network Operations & Troubleshooting |
 | Review cycle | Every 6 months, and after every new incident worth a case entry |
@@ -119,15 +119,17 @@ Outcome: <one sentence>
 
 ## 9. Control Mapping and Revision History
 
-These cases are operational faults, not security incidents, so the mapping is to handling and learning practices. Verify each reference against the published text before marking Reviewed.
+These cases are operational faults, not security incidents, so the mapping is to documented operating procedures and maintenance records rather than to incident response controls. If a case turns out to be a security incident, hand it off to the incident response process (see SOP-006). Verify each reference against the published text before marking Reviewed.
 
 | Runbook element | NIST SP 800-53 Rev 5 | ISO/IEC 27001:2022 Annex A |
 | --- | --- | --- |
-| Structured diagnosis and response (Section 3) | IR-4 Incident Handling | 5.26 Response to information security incidents |
-| Case log of each event (Sections 5 to 8) | IR-5 Incident Monitoring | 5.25 Assessment and decision on information security events |
-| Lessons fed back into SOPs (step 7) | IR-4 (incorporating lessons learned) | 5.27 Learning from information security incidents |
+| One documented diagnostic method for every fault (Sections 3 and 4) | No direct equivalent | 5.37 Documented operating procedures |
+| Case log of each fault, its cause, and the repair (Sections 5 to 8) | MA-2 Controlled Maintenance (maintenance and repair records) | 5.37 Documented operating procedures |
+| Lessons fed back into the affected SOPs (step 7) | No direct equivalent | 5.37 Documented operating procedures (procedures kept current) |
 | Planned fixes with known effects (step 4) | CM-3 Configuration Change Control | 8.32 Change management |
+| Escalation to the ISP with evidence (Section 8) | No direct equivalent | 5.22 Monitoring, review and change management of supplier services |
 
 | Version | Date | Change |
 | --- | --- | --- |
 | 0.1 | 2026-09-29 | Initial draft with three recorded cases |
+| 0.2 | 2026-10-03 | Remapped from incident response controls (IR-4, IR-5, ISO 5.25 to 5.27) to operating procedure and maintenance controls, since the cases are operational faults |

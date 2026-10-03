@@ -3,9 +3,9 @@
 | Field | Value |
 | --- | --- |
 | Document ID | SOP-001 |
-| Version | 1.0 |
+| Version | 0.2 (Draft) |
 | Status | Draft |
-| Owner | Johnson Technical Systems |
+| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
 | Milestone | Security+ Frameworks |
 | Effective date | 2026-09-18 |
 | Next scheduled review | 2027-03-18 |
@@ -114,7 +114,15 @@ Elevation is required. A non-elevated shell returns `System error 5` on any writ
 
 **C.4 Install the mesh VPN on the host.** Install the client, sign in to the organization's tenant, and confirm the host appears in the tenant device list. Record the overlay address assigned to the host.
 
-**C.5 Disable key expiry on the host.** Devices in a mesh VPN tenant are typically issued keys that expire on a fixed schedule. When a key expires, the device leaves the network and requires interactive re-authentication at the console. For an always-on host accessed remotely, disable key expiry. Leaving it enabled creates a scheduled, unattended loss of access.
+**C.5 Disable key expiry on the host, as an accepted risk.** Devices in a mesh VPN tenant are typically issued keys that expire on a fixed schedule. When a key expires, the device leaves the network and requires interactive re-authentication at the console. For an always-on host accessed remotely, disable key expiry on the host only. Leaving it enabled creates a scheduled, unattended loss of access.
+
+Disabling expiry removes a periodic re-authentication control, so record it as an accepted risk with these compensating controls in place:
+
+1. MFA on the identity provider account that administers the tenant (Prerequisite 4).
+2. New devices require administrator approval before they join the tenant.
+3. Tenant access rules allow only the remote user's enrolled client devices to reach the host on TCP 3389.
+4. Key expiry stays enabled on every client device. Only the host is exempt.
+5. The tenant device list is reviewed at each semiannual review, and a lost or retired device is removed the same day.
 
 **C.6 Confirm outbound-only operation.** No inbound firewall rule or router configuration is required for the mesh VPN. Both endpoints establish outbound connections to a coordination service, which is why this design functions where the ISP places the subscriber behind CGNAT and no publicly routable address exists.
 
@@ -164,7 +172,8 @@ Observed during implementation and retained for diagnostic use. The ordering mat
 | Warning that the certificate is not from a trusted certifying authority | Host uses a self-signed RDP certificate | Expected. Confirm the certificate name matches the host, then accept |
 | New remote account shows an empty desktop with no applications | Windows created a separate user profile for the new account | Expected behaviour, not data loss. The original profile is intact under its own account |
 | Host unreachable after a router restart, overlay address still working | Local DHCP lease reassigned | Confirm the DHCP reservation is present and bound to the correct MAC address |
-| All devices join Wi-Fi but no traffic passes; router shows PON green, INTERNET red, WAN status unconnected | Upstream session not reissued after a power interruption. Not a local configuration fault | Power cycle the router for a full five minutes. If unresolved, escalate to the ISP, citing PON online with no WAN address |
+
+Faults upstream of the host, such as an ISP outage, are diagnosed with SOP-003 Network Troubleshooting Runbook. SOP-003 Case 1 records the ISP outage observed during this implementation.
 
 ## 12. Control Mapping
 
@@ -196,4 +205,5 @@ This procedure is reviewed semiannually, and additionally whenever the host oper
 
 | Version | Date | Author | Change |
 | --- | --- | --- | --- |
-| 1.0 | 2026-09-18 | Johnson Technical Systems | Initial issue. Derived from a documented implementation and its observed failure modes |
+| 0.1 | 2026-09-18 | Johnson Technical Systems | Initial draft, derived from a documented implementation and its observed failure modes. Previously labelled 1.0 |
+| 0.2 | 2026-10-03 | Johnson Technical Systems | Recorded key-expiry exemption as an accepted risk with compensating controls (C.5). Moved the ISP outage row to SOP-003. Version renumbered to match Draft status |
