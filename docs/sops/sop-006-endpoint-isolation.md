@@ -8,7 +8,7 @@ Sep 29, 2026 · @Lloyd
 | --- | --- |
 | Document ID | SOP-006 |
 | Version | 0.2 (Draft) |
-| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
+| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
 | Milestone | Security+ Frameworks |
 | Review cycle | Every 6 months, and after every incident that uses this SOP |
 | Classification | Internal / Portfolio sample |
@@ -84,4 +84,4 @@ Verify each reference against the published text before changing status to Revie
 | Version | Date | Change |
 | --- | --- | --- |
 | 0.1 | 2026-09-29 | Initial AI-assisted draft; not yet fact-checked |
-| 0.2 | 2026-10-03 | Cited NIST SP 800-61 Rev. 3 by name and tied the procedures to CSF 2.0 Respond and Recover |
+| 0.2 | 2026-10-03 | Cited NIST SP 800-61 Rev. 3 by name and tied the procedures to CSF 2.0 Respond and Recover. Not yet verified against the published text |

@@ -8,7 +8,7 @@ Sep 29, 2026 · @Lloyd
 | --- | --- |
 | Document ID | SOP-005 |
 | Version | 0.2 (Draft) |
-| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
+| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
 | Milestone | Subnetting & VLANs |
 | Review cycle | Every 6 months, or after any switch platform or IOS upgrade |
 | Classification | Internal / Portfolio sample |
@@ -44,78 +44,78 @@ The native VLAN and the parking VLAN are kept separate. If unused ports were par
 
 1. Create and name the VLANs:
 
-```
-configure terminal
-vlan 10
- name USERS
-vlan 20
- name SERVERS
-vlan 30
- name VOICE
-vlan 99
- name MGMT
-vlan 998
- name NATIVE
-vlan 999
- name BLACKHOLE
-exit
-```
+    ```
+    configure terminal
+    vlan 10
+     name USERS
+    vlan 20
+     name SERVERS
+    vlan 30
+     name VOICE
+    vlan 99
+     name MGMT
+    vlan 998
+     name NATIVE
+    vlan 999
+     name BLACKHOLE
+    exit
+    ```
 
 2. Assign access ports:
 
-```
-interface range gigabitEthernet1/0/1 - 20
- switchport mode access
- switchport access vlan 10
- switchport voice vlan 30
- spanning-tree portfast
- spanning-tree bpduguard enable
-exit
-```
+    ```
+    interface range gigabitEthernet1/0/1 - 20
+     switchport mode access
+     switchport access vlan 10
+     switchport voice vlan 30
+     spanning-tree portfast
+     spanning-tree bpduguard enable
+    exit
+    ```
 
 3. Configure the uplink trunk with an explicit allowed list and the dedicated native VLAN. On platforms that also support ISL, add `switchport trunk encapsulation dot1q` before `switchport mode trunk`.
 
-```
-interface gigabitEthernet1/0/48
- switchport mode trunk
- switchport trunk native vlan 998
- switchport trunk allowed vlan 10,20,30,99
- switchport nonegotiate
-exit
-```
+    ```
+    interface gigabitEthernet1/0/48
+     switchport mode trunk
+     switchport trunk native vlan 998
+     switchport trunk allowed vlan 10,20,30,99
+     switchport nonegotiate
+    exit
+    ```
 
 4. Park and shut down unused ports:
 
-```
-interface range gigabitEthernet1/0/21 - 47
- switchport mode access
- switchport access vlan 999
- shutdown
-exit
-```
+    ```
+    interface range gigabitEthernet1/0/21 - 47
+     switchport mode access
+     switchport access vlan 999
+     shutdown
+    exit
+    ```
 
 5. Move switch management to VLAN 99 and restrict who can reach it. SSH must already be enabled (hostname, domain name, RSA key, and a local or AAA login). If it is not, enable it first, or `transport input ssh` will cut off remote management.
 
-```
-interface vlan 99
- ip address 10.10.99.2 255.255.255.0
- no shutdown
-exit
-ip default-gateway 10.10.99.1
-interface vlan 1
- shutdown
-exit
-ip access-list standard MGMT-ONLY
- permit 10.10.99.0 0.0.0.255
- deny any log
-exit
-line vty 0 15
- access-class MGMT-ONLY in
- transport input ssh
-exit
-```
+    ```
+    interface vlan 99
+     ip address 10.10.99.2 255.255.255.0
+     no shutdown
+    exit
+    ip default-gateway 10.10.99.1
+    interface vlan 1
+     shutdown
+    exit
+    ip access-list standard MGMT-ONLY
+     permit 10.10.99.0 0.0.0.255
+     deny any log
+    exit
+    line vty 0 15
+     access-class MGMT-ONLY in
+     transport input ssh
+    exit
+    ```
 
-`ip default-gateway` applies to a layer 2 switch with IP routing disabled. On a layer 3 switch, use a default route instead.
+    `ip default-gateway` applies to a layer 2 switch with IP routing disabled. On a layer 3 switch, use a default route instead.
 
 6. Save the configuration: `copy running-config startup-config`.
 
@@ -155,4 +155,4 @@ Verify each reference against the published text before changing status to Revie
 | Version | Date | Change |
 | --- | --- | --- |
 | 0.1 | 2026-09-29 | Initial AI-assisted draft; not yet fact-checked |
-| 0.2 | 2026-10-03 | Separated the native VLAN (998) from the parking VLAN (999). Added management interface and SSH access restriction on VLAN 99. Added BPDU guard on access ports. Verification now matches the layer 2 scope. Remapped trunk controls from CC6.6 to CC6.1 |
+| 0.2 | 2026-10-03 | Separated the native VLAN (998) from the parking VLAN (999). Added management interface and SSH access restriction on VLAN 99. Added BPDU guard on access ports. Verification now matches the layer 2 scope. Remapped trunk controls from CC6.6 to CC6.1. Commands not yet verified on a switch |

@@ -8,7 +8,7 @@ Sep 29, 2026 · @Lloyd
 | --- | --- |
 | Document ID | SOP-003 |
 | Version | 0.2 (Draft) |
-| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
+| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
 | Milestone | Network Operations & Troubleshooting |
 | Review cycle | Every 6 months, and after every new incident worth a case entry |
 | Classification | Internal / Portfolio sample |
@@ -132,4 +132,4 @@ These cases are operational faults, not security incidents, so the mapping is to
 | Version | Date | Change |
 | --- | --- | --- |
 | 0.1 | 2026-09-29 | Initial draft with three recorded cases |
-| 0.2 | 2026-10-03 | Remapped from incident response controls (IR-4, IR-5, ISO 5.25 to 5.27) to operating procedure and maintenance controls, since the cases are operational faults |
+| 0.2 | 2026-10-03 | Remapped from incident response controls (IR-4, IR-5, ISO 5.25 to 5.27) to operating procedure and maintenance controls, since the cases are operational faults. New mappings not yet verified against the framework text |

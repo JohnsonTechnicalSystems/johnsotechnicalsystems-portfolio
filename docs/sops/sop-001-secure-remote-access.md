@@ -206,4 +206,4 @@ This procedure is reviewed semiannually, and additionally whenever the host oper
 | Version | Date | Author | Change |
 | --- | --- | --- | --- |
 | 0.1 | 2026-09-18 | Johnson Technical Systems | Initial draft, derived from a documented implementation and its observed failure modes. Previously labelled 1.0 |
-| 0.2 | 2026-10-03 | Johnson Technical Systems | Recorded key-expiry exemption as an accepted risk with compensating controls (C.5). Moved the ISP outage row to SOP-003. Version renumbered to match Draft status |
+| 0.2 | 2026-10-03 | Johnson Technical Systems | Recorded key-expiry exemption as an accepted risk with compensating controls (C.5). Moved the ISP outage row to SOP-003. Version renumbered to match Draft status. Changes not yet tested |

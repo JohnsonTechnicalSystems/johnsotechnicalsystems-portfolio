@@ -8,7 +8,7 @@ Sep 29, 2026 · @Lloyd
 | --- | --- |
 | Document ID | SOP-004 |
 | Version | 0.1 (Draft) |
-| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
+| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
 | Milestone | Network+ Fundamentals |
 | Review cycle | Every 12 months, or when the cabling standard is revised |
 | Classification | Internal / Portfolio sample |

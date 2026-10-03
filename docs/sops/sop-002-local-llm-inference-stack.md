@@ -8,7 +8,7 @@ Sep 29, 2026 · @Lloyd
 | --- | --- |
 | Document ID | SOP-002 |
 | Version | 0.2 (Draft) |
-| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
+| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
 | Milestone | Network Operations & Troubleshooting |
 | Review cycle | Every 6 months, or after any stack upgrade or new failure mode |
 | Classification | Internal / Portfolio sample |
@@ -71,9 +71,9 @@ Back up before every upgrade; the container is disposable, the `open-webui` volu
 6. Remove the old container: `docker rm open-webui`. The volume is kept.
 7. Recreate it with the port bound to loopback only:
 
-```
-docker run -d -p 127.0.0.1:3001:8080 -v open-webui:/app/backend/data --add-host=host.docker.internal:host-gateway --name open-webui --restart always ghcr.io/open-webui/open-webui:<release tag>
-```
+    ```
+    docker run -d -p 127.0.0.1:3001:8080 -v open-webui:/app/backend/data --add-host=host.docker.internal:host-gateway --name open-webui --restart always ghcr.io/open-webui/open-webui:<release tag>
+    ```
 
 8. Watch `docker logs -f open-webui` until database migrations complete without errors, then run Section 7.
 9. Record the new release tag in Section 3 and in Section 10.
@@ -132,4 +132,4 @@ Verify each reference against the published framework text before changing statu
 | Version | Date | Change |
 | --- | --- | --- |
 | 0.1 | 2026-09-29 | Initial draft from observed operation: NordVPN conflict, output truncation, Open WebUI upgrade |
-| 0.2 | 2026-10-03 | Bound the UI to loopback and published it with Tailscale Serve, so it is no longer exposed to the local network. Pinned the image to a release tag. Stop the container before backing up the database. Added a rollback procedure |
+| 0.2 | 2026-10-03 | Bound the UI to loopback and published it with Tailscale Serve, so it is no longer exposed to the local network. Pinned the image to a release tag. Stop the container before backing up the database. Added a rollback procedure. Changes not yet tested on the host |
