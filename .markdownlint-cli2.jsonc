@@ -1,0 +1,11 @@
+{
+  "config": {
+    // Long lines are normal in prose and tables.
+    "MD013": false,
+    // SOP headings repeat by design (for example, several "Revision History" tables across files, and "2 Theory" rows).
+    "MD024": { "siblings_only": true },
+    // Fenced code blocks without a language are used for CLI transcripts.
+    "MD040": false
+  },
+  "ignores": ["site/**", "node_modules/**", "LICENSE"]
+}

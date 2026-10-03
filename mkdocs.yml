@@ -1,0 +1,54 @@
+site_name: Johnson Technical Systems
+site_description: Security documentation, technical writing, and the lab work behind them. All documents are drafts.
+site_author: Lloyd Johnson
+repo_url: https://github.com/JohnsonTechnicalSystems/johnsotechnicalsystems-portfolio
+repo_name: GitHub
+copyright: Johnson Technical Systems LLC. Documentation licensed CC BY-NC-ND 4.0.
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - Tracks:
+      - Security & Compliance: security-compliance.md
+      - Technical Writing: technical-writing.md
+      - Homelab: homelab.md
+  - SOPs (Drafts):
+      - SOP-001 Secure Remote Access: sops/sop-001-secure-remote-access.md
+      - SOP-002 Local LLM Inference Stack: sops/sop-002-local-llm-inference-stack.md
+      - SOP-003 Network Troubleshooting Runbook: sops/sop-003-network-troubleshooting-runbook.md
+      - SOP-004 Cat6 Termination and Testing: sops/sop-004-cat6-termination-and-testing.md
+      - SOP-005 VLAN Creation and Segmentation: sops/sop-005-vlan-creation-and-segmentation.md
+      - SOP-006 Endpoint Isolation: sops/sop-006-endpoint-isolation.md
+      - SOP Template: templates/sop-template.md
+  - About:
+      - Review Process: about/review-process.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
