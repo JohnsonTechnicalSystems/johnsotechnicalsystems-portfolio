@@ -26,3 +26,4 @@ All documents remain Drafts until their status field says otherwise.
 - Added `mkdocs.yml` for a Zensical site build with light and dark themes.
 - Added a GitHub Actions workflow that lints Markdown, builds the site in strict mode (failing on broken internal links), and deploys to GitHub Pages from `main`.
 - Added a CC BY-NC-ND 4.0 license for the documentation.
+- Set the site URL to johnsontechnicalsystems.com. The custom domain itself is configured in the repository's Pages settings and in Cloudflare DNS.

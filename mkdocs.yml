@@ -1,6 +1,7 @@
 site_name: Johnson Technical Systems
 site_description: Security documentation, technical writing, and the lab work behind them. All documents are drafts.
 site_author: Lloyd Johnson
+site_url: https://johnsontechnicalsystems.com/
 repo_url: https://github.com/JohnsonTechnicalSystems/johnsotechnicalsystems-portfolio
 repo_name: GitHub
 copyright: Johnson Technical Systems LLC. Documentation licensed CC BY-NC-ND 4.0.
