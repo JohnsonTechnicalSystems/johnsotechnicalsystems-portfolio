@@ -1,6 +1,6 @@
-# SOP-00N: <Title>
+# SOP-00N: [Title]
 
-<Mon DD, YYYY> · @<author>
+[Mon DD, YYYY] · @[author]
 
 ## 1. Document Control
 
@@ -8,11 +8,11 @@
 | --- | --- |
 | Document ID | SOP-00N |
 | Version | 0.1 (Draft) |
-| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
+| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
 | Milestone | Network+ Fundamentals / Subnetting & VLANs / Security+ Frameworks / Network Operations & Troubleshooting |
-| Review cycle | <e.g. Every 6 months, or after any upgrade or new failure mode> |
+| Review cycle | [e.g. Every 6 months, or after any upgrade or new failure mode] |
 | Classification | Internal / Portfolio sample |
-| Related | <SOP-00X Title; ...> |
+| Related | [SOP-00X Title; ...] |
 
 ## 2. Purpose and Scope
 
@@ -26,7 +26,7 @@ _What this SOP accomplishes and why it exists._
 
 _The environment, components, or reference values the procedures depend on. Use a table._
 
-## 4. Procedure A: <Name>
+## 4. Procedure A: [Name]
 
 1. _Step one._
 2. _Step two._
@@ -60,4 +60,4 @@ Verify each reference against the published framework text before changing statu
 
 | Version | Date | Change |
 | --- | --- | --- |
-| 0.1 | <YYYY-MM-DD> | Initial draft |
+| 0.1 | [YYYY-MM-DD] | Initial draft |

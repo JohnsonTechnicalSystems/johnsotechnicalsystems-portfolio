@@ -7,8 +7,8 @@ Sep 29, 2026 · @Lloyd
 | Field | Value |
 | --- | --- |
 | Document ID | SOP-006 |
-| Version | 0.1 (Draft) |
-| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
+| Version | 0.2 (Draft) |
+| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
 | Milestone | Security+ Frameworks |
 | Review cycle | Every 6 months, and after every incident that uses this SOP |
 | Classification | Internal / Portfolio sample |
@@ -69,7 +69,7 @@ Run top to bottom. Do not power off or reboot the device at any point: shutdown 
 
 ## 8. Control Mapping
 
-Verify each reference against the published text before changing status to Reviewed. NIST SP 800-61 Rev. 3 (2025) reorganized incident response guidance around CSF 2.0 functions; confirm which revision is cited.
+Verify each reference against the published text before changing status to Reviewed. Incident handling in this SOP follows NIST SP 800-61 Rev. 3, *Incident Response Recommendations and Considerations for Cybersecurity Risk Management* (April 2025), which organizes incident response around the NIST CSF 2.0 functions. Containment and evidence preservation fall under CSF Respond; reimaging and return to service fall under Recover.
 
 | Procedure step | NIST SP 800-53 Rev 5 | AICPA SOC 2 (TSC 2017) |
 | --- | --- | --- |
@@ -84,3 +84,4 @@ Verify each reference against the published text before changing status to Revie
 | Version | Date | Change |
 | --- | --- | --- |
 | 0.1 | 2026-09-29 | Initial AI-assisted draft; not yet fact-checked |
+| 0.2 | 2026-10-03 | Cited NIST SP 800-61 Rev. 3 by name and tied the procedures to CSF 2.0 Respond and Recover. Not yet verified against the published text |
