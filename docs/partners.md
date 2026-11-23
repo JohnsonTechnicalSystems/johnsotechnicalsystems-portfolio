@@ -26,14 +26,9 @@ For Vanta and Drata partner agencies, fractional CISOs and vCISOs, small MSPs an
 
 ## Rates
 
-| Work | Rate |
-| --- | --- |
-| Hourly | From USD 35 per hour |
-| Starter policy pack (10 to 16 policies) adapted from your templates | From USD 400 |
-| Full questionnaire draft, up to about 100 questions | From USD 250 |
-| AI use policy | From USD 200 |
-| Cyber insurance renewal pack | From USD 300 |
-| **First job** | **A paid trial at 25% off**, so you can judge the work before committing |
+Partner pricing is on request. [Ask for the partner sheet](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20sheet%20request) for hourly and per-deliverable rates.
+
+Your **first job is a paid trial at 25% off**, so you can judge the work before committing.
 
 ## Data handling
 
