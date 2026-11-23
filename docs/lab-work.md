@@ -1,6 +1,6 @@
-# Homelab
+# Lab work
 
-> **Work in progress: every document is a Draft.** Nothing on this site has been verified yet. Commands, steps, and control references have not been checked against primary sources or retested in the lab. Do not rely on any document as authoritative until its status reads Reviewed. See [Review Process](about/review-process.md).
+> **Illustrative examples.** These labs back the [sample procedures](samples.md). They are portfolio work, not client environments.
 
 The systems behind the documents. Each lab produces three things: the working configuration and evidence, a procedure that documents it, and the controls it satisfies.
 

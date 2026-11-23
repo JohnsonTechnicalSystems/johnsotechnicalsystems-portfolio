@@ -1,0 +1,20 @@
+/* Homepage hero */
+.jts-hero {
+  padding: 1.5rem 0 1rem;
+}
+.jts-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+.jts-hero p {
+  font-size: 1.1rem;
+  max-width: 40rem;
+}
+.jts-hero .md-button {
+  margin: 0.4rem 0.5rem 0.4rem 0;
+}
+@media screen and (max-width: 600px) {
+  .jts-hero h1 { font-size: 1.7rem; }
+}

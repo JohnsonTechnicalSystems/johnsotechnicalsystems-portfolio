@@ -2,6 +2,14 @@
 
 All documents remain Drafts until their status field says otherwise.
 
+## 2026-11-23: Rebuild the site around paid services
+
+- New homepage that leads with the offer: security questionnaires, starter policy packs and public security pages for early-stage software and AI companies, with prices, a three-step process and contact details.
+- Service pages for cold outreach to link to: questionnaires, partners, AI use policy, documentation and automation.
+- Added a Security page on how client documents are handled, plus Terms and Privacy pages and a footer disclaimer.
+- Removed the "nothing verified" banner from the homepage. SOPs now sit under Samples as illustrative examples, each still showing its Draft status.
+- Replaced the Security & Compliance and Technical Writing track pages with the new service pages; renamed Homelab to Lab work.
+
 ## 2026-10-03: Restructure for three tracks
 
 ### Positioning

@@ -8,15 +8,9 @@ Site: [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com)
 
 I build it, document it, and map it to controls. The procedures here come from systems I configured, faults I diagnosed, and study scenarios written while preparing for CompTIA Network+ and Security+. Each one follows the same [SOP template](docs/templates/sop-template.md) and is mapped to NIST SP 800-53, ISO/IEC 27001:2022, and SOC 2 where a control applies.
 
-## Three tracks, one body of work
+## What the site offers
 
-| Track | For | Landing page |
-| --- | --- | --- |
-| Security & Compliance Documentation | Policies, SOPs, and control mappings for audit readiness and customer security reviews | [docs/security-compliance.md](docs/security-compliance.md) |
-| Technical Writing | Runbooks, procedures, knowledge base articles, and documentation cleanup | [docs/technical-writing.md](docs/technical-writing.md) |
-| Homelab | The working configurations and evidence behind the documents | [docs/homelab.md](docs/homelab.md) |
-
-The tracks share documents rather than competing for them. One lab produces a configuration and evidence (homelab), a procedure (technical writing), and control mappings (compliance).
+The site at [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com) leads with security questionnaires, starter policy packs and public security pages for early-stage software and AI companies, with pages for partner overflow work, AI use policies, technical documentation and automation. The SOPs below are published there under Samples as illustrative examples.
 
 ## Index
 
@@ -53,7 +47,9 @@ These documents are portfolio samples, not legal advice, an audit opinion, or a 
 ```text
 docs/                 Site content (built with Zensical from mkdocs.yml)
   index.md            Home page and document list
-  security-compliance.md, technical-writing.md, homelab.md   Track landing pages
+  questionnaires.md, partners.md, ai-policy.md, documentation.md, automation.md   Service pages
+  samples.md, lab-work.md   Samples overview and lab work
+  security.md, legal/   Data handling, Terms and Privacy
   sops/               SOP-001 to SOP-006
   templates/          SOP template
   about/              Review process, AI use, and limits

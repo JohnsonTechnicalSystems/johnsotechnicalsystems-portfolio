@@ -1,10 +1,10 @@
 site_name: Johnson Technical Systems
-site_description: Security documentation, technical writing, and the lab work behind them. All documents are drafts.
+site_description: Security questionnaires, starter policies and public security pages for early-stage software and AI companies, plus partner overflow work, AI use policies, technical documentation and automation.
 site_author: Lloyd Johnson
 site_url: https://johnsontechnicalsystems.com/
 repo_url: https://github.com/JohnsonTechnicalSystems/johnsotechnicalsystems-portfolio
 repo_name: GitHub
-copyright: Johnson Technical Systems LLC. Documentation licensed CC BY-NC-ND 4.0.
+copyright: johnsontechnicalsystems LLC · Documentation and preparation services, not legal advice or an audit opinion · <a href="/legal/terms/">Terms</a> · <a href="/legal/privacy/">Privacy</a> · Samples licensed CC BY-NC-ND 4.0
 
 theme:
   name: material
@@ -13,6 +13,7 @@ theme:
     - navigation.top
     - search.highlight
     - content.code.copy
+    - navigation.tabs
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -27,11 +28,14 @@ theme:
 
 nav:
   - Home: index.md
-  - Tracks:
-      - Security & Compliance: security-compliance.md
-      - Technical Writing: technical-writing.md
-      - Homelab: homelab.md
-  - SOPs (Drafts):
+  - Services:
+      - Security questionnaires: questionnaires.md
+      - Partner overflow work: partners.md
+      - AI use policy: ai-policy.md
+      - Technical documentation: documentation.md
+      - Automation for vet clinics: automation.md
+  - Samples:
+      - Overview: samples.md
       - SOP-001 Secure Remote Access: sops/sop-001-secure-remote-access.md
       - SOP-002 Local LLM Inference Stack: sops/sop-002-local-llm-inference-stack.md
       - SOP-003 Network Troubleshooting Runbook: sops/sop-003-network-troubleshooting-runbook.md
@@ -39,8 +43,15 @@ nav:
       - SOP-005 VLAN Creation and Segmentation: sops/sop-005-vlan-creation-and-segmentation.md
       - SOP-006 Endpoint Isolation: sops/sop-006-endpoint-isolation.md
       - SOP Template: templates/sop-template.md
+      - Lab work: lab-work.md
   - About:
-      - Review Process: about/review-process.md
+      - Security: security.md
+      - Review process: about/review-process.md
+      - Terms: legal/terms.md
+      - Privacy: legal/privacy.md
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - tables
