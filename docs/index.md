@@ -77,11 +77,11 @@ Not sure which you need? Book a 15-minute call for a fixed quote. Every price is
 - **A writer who checks.** Trained in English and technical communication, and studying for CompTIA Security+. AI helps with first drafts; every claim and control reference is checked by hand before you see it.
 - **Your documents stay private.** NDA by default, one encrypted folder per client, deleted at the end of the job. See [how I handle your data](security.md).
 
-<!-- Veteran-owned: add a bullet here only if Lloyd approves. -->
+- **Veteran-owned.** Run by a US military veteran.
 
 ## Other services
 
-[Partner overflow work](partners.md) · [AI use policy](ai-policy.md) · [Technical documentation](documentation.md) · [Automation for veterinary clinics](automation.md)
+[Partner overflow work](partners.md) · [WISP packs for tax and finance firms](wisp.md) · [Cyber insurance renewal packs](insurance-pack.md) · [AI use policy](ai-policy.md) · [Automation for veterinary clinics](automation.md)
 
 ## Contact
 

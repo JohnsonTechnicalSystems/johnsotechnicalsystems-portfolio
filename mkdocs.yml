@@ -32,7 +32,8 @@ nav:
       - Security questionnaires: questionnaires.md
       - Partner overflow work: partners.md
       - AI use policy: ai-policy.md
-      - Technical documentation: documentation.md
+      - WISP packs (FTC Safeguards Rule): wisp.md
+      - Cyber insurance renewal packs: insurance-pack.md
       - Automation for vet clinics: automation.md
   - Samples:
       - Overview: samples.md

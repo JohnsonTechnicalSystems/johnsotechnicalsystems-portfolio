@@ -10,7 +10,7 @@ I build it, document it, and map it to controls. The procedures here come from s
 
 ## What the site offers
 
-The site at [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com) leads with security questionnaires, starter policy packs and public security pages for early-stage software and AI companies, with pages for partner overflow work, AI use policies, technical documentation and automation. The SOPs below are published there under Samples as illustrative examples.
+The site at [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com) leads with security questionnaires, starter policy packs and public security pages for early-stage software and AI companies, with pages for partner overflow work, FTC Safeguards Rule WISP packs, cyber insurance renewal packs, AI use policies and automation. The SOPs below are published there under Samples as illustrative examples.
 
 ## Index
 
@@ -47,13 +47,14 @@ These documents are portfolio samples, not legal advice, an audit opinion, or a 
 ```text
 docs/                 Site content (built with Zensical from mkdocs.yml)
   index.md            Home page and document list
-  questionnaires.md, partners.md, ai-policy.md, documentation.md, automation.md   Service pages
+  questionnaires.md, partners.md, wisp.md, insurance-pack.md, ai-policy.md, automation.md   Service pages
   samples.md, lab-work.md   Samples overview and lab work
   security.md, legal/   Data handling, Terms and Privacy
   sops/               SOP-001 to SOP-006
   templates/          SOP template
   about/              Review process, AI use, and limits
 .github/workflows/    Lint and build checks; deploys the site from main
+archive/              Retired pages, not built into the site
 CHANGELOG.md          What changed and when
 ```
 

@@ -14,14 +14,15 @@ For Vanta and Drata partner agencies, fractional CISOs and vCISOs, small MSPs an
 - **Procedures**: standard operating procedures and runbooks that back the policies
 - **Evidence notes**: short write-ups explaining what each piece of evidence shows and which control it supports
 - **Questionnaire first drafts**: customer security questionnaires drafted from the client's facts, for your review
-- **Insurance and vendor questionnaires** for MSP clients: cyber insurance applications and vendor risk forms
+- **Insurance and vendor questionnaires** for MSP clients: [cyber insurance renewal packs](insurance-pack.md) and vendor risk forms
+- **WISP packs** for your tax, mortgage and small finance clients under the [FTC Safeguards Rule](wisp.md)
 
 ## How it works
 
 - **Turnaround:** 24 to 48 hours for most documents, often overnight for US time zones (I work from Manila).
 - **Unbranded delivery:** work goes out in your templates and under your name. Your clients don't hear from me.
 - **No poaching:** I never approach your clients directly, and I'll put that in writing.
-- **Paperwork:** subcontractor agreement and mutual NDA before any client data is shared. US LLC with an EIN; W-9 on request.
+- **Paperwork:** subcontractor agreement and mutual NDA before any client data is shared. Veteran-owned US LLC with an EIN; W-9 on request.
 
 ## Rates
 
@@ -31,7 +32,8 @@ For Vanta and Drata partner agencies, fractional CISOs and vCISOs, small MSPs an
 | Starter policy pack (10 to 16 policies) adapted from your templates | From USD 400 |
 | Full questionnaire draft, up to about 100 questions | From USD 250 |
 | AI use policy | From USD 200 |
-| **First job** | **A discounted paid trial**, priced up front, so you can judge the work before committing |
+| Cyber insurance renewal pack | From USD 300 |
+| **First job** | **A paid trial at 25% off**, so you can judge the work before committing |
 
 ## Data handling
 

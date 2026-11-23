@@ -2,6 +2,8 @@
 title: Technical documentation for software companies
 ---
 
+<!-- Archived 2026-11-23: standalone documentation outreach retired. Not built into the site; links below were relative to docs/. -->
+
 # Documentation your users and your team can actually follow
 
 For software companies whose runbooks, setup guides and knowledge base articles are out of date, scattered, or living in one engineer's head.
