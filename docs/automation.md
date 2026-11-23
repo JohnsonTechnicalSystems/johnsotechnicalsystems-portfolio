@@ -26,7 +26,8 @@ Every build keeps a person in the loop for anything sent to a client, and starts
 
 | Package | Price |
 | --- | --- |
-| One automation build, including setup and a short handover guide | From USD 1,500, up to about USD 3,000 |
+| Setup of one workflow, with a short handover guide | From USD 300 |
+| Monitoring, fixes and small changes | From USD 75 per month |
 
 ## Proof
 

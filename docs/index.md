@@ -56,12 +56,14 @@ Security questionnaires, starter policies and public security pages for early-st
 
 | Package | What you get | Price |
 | --- | --- | --- |
-| **Security questionnaire** | One customer questionnaire (spreadsheet or portal) answered from your facts, plus a reusable answer library | From USD 750 |
-| **Starter policy pack** | Core security policies sized for a small team: information security, access control, acceptable use, change management, incident response and more | From USD 1,500 |
-| **Public security page** | A plain-English security page for your website that matches what your policies actually say | USD 500 |
-| **AI use policy** | An AI use policy and ready answers for the AI section of customer questionnaires | From USD 500 |
+| **Questionnaire pilot** | The first 25 to 30 questions of a customer questionnaire answered from your facts, so you can judge the work | From USD 150 |
+| **Full security questionnaire** | One customer questionnaire of up to about 100 questions (spreadsheet or portal), plus a reusable answer library | From USD 350 |
+| **Starter policy pack** | 10 to 16 security policies tailored to a small team: information security, access control, acceptable use, change management, incident response and more | From USD 600 |
+| **Public security page** | A plain-English security page for your website that matches what your policies actually say | From USD 250 as an add-on |
+| **AI use policy** | An AI use policy and an inventory of the AI tools your team uses, with ready answers for the AI section of questionnaires | From USD 300 |
+| **Security-review readiness check** | A short paid diagnostic: what a buyer's review will ask, what you can already answer, and what to fix first | From USD 300 |
 
-Prices are fixed and agreed before work starts. The final price depends on length and how much is already written.
+Not sure which you need? Book a 15-minute call for a fixed quote. Every price is fixed and agreed before work starts.
 
 ## Proof
 

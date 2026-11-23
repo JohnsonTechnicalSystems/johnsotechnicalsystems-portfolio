@@ -27,10 +27,11 @@ For Vanta and Drata partner agencies, fractional CISOs and vCISOs, small MSPs an
 
 | Work | Rate |
 | --- | --- |
-| Hourly | About USD 45 to 60 per hour |
-| Policy adapted from your template | About USD 150 to 300 per document |
-| Questionnaire first draft | About USD 400 to 900, depending on length |
-| **First job** | **Half rate**, so you can judge the work before committing |
+| Hourly | From USD 35 per hour |
+| Starter policy pack (10 to 16 policies) adapted from your templates | From USD 400 |
+| Full questionnaire draft, up to about 100 questions | From USD 250 |
+| AI use policy | From USD 200 |
+| **First job** | **A discounted paid trial**, priced up front, so you can judge the work before committing |
 
 ## Data handling
 

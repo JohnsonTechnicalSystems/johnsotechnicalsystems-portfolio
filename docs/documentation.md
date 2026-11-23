@@ -26,8 +26,9 @@ For software companies whose runbooks, setup guides and knowledge base articles 
 
 | Option | Price |
 | --- | --- |
-| Hourly | About USD 50 to 75 per hour |
-| Fixed package (for example, a runbook set or a knowledge base cleanup) | Quoted after a short call |
+| Hourly | From USD 40 per hour |
+| Per document (for example, a runbook or a setup guide) | From USD 400 |
+| Larger projects (for example, a knowledge base cleanup) | Fixed quote after a 15-minute call |
 
 ## Samples
 

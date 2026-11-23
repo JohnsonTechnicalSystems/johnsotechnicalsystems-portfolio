@@ -24,11 +24,13 @@ Enterprise and mid-market buyers send a security questionnaire before they sign:
 
 | Package | Price | Typical turnaround |
 | --- | --- | --- |
-| Security questionnaire (one questionnaire, any format) | From USD 750, up to about USD 1,500 for long or technical ones | 3 to 5 business days, faster for short ones |
-| Add a starter policy pack, so your answers have documents behind them | From USD 1,500 | 1 to 2 weeks |
-| Add a public security page for your website | USD 500 | 2 to 3 business days |
+| Questionnaire pilot: the first 25 to 30 questions, so you can judge the work | From USD 150 | 1 to 2 business days |
+| Full security questionnaire, up to about 100 questions, any format | From USD 350 | 3 to 5 business days, faster for short ones |
+| Add a starter policy pack (10 to 16 tailored policies), so your answers have documents behind them | From USD 600 | 1 to 2 weeks |
+| Add a public security page for your website | From USD 250 | 2 to 3 business days |
+| Not sure where you stand? Security-review readiness check | From USD 300 | 2 to 3 business days |
 
-The price is fixed and agreed after I see the questionnaire.
+Longer than 100 questions, or a vendor portal? You get a fixed quote after I see it or after a 15-minute call.
 
 ## Sample
 

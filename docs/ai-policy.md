@@ -15,6 +15,7 @@ Security questionnaires now include an AI section: Is customer data used to trai
 ## What I do
 
 - **AI use policy**: how your team and your product use AI, which providers are approved, what data may go to them, and how output is reviewed
+- **AI tool inventory**: a simple list of the AI tools and model providers your team and product use, what data each one touches, and who approved it
 - **Ready answers** for the AI section of customer questionnaires, consistent with the policy
 - **Light ISO/IEC 42001 gap check** (optional): a short, plain-English list of where your current practices stand against the main themes of ISO/IEC 42001, the international standard for AI management systems. This is a readiness view, not a certification audit.
 
@@ -22,7 +23,8 @@ Security questionnaires now include an AI section: Is customer data used to trai
 
 | Package | Price |
 | --- | --- |
-| AI use policy plus questionnaire answers | From USD 500, up to about USD 1,000 with the gap check |
+| AI use policy, AI tool inventory and questionnaire answers | From USD 300 |
+| ISO/IEC 42001 gap check | Fixed quote after a 15-minute call |
 
 ## Sample
 
