@@ -5,7 +5,9 @@
     // SOP headings repeat by design (for example, several "Revision History" tables across files, and "2 Theory" rows).
     "MD024": { "siblings_only": true },
     // Fenced code blocks without a language are used for CLI transcripts.
-    "MD040": false
+    "MD040": false,
+    // The homepage and service pages use a few HTML elements for the hero, card grid and fine print.
+    "MD033": { "allowed_elements": ["div", "small"] }
   },
   "ignores": ["site/**", "node_modules/**", "LICENSE"]
 }
