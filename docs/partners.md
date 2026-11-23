@@ -36,7 +36,7 @@ One encrypted folder per partner or client, shared only with you. Client documen
 
 ## Sample work
 
-See the [sample procedures](samples.md). A sample security questionnaire is in progress.
+See the [sample security questionnaire](sample-questionnaire.md) and the [sample procedures](samples.md).
 
 [Email me about overflow work](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20overflow%20work){ .md-button .md-button--primary }
 

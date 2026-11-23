@@ -37,6 +37,7 @@ nav:
       - Automation for vet clinics: automation.md
   - Samples:
       - Overview: samples.md
+      - Sample security questionnaire: sample-questionnaire.md
       - SOP-001 Secure Remote Access: sops/sop-001-secure-remote-access.md
       - SOP-002 Local LLM Inference Stack: sops/sop-002-local-llm-inference-stack.md
       - SOP-003 Network Troubleshooting Runbook: sops/sop-003-network-troubleshooting-runbook.md

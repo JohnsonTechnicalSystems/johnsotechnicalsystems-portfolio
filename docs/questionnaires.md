@@ -34,7 +34,7 @@ Longer than 100 questions, or a vendor portal? You get a fixed quote after I see
 
 ## Sample
 
-A fully answered sample questionnaire for a fictional seed-stage SaaS company is in progress. Until then, see the [sample procedures](samples.md) for how I write and cite.
+See a [fully answered sample questionnaire](sample-questionnaire.md) for a fictional seed-stage SaaS company: 50 questions, each with its status, evidence and SOC 2 and NIST CSF 2.0 references. It comes as a web page, a spreadsheet and a PDF.
 
 ## What this is not
 

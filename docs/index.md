@@ -67,7 +67,7 @@ Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) 
 
 ## Proof
 
-- **Sample security questionnaire** for a fictional seed-stage SaaS company, with every answer and framework reference checked. *Coming soon.*
+- **[Sample security questionnaire](sample-questionnaire.md)**: 50 questions answered for a fictional seed-stage SaaS company, each with its status, the evidence behind it and the related SOC 2 and NIST CSF 2.0 references, all checked against the source documents.
 - **[Sample procedures](samples.md)**: six standard operating procedures written to one template and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2. These are illustrative examples, not client work.
 
 ## Why work with me
