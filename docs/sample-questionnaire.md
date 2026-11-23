@@ -2,7 +2,7 @@
 title: Sample security questionnaire for a fictional seed-stage SaaS company
 ---
 
-# Sample security questionnaire: Quorrel, Inc.
+# Sample security questionnaire for Quorrel, Inc. (fictional)
 
 > **A fictional company, a real method.** 50 questions from a typical customer security review, answered for Quorrel, Inc., a fictional seed-stage software company. Each answer says plainly what is in place, what is partial and what is planned, lists the evidence behind it, and points to the related SOC 2 and NIST CSF 2.0 references.
 
