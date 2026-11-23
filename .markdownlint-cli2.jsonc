@@ -7,7 +7,9 @@
     // Fenced code blocks without a language are used for CLI transcripts.
     "MD040": false,
     // The homepage and service pages use a few HTML elements for the hero, card grid and fine print.
-    "MD033": { "allowed_elements": ["div", "small"] }
+    "MD033": { "allowed_elements": ["div", "small"] },
+    // Front-matter titles set the browser and search title; the page H1 is the visible headline.
+    "MD025": { "front_matter_title": "" }
   },
   "ignores": ["site/**", "node_modules/**", "LICENSE"]
 }
