@@ -25,10 +25,8 @@ Delivered unbranded, in your format and under your name. I never contact your cl
 
 ## Price
 
-| Option | Price |
-| --- | --- |
-| White-label through your MSP | From USD 300 per client |
-| Direct to a small business | Fixed quote after a 15-minute call |
+- **MSPs:** partner pricing on request. [Ask for the partner sheet](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20sheet%20request).
+- **Small businesses:** a fixed quote after a 15-minute call.
 
 ## What this is not
 
