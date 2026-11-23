@@ -12,7 +12,7 @@ hide:
 Security questionnaires, starter policies and public security pages for early-stage software and AI companies. Done in days, written by a human who checks every claim.
 
 [Get a questionnaire handled](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }
-[Book a 15-minute call](mailto:hello@johnsontechnicalsystems.com?subject=15-minute%20call){ .md-button }
+[Book a 15-minute call](https://cal.com/lloyd-johnson){ .md-button }
 
 </div>
 
@@ -63,7 +63,7 @@ Security questionnaires, starter policies and public security pages for early-st
 | **AI use policy** | An AI use policy and an inventory of the AI tools your team uses, with ready answers for the AI section of questionnaires | From USD 300 |
 | **Security-review readiness check** | A short paid diagnostic: what a buyer's review will ask, what you can already answer, and what to fix first | From USD 300 |
 
-Not sure which you need? Book a 15-minute call for a fixed quote. Every price is fixed and agreed before work starts.
+Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) for a fixed quote. Every price is fixed and agreed before work starts.
 
 ## Proof
 

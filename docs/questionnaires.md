@@ -30,7 +30,7 @@ Enterprise and mid-market buyers send a security questionnaire before they sign:
 | Add a public security page for your website | From USD 250 | 2 to 3 business days |
 | Not sure where you stand? Security-review readiness check | From USD 300 | 2 to 3 business days |
 
-Longer than 100 questions, or a vendor portal? You get a fixed quote after I see it or after a 15-minute call.
+Longer than 100 questions, or a vendor portal? You get a fixed quote after I see it or after a [15-minute call](https://cal.com/lloyd-johnson).
 
 ## Sample
 

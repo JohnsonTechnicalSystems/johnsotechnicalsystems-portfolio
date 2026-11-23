@@ -24,7 +24,7 @@ Security questionnaires now include an AI section: Is customer data used to trai
 | Package | Price |
 | --- | --- |
 | AI use policy, AI tool inventory and questionnaire answers | From USD 300 |
-| ISO/IEC 42001 gap check | Fixed quote after a 15-minute call |
+| ISO/IEC 42001 gap check | Fixed quote after a [15-minute call](https://cal.com/lloyd-johnson) |
 
 ## Sample
 

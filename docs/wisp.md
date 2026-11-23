@@ -31,7 +31,7 @@ Smaller firms get some relief: firms holding customer information on fewer than 
 | Package | Price |
 | --- | --- |
 | WISP pack for a small firm | From USD 500 |
-| Larger firms or several offices | Fixed quote after a 15-minute call |
+| Larger firms or several offices | Fixed quote after a [15-minute call](https://cal.com/lloyd-johnson) |
 
 ## What this is not
 

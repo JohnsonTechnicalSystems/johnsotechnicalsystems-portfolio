@@ -26,7 +26,7 @@ Delivered unbranded, in your format and under your name. I never contact your cl
 ## Price
 
 - **MSPs:** partner pricing on request. [Ask for the partner sheet](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20sheet%20request).
-- **Small businesses:** a fixed quote after a 15-minute call.
+- **Small businesses:** a fixed quote after a [15-minute call](https://cal.com/lloyd-johnson).
 
 ## What this is not
 
