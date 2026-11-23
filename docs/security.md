@@ -16,7 +16,7 @@ You will be sharing security details about your company. This page says what hap
 
 - **One folder per client or partner,** in encrypted cloud storage, shared only with the people you name.
 - **Accounts protected with multi-factor authentication,** on a device with full-disk encryption and automatic screen lock.
-- **Email** through Proton Mail. For sensitive files, I'll send a shared-folder link rather than an attachment.
+- **Email** through Proton Mail on the business domain. For sensitive files, I'll send a shared-folder link rather than an attachment.
 - **AI tools** help with first drafts. I don't paste confidential client details into AI tools that use inputs for training, and I'll tell you which tools I use if you ask.
 
 ## At the end of the job
@@ -30,4 +30,4 @@ If I learn that your documents may have been exposed, I'll tell you within 72 ho
 
 ## Questions
 
-Email [Johnson.Technical.Systems@pm.me](mailto:Johnson.Technical.Systems@pm.me).
+Email [hello@johnsontechnicalsystems.com](mailto:hello@johnsontechnicalsystems.com).

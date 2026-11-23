@@ -6,7 +6,7 @@ title: Technical documentation for software companies
 
 For software companies whose runbooks, setup guides and knowledge base articles are out of date, scattered, or living in one engineer's head.
 
-[Ask about a documentation project](mailto:Johnson.Technical.Systems@pm.me?subject=Documentation%20project){ .md-button .md-button--primary }
+[Ask about a documentation project](mailto:hello@johnsontechnicalsystems.com?subject=Documentation%20project){ .md-button .md-button--primary }
 
 ## What I write
 
@@ -37,4 +37,4 @@ For software companies whose runbooks, setup guides and knowledge base articles 
 
 All samples are illustrative examples. See [Samples](samples.md).
 
-[Email me about documentation](mailto:Johnson.Technical.Systems@pm.me?subject=Documentation%20project){ .md-button .md-button--primary }
+[Email me about documentation](mailto:hello@johnsontechnicalsystems.com?subject=Documentation%20project){ .md-button .md-button--primary }

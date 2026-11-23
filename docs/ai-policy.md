@@ -6,7 +6,7 @@ title: AI use policy and AI questionnaire answers for AI startups
 
 For AI and AI-powered software companies whose customers now ask how their data is used with models, and whether you have an AI policy.
 
-[Ask about an AI use policy](mailto:Johnson.Technical.Systems@pm.me?subject=AI%20use%20policy){ .md-button .md-button--primary }
+[Ask about an AI use policy](mailto:hello@johnsontechnicalsystems.com?subject=AI%20use%20policy){ .md-button .md-button--primary }
 
 ## The problem
 
@@ -28,6 +28,6 @@ Security questionnaires now include an AI section: Is customer data used to trai
 
 A sample AI use policy is in progress. See the [sample procedures](samples.md) for how I write.
 
-[Email me about an AI use policy](mailto:Johnson.Technical.Systems@pm.me?subject=AI%20use%20policy){ .md-button .md-button--primary }
+[Email me about an AI use policy](mailto:hello@johnsontechnicalsystems.com?subject=AI%20use%20policy){ .md-button .md-button--primary }
 
 <small>Documentation and preparation services only. Not legal advice or a certification. ISO/IEC 42001 certificates are issued only by accredited certification bodies.</small>

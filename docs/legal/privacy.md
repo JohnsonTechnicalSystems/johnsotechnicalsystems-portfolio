@@ -23,4 +23,4 @@ Documents shared for a job are handled as described on the [Security page](../se
 
 ## Your choices
 
-Email [Johnson.Technical.Systems@pm.me](mailto:Johnson.Technical.Systems@pm.me) to ask what I hold about you or to have it deleted.
+Email [hello@johnsontechnicalsystems.com](mailto:hello@johnsontechnicalsystems.com) to ask what I hold about you or to have it deleted.

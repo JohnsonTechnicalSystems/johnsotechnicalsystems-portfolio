@@ -6,7 +6,7 @@ title: Security questionnaires answered for early-stage software and AI companie
 
 For seed to Series A software and AI companies that have a deal waiting on a security review and no security team to answer it.
 
-[Send me your questionnaire](mailto:Johnson.Technical.Systems@pm.me?subject=Security%20questionnaire){ .md-button .md-button--primary }
+[Send me your questionnaire](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }
 
 ## The problem
 
@@ -38,4 +38,4 @@ A fully answered sample questionnaire for a fictional seed-stage SaaS company is
 
 This is preparation and documentation help. It is not legal advice, an audit, or a SOC 2 report. You review and approve every answer before it goes to your customer.
 
-[Email me about your questionnaire](mailto:Johnson.Technical.Systems@pm.me?subject=Security%20questionnaire){ .md-button .md-button--primary }
+[Email me about your questionnaire](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }

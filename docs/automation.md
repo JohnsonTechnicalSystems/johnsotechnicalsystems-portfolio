@@ -6,7 +6,7 @@ title: AI automation for veterinary clinics
 
 For independent US veterinary clinics whose staff spend hours on reminders, intake forms, follow-up emails and copying information between systems.
 
-[Ask about an automation build](mailto:Johnson.Technical.Systems@pm.me?subject=Clinic%20automation){ .md-button .md-button--primary }
+[Ask about an automation build](mailto:hello@johnsontechnicalsystems.com?subject=Clinic%20automation){ .md-button .md-button--primary }
 
 ## The problem
 
@@ -32,4 +32,4 @@ Every build keeps a person in the loop for anything sent to a client, and starts
 
 I run similar automations for myself every day: email routines, a daily briefing, and an app that estimates calories from a meal photo. A clinic case study will be added after the first project.
 
-[Email me about your clinic](mailto:Johnson.Technical.Systems@pm.me?subject=Clinic%20automation){ .md-button .md-button--primary }
+[Email me about your clinic](mailto:hello@johnsontechnicalsystems.com?subject=Clinic%20automation){ .md-button .md-button--primary }

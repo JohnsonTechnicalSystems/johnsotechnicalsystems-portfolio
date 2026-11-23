@@ -40,4 +40,4 @@ These terms are governed by the laws of the State of New York.
 
 ## Contact
 
-[Johnson.Technical.Systems@pm.me](mailto:Johnson.Technical.Systems@pm.me)
+[hello@johnsontechnicalsystems.com](mailto:hello@johnsontechnicalsystems.com)

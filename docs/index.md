@@ -11,8 +11,8 @@ hide:
 
 Security questionnaires, starter policies and public security pages for early-stage software and AI companies. Done in days, written by a human who checks every claim.
 
-[Get a questionnaire handled](mailto:Johnson.Technical.Systems@pm.me?subject=Security%20questionnaire){ .md-button .md-button--primary }
-[Book a 15-minute call](mailto:Johnson.Technical.Systems@pm.me?subject=15-minute%20call){ .md-button }
+[Get a questionnaire handled](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }
+[Book a 15-minute call](mailto:hello@johnsontechnicalsystems.com?subject=15-minute%20call){ .md-button }
 
 </div>
 
@@ -83,6 +83,6 @@ Prices are fixed and agreed before work starts. The final price depends on lengt
 
 ## Contact
 
-Email **[Johnson.Technical.Systems@pm.me](mailto:Johnson.Technical.Systems@pm.me)** with your questionnaire or a short note on what you need. Replies within one US business day.
+Email **[hello@johnsontechnicalsystems.com](mailto:hello@johnsontechnicalsystems.com)** with your questionnaire or a short note on what you need. Replies within one US business day.
 
 <small>Documentation and preparation services only. Not legal advice, an audit, or an audit opinion. SOC 2 reports are issued only by licensed CPA firms, and ISO certificates only by accredited certification bodies.</small>

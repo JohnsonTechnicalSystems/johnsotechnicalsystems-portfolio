@@ -6,7 +6,7 @@ title: Overflow documentation help for security agencies, vCISOs and MSPs
 
 For Vanta and Drata partner agencies, fractional CISOs and vCISOs, small MSPs and small security firms with more client documentation than hands.
 
-[Ask about a trial job](mailto:Johnson.Technical.Systems@pm.me?subject=Partner%20overflow%20work){ .md-button .md-button--primary }
+[Ask about a trial job](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20overflow%20work){ .md-button .md-button--primary }
 
 ## What I take on
 
@@ -40,6 +40,6 @@ One encrypted folder per partner or client, shared only with you. Client documen
 
 See the [sample procedures](samples.md). A sample security questionnaire is in progress.
 
-[Email me about overflow work](mailto:Johnson.Technical.Systems@pm.me?subject=Partner%20overflow%20work){ .md-button .md-button--primary }
+[Email me about overflow work](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20overflow%20work){ .md-button .md-button--primary }
 
 <small>Documentation and preparation services only. Not legal advice, an audit, or an audit opinion.</small>
