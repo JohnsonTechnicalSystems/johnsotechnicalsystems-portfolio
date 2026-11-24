@@ -17,4 +17,26 @@
 }
 @media screen and (max-width: 600px) {
   .jts-hero h1 { font-size: 1.7rem; }
+  .jts-hero .md-button { padding-left: 1.2em; padding-right: 1.2em; }
+}
+
+/* Buttons: keep a gap when two buttons sit side by side or wrap onto two lines */
+.md-typeset .md-button {
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}
+
+/* Keyboard focus: a clearly visible outline on links and buttons */
+.md-typeset a:focus-visible,
+.md-typeset .md-button:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.md-typeset .md-button:focus-visible {
+  border-radius: 1.2rem;
+}
+
+/* Print: hide site chrome so a page prints as a clean document */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top { display: none !important; }
 }
