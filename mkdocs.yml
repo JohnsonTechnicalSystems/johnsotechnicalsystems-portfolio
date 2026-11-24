@@ -8,6 +8,8 @@ theme:
   name: material
   custom_dir: overrides
   font: false
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   features:
     - navigation.sections
     - navigation.top
