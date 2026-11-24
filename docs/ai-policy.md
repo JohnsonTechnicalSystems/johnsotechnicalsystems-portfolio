@@ -1,5 +1,6 @@
 ---
 title: AI use policy and AI questionnaire answers for AI startups
+description: "For AI and AI-powered software companies whose customers now ask how their data is used with models, and whether you have an AI policy."
 ---
 
 # Answer your customers' AI questions with confidence

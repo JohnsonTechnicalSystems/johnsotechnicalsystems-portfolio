@@ -1,5 +1,6 @@
 ---
 title: How I handle your documents
+description: "You will be sharing security details about your company. This page says what happens to them."
 ---
 
 # Security: how I handle your documents

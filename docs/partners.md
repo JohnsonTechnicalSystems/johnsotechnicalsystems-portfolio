@@ -1,5 +1,6 @@
 ---
 title: Overflow documentation help for security agencies, vCISOs and MSPs
+description: "For Vanta and Drata partner agencies, fractional CISOs and vCISOs, small MSPs and small security firms with more client documentation than hands."
 ---
 
 # Overflow help for compliance and security firms, delivered under your name

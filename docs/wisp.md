@@ -1,5 +1,6 @@
 ---
 title: Written information security program (WISP) packs for tax preparers and small finance firms
+description: "For tax preparers, mortgage brokers and small finance firms that need a written information security program (WISP) under the FTC Safeguards Rule and don't have time to write one."
 ---
 
 # Your written security plan, done and tailored to your firm

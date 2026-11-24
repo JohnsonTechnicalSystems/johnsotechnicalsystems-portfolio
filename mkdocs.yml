@@ -2,12 +2,14 @@ site_name: Johnson Technical Systems
 site_description: Security questionnaires, starter policies and public security pages for early-stage software and AI companies, plus partner overflow work, AI use policies, technical documentation and automation.
 site_author: Lloyd Johnson
 site_url: https://johnsontechnicalsystems.com/
-repo_url: https://github.com/JohnsonTechnicalSystems/johnsotechnicalsystems-portfolio
-repo_name: GitHub
 copyright: johnsontechnicalsystems LLC · Documentation and preparation services, not legal advice or an audit opinion · <a href="/legal/terms/">Terms</a> · <a href="/legal/privacy/">Privacy</a> · Samples licensed CC BY-NC-ND 4.0
 
 theme:
   name: material
+  custom_dir: overrides
+  font: false
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   features:
     - navigation.sections
     - navigation.top
@@ -66,3 +68,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
+
+extra:
+  generator: false

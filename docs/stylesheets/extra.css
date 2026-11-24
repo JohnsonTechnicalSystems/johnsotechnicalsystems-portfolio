@@ -1,3 +1,45 @@
+/* Fonts: served from this site, so no request goes to a third party.
+   IBM Plex Sans and IBM Plex Mono are under the SIL Open Font License (see assets/fonts). */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-sans-latin-wght-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: italic;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-sans-latin-wght-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-mono-latin-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-mono-latin-700-normal.woff2") format("woff2");
+}
+:root {
+  --md-text-font: "IBM Plex Sans";
+  --md-code-font: "IBM Plex Mono";
+}
+
 /* Homepage hero */
 .jts-hero {
   padding: 1.5rem 0 1rem;
@@ -17,4 +59,26 @@
 }
 @media screen and (max-width: 600px) {
   .jts-hero h1 { font-size: 1.7rem; }
+  .jts-hero .md-button { padding-left: 1.2em; padding-right: 1.2em; }
+}
+
+/* Buttons: keep a gap when two buttons sit side by side or wrap onto two lines */
+.md-typeset .md-button {
+  margin: 0.25rem 0.5rem 0.25rem 0;
+}
+
+/* Keyboard focus: a clearly visible outline on links and buttons */
+.md-typeset a:focus-visible,
+.md-typeset .md-button:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.md-typeset .md-button:focus-visible {
+  border-radius: 1.2rem;
+}
+
+/* Print: hide site chrome so a page prints as a clean document */
+@media print {
+  .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top { display: none !important; }
 }

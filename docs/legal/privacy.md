@@ -10,7 +10,6 @@ Last updated: November 2026. This site is run by johnsontechnicalsystems LLC.
 
 - The site has **no analytics, no tracking cookies and no contact forms.**
 - It is hosted on GitHub Pages. GitHub may log visitor IP addresses for security and operations; see the [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
-- Pages load web fonts from Google Fonts, which receives your IP address when fonts are downloaded.
 - The site remembers your light or dark mode choice in your browser's local storage. That stays on your device.
 
 ## When you email me
