@@ -1,5 +1,5 @@
 /* Fonts: served from this site, so no request goes to a third party.
-   IBM Plex Sans and JetBrains Mono are under the SIL Open Font License (see assets/fonts). */
+   IBM Plex Sans and IBM Plex Mono are under the SIL Open Font License (see assets/fonts). */
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
@@ -15,15 +15,29 @@
   src: url("../assets/fonts/ibm-plex-sans-latin-wght-italic.woff2") format("woff2");
 }
 @font-face {
-  font-family: "JetBrains Mono";
+  font-family: "IBM Plex Mono";
   font-style: normal;
-  font-weight: 100 800;
+  font-weight: 400;
   font-display: swap;
-  src: url("../assets/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2");
+  src: url("../assets/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-mono-latin-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-mono-latin-700-normal.woff2") format("woff2");
 }
 :root {
   --md-text-font: "IBM Plex Sans";
-  --md-code-font: "JetBrains Mono";
+  --md-code-font: "IBM Plex Mono";
 }
 
 /* Homepage hero */
