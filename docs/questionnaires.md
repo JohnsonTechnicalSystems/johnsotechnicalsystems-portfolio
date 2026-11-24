@@ -1,5 +1,6 @@
 ---
 title: Security questionnaires answered for early-stage software and AI companies
+description: "For seed to Series A software and AI companies that have a deal waiting on a security review and no security team to answer it."
 ---
 
 # Your customer sent a security questionnaire, and I'll answer it

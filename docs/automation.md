@@ -1,5 +1,6 @@
 ---
 title: AI automation for veterinary clinics
+description: "For independent US veterinary clinics whose staff spend hours on reminders, intake forms, follow-up emails and copying information between systems."
 ---
 
 # Give your front desk back an hour a day

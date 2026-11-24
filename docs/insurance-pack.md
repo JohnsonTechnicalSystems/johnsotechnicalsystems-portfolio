@@ -1,5 +1,6 @@
 ---
 title: Cyber insurance renewal packs for MSPs and their clients
+description: "For MSPs whose small-business clients face a cyber insurance renewal application every year, and for the businesses themselves. Delivered white-label through your MSP, or direct."
 ---
 
 # Cyber insurance renewals, prepared before the deadline
