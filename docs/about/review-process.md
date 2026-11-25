@@ -2,15 +2,15 @@
 
 ## Document status
 
-As of October 2026, every document in this portfolio is a Draft. None has been marked Reviewed or Published.
+As of November 2026, SOP-001 is Approved. SOP-002 to SOP-006 are Drafts.
 
 | Status | Meaning |
 | --- | --- |
 | Draft | Written and internally consistent, but not every command, step, and control reference has been checked against primary sources yet |
 | Reviewed | Every factual claim, command, and control reference checked by the author against primary sources: NIST SP 800-53 Rev 5, ISO/IEC 27001:2022, AICPA Trust Services Criteria, vendor documentation, and the relevant standard |
-| Published | Reviewed, given version 1.0 or later, and featured on the landing pages |
+| Approved | Reviewed, the environment it describes confirmed by the owner, and issued as version 1.0 or later with an effective date and next review date |
 
-A document moves up a status through a pull request that records what was checked and against which source. The pull request history is the audit trail for each review.
+A document moves up a status through a commit that records what was checked and against which source. The commit history is the audit trail for each review.
 
 ## Use of AI
 
