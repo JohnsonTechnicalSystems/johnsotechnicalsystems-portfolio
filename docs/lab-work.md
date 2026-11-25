@@ -12,14 +12,6 @@ The systems behind the documents. Each lab produces three things: the working co
 | Local AI inference stack | Ollama on the host GPU, Open WebUI in Docker, reachable only over the tailnet | [SOP-002](sops/sop-002-local-llm-inference-stack.md) |
 | Fault diagnosis | An ISP WAN outage, an RDP session hang with two stacked causes, and a VPN driver that broke GPU inference | [SOP-003](sops/sop-003-network-troubleshooting-runbook.md) |
 
-## Certification study map
-
-The labs also serve as practice for CompTIA Network+ and Security+. The table lists the exam objectives each approved procedure exercises, numbered as in CompTIA's published exam objectives (Network+ N10-009, Security+ SY0-701).
-
-| Procedure | Network+ N10-009 | Security+ SY0-701 |
-| --- | --- | --- |
-| [SOP-001](sops/sop-001-secure-remote-access.md) | 1.4, 3.5, 4.1, 4.3 | 1.4, 2.5, 3.2, 4.5, 4.6, 5.1, 5.2 |
-
 ## Planned labs
 
 | Lab | Hands-on output | Documentation output | Compliance output |
