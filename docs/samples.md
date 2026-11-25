@@ -12,7 +12,7 @@ title: Sample procedures
 | --- | --- | --- |
 | [Sample security questionnaire](sample-questionnaire.md) | 50 customer security questions answered for a fictional SaaS company, with status, evidence, SOC 2 and NIST CSF 2.0 references, and reviewer notes | References checked |
 | [SOP-001: Secure remote access to Windows workstations](sops/sop-001-secure-remote-access.md) | Control mapping across four frameworks, a recorded risk acceptance with compensating controls, and a test that proves the control works | Approved |
-| [SOP-006: Endpoint isolation during a suspected compromise](sops/sop-006-endpoint-isolation.md) | Incident containment aligned to NIST SP 800-61 Rev. 3, with evidence preservation and SOC 2 mapping | Draft |
+| [SOP-006: Endpoint isolation during a suspected compromise](sops/sop-006-endpoint-isolation.md) | Incident containment aligned to NIST SP 800-61 Rev. 3, with evidence preservation and SOC 2 mapping | Approved |
 | [SOP-005: VLAN creation and segmentation](sops/sop-005-vlan-creation-and-segmentation.md) | A change-controlled network procedure with change evidence | Draft |
 
 ## Technical writing samples
