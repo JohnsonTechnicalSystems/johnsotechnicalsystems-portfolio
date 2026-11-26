@@ -29,7 +29,7 @@ Security questionnaires now include an AI section: Is customer data used to trai
 
 ## Sample
 
-A sample AI use policy is in progress. See the [sample procedures](samples.md) for how I write.
+See a [sample AI use policy and AI tool inventory](sample-ai-use-policy.md) for a fictional seed-stage software company. The policy states what is in place, partial and planned, and the inventory records what each AI tool may be used for and on what terms. It comes as a web page, a PDF and a spreadsheet.
 
 [Email me about an AI use policy](mailto:hello@johnsontechnicalsystems.com?subject=AI%20use%20policy){ .md-button .md-button--primary }
 

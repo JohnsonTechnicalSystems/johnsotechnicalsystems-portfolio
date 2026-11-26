@@ -40,14 +40,17 @@ nav:
   - Samples:
       - Overview: samples.md
       - Sample security questionnaire: sample-questionnaire.md
+      - Sample access control policy: sample-access-control-policy.md
+      - Sample AI use policy: sample-ai-use-policy.md
+      - Sample public security page: sample-security-page.md
+      - Sample WISP: sample-wisp.md
+      - Sample cyber insurance renewal pack: sample-insurance-renewal-pack.md
       - SOP-001 Secure Remote Access: sops/sop-001-secure-remote-access.md
       - SOP-002 Local LLM Inference Stack: sops/sop-002-local-llm-inference-stack.md
       - SOP-003 Network Troubleshooting Runbook: sops/sop-003-network-troubleshooting-runbook.md
       - SOP-004 Cat6 Termination and Testing: sops/sop-004-cat6-termination-and-testing.md
       - SOP-005 VLAN Creation and Segmentation: sops/sop-005-vlan-creation-and-segmentation.md
       - SOP-006 Endpoint Isolation: sops/sop-006-endpoint-isolation.md
-      - SOP Template: templates/sop-template.md
-      - Lab work: lab-work.md
   - About:
       - Security: security.md
       - Review process: about/review-process.md

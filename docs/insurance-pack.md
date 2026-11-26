@@ -29,6 +29,10 @@ Delivered unbranded, in your format and under your name. I never contact your cl
 - **MSPs:** partner pricing on request. [Ask for the partner sheet](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20sheet%20request).
 - **Small businesses:** a fixed quote after a [15-minute call](https://cal.com/lloyd-johnson).
 
+## Sample
+
+See a [sample renewal pack](sample-insurance-renewal-pack.md) for a fictional 19-person architecture firm: 30 application questions answered from the facts, the evidence behind each answer, a gap list and a one-page incident response plan. It comes as a web page, a PDF and a spreadsheet.
+
 ## What this is not
 
 This is preparation help. It is not legal or insurance advice, and it doesn't guarantee coverage or a premium. The business reviews and signs its own application and is responsible for its answers.
