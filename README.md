@@ -6,7 +6,7 @@ Security documentation, technical writing, and the lab work behind them, by Lloy
 
 Site: [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com)
 
-I build it, document it, and map it to controls. The procedures here come from systems I configured, faults I diagnosed, and study scenarios written while preparing for CompTIA Network+ and Security+. Each one follows the same [SOP template](docs/templates/sop-template.md) and is mapped to NIST SP 800-53, ISO/IEC 27001:2022, and SOC 2 where a control applies.
+I build it, document it, and map it to controls. The procedures here come from systems I configured, faults I diagnosed, and study scenarios written while preparing for CompTIA Network+ and Security+. Each one follows the same structure and is mapped to NIST SP 800-53, ISO/IEC 27001:2022, and SOC 2 where a control applies.
 
 ## What the site offers
 
@@ -48,10 +48,9 @@ These documents are portfolio samples, not legal advice, an audit opinion, or a 
 docs/                 Site content (built with Zensical from mkdocs.yml)
   index.md            Home page and document list
   questionnaires.md, partners.md, wisp.md, insurance-pack.md, ai-policy.md, automation.md   Service pages
-  samples.md, lab-work.md   Samples overview and lab work
+  samples.md          Samples overview
   security.md, legal/   Data handling, Terms and Privacy
   sops/               SOP-001 to SOP-006
-  templates/          SOP template
   about/              Review process, AI use, and limits
 .github/workflows/    Lint and build checks; deploys the site from main
 archive/              Retired pages, not built into the site
