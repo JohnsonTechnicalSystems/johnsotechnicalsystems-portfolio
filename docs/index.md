@@ -1,5 +1,5 @@
 ---
-title: Security questionnaires and policies for early-stage software and AI companies
+title: Written security documentation for small firms
 hide:
   - navigation
   - toc
