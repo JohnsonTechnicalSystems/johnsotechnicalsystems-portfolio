@@ -10,7 +10,7 @@ I build it, document it, and map it to controls. The procedures here come from s
 
 ## What the site offers
 
-The site at [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com) leads with security questionnaires, starter policy packs and public security pages for early-stage software and AI companies, with pages for partner overflow work, FTC Safeguards Rule WISP packs, cyber insurance renewal packs, AI use policies and automation. The SOPs below are published there under Samples as illustrative examples.
+The site at [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com) leads with written security documentation for small firms (startups, small finance firms, MSPs and vCISO partners): security questionnaires, starter policy packs and public security pages, with pages for partner overflow work, FTC Safeguards Rule WISP packs, cyber insurance renewal packs, AI use policies and automation. The SOPs below are published there under Samples as illustrative examples.
 
 ## Index
 

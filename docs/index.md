@@ -9,7 +9,7 @@ hide:
 
 # Pass your customers' security reviews and close the deal
 
-Security questionnaires, starter policies and public security pages for early-stage software and AI companies. Done in days, written by a human who checks every claim.
+Security questionnaires, starter policies, AI use policies, public security pages and FTC Safeguards Rule WISPs for small firms: startups, small finance firms, MSPs and vCISO partners. Done in days, written by a human who checks every claim.
 
 [Get a questionnaire handled](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }
 [Book a 15-minute call](https://cal.com/lloyd-johnson){ .md-button }
