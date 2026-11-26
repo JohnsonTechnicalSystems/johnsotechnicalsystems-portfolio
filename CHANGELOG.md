@@ -7,6 +7,7 @@ All documents remain Drafts until their status field says otherwise.
 - The social share image now reads "For small firms" in place of "For early-stage software and AI companies". The headline, colors, font and 1200x630 size are unchanged.
 - The site description and homepage title, which feed the Open Graph and Twitter card text, now describe written security documentation for small firms.
 - The homepage opening sentence and the README now name small firms and the buyers served (startups, small finance firms, MSPs and vCISO partners), and the homepage sentence lists AI use policies and WISPs alongside questionnaires.
+- The security questionnaires page now addresses software, AI and other small firms with a deal waiting on a security review, in place of seed to Series A software and AI companies only.
 
 ## 2026-11-23: Rebuild the site around paid services
 

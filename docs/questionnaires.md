@@ -1,17 +1,17 @@
 ---
-title: Security questionnaires answered for early-stage software and AI companies
-description: "For seed to Series A software and AI companies that have a deal waiting on a security review and no security team to answer it."
+title: Security questionnaires answered for software, AI and other small firms
+description: "For software, AI and other small firms that have a deal waiting on a security review and no security team to answer it."
 ---
 
 # Your customer sent a security questionnaire, and I'll answer it
 
-For seed to Series A software and AI companies that have a deal waiting on a security review and no security team to answer it.
+For software, AI and other small firms that have a deal waiting on a security review and no security team to answer it.
 
 [Send me your questionnaire](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }
 
 ## The problem
 
-Enterprise and mid-market buyers send a security questionnaire before they sign: a spreadsheet, a SIG Lite or CAIQ-style form, or a vendor portal with 50 to 300 questions. Founders end up answering it at midnight, guessing at wording, and promising controls that don't exist yet. Wrong answers can lose the deal or come back later as a contract problem.
+Enterprise and mid-market buyers send a security questionnaire before they sign: a spreadsheet, a SIG Lite or CAIQ-style form, or a vendor portal with 50 to 300 questions. Founders and owners end up answering it at midnight, guessing at wording, and promising controls that don't exist yet. Wrong answers can lose the deal or come back later as a contract problem.
 
 ## What I do
 
