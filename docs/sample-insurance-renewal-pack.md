@@ -29,7 +29,7 @@ This is the intake summary the answers are written from.
 | **Systems** | Microsoft 365 for email, files and sign-in. 21 computers: 12 laptops, 5 desktops, 3 CAD workstations and 1 PC that drives the large-format plotter. One file server in the office that holds the project archive. Cloud accounting software and a cloud payroll provider. A managed firewall with a VPN, and separate staff and guest Wi-Fi. |
 | **Information held** | Client project files, drawings and contracts. HR and payroll records for about 60 current and former employees. Business contact details for about 900 client and consultant contacts. No payment card data (clients pay by check or bank transfer) and no health records. |
 | **Policy** | The current cyber policy renews on 1 February 2027. The application is due to the broker by 15 January 2027. |
-| **Prepared** | November 2026, from the MSP's reports dated 10 to 14 November 2026 and a 40-minute call with the office manager and one principal. |
+| **Prepared** | November 2026, from the MSP's reports dated 10 to 13 November 2026, a 40-minute call with the office manager and one principal, and a call with the bookkeeper on 13 November 2026, with screenshots. |
 
 ## 2. Summary for the principals
 
@@ -363,7 +363,7 @@ Partly. Training is assigned every year through the MSP's training platform, and
 <div class="jts-meta" markdown>
 
 - **Status** Partial
-- **Evidence** Training completion report, 14 November 2026
+- **Evidence** Training completion report; phishing simulation results, 13 November 2026
 - **Confirmed by** MSP report
 - **NIST CSF 2.0** PR.AT-01
 
@@ -464,29 +464,29 @@ What proves each group of answers, where it came from and when it was captured. 
 | EDR coverage and alert handling | EDR device list; response policy; MSP service agreement | EDR console; contract | 12 November 2026 | 10, 11 |
 | Updates and supported software | Patch compliance report; operating system inventory | MSP management tool | October and November 2026 | 12, 13 |
 | Encryption and administrator rights | Device compliance report; local administrators report | Device management | 12 November 2026 | 14, 15 |
-| Backups | Backup job history; cloud backup console settings; restore tickets; September 2025 restore test record | Backup consoles; MSP tickets | 13 November 2026 | 16 to 20 |
+| Backups | Backup job history; cloud backup console settings; backup configuration; restore tickets; September 2025 restore test record | Backup consoles; MSP tickets | 13 November 2026 | 16 to 20 |
 | Network | Firewall rule export; external scan report; wireless configuration; network diagram | Firewall; external scanner | 10 November 2026 | 21 to 23 |
-| Training | Training completion report; phishing simulation results | MSP training platform | 14 November 2026 | 24 |
+| Training | Training completion report; phishing simulation results | MSP training platform | 13 November 2026 | 24 |
 | Payment controls | Bank portal user roles; notes of the call with the bookkeeper | Bank portal; call notes | 13 November 2026 | 25, 26 |
 | Incident response plan and vendors | Notes of the call with the principal; MSP service agreement | Call notes; contract | 13 November 2026 | 27 to 29 |
 | Incident history | MSP incident ticket; email to the broker | MSP ticketing system; principal's email | March and April 2025 | 30 |
 
 ## 5. Gap list
 
-Controls the application asks about that are not fully in place, in the order to deal with them. Priority reflects how heavily insurers commonly weigh the control and how exposed the firm is today.
+Controls the application asks about that are not fully in place. Deal with them by priority, then by target date. Priority reflects how heavily insurers commonly weigh the control and how exposed the firm is today.
 
 | # | Gap | Questions | Priority | What to do | Owner | Target date |
 | --- | --- | --- | --- | --- | --- | --- |
-| G1 | Remote support tool on the bookkeeper's PC allows unattended access with a password only | 6 | High | Remove the tool, or set it to attended sessions only, started by the bookkeeper | MSP | 5 December 2026 |
-| G2 | One principal has not turned on MFA in the accounting software | 8 | High | Enrol the principal; then make MFA mandatory for all users in the software's settings | Principal; bookkeeper | 5 December 2026 |
-| G3 | EDR missing from the plotter PC and one CAD workstation | 10 | High | Reinstall on the CAD workstation by 5 December. For the plotter PC, see G4: replacing it with a supported PC that has EDR closes this gap; isolating it leaves question 10 at Partial | MSP | 5 December 2026 (CAD workstation) |
-| G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 13 | High | Replace the PC, or move it to its own network that can reach only the plotter and the print queue | MSP; principal to approve cost | 9 January 2027 |
-| G5 | DMARC is in monitoring mode only | 9 | Medium | Review the DMARC reports for two weeks, then move to quarantine and later to reject | MSP | 9 January 2027 |
-| G6 | Cloud backup immutability is not turned on | 17 | High | Turn on immutability with a 30-day period and confirm in the console | MSP | 5 December 2026 |
-| G7 | No full restore test in the last 12 months | 19, 20 | Medium | Restore the file server to a test machine, time it, and record the result | MSP | 19 December 2026 |
-| G8 | Two staff have not completed the 2026 training | 24 | Low | Complete the training | Office manager | 5 December 2026 |
-| G9 | Call-back check is unwritten, and one person can release any payment alone | 25, 26 | High | Write a half-page payment procedure; turn on dual approval in the bank portal above an amount the principals choose | Principals; bookkeeper | 19 December 2026 |
-| G10 | No adopted or tested incident response plan | 27, 28 | Medium | Principals adopt the one-page plan below; fill in the contact numbers; hold a one-hour walk-through with the MSP | Principals; MSP | 19 December 2026 |
+| G1 | Remote support tool on the bookkeeper's PC allows unattended access with a password only | 6 | High | Remove the tool, or set it to attended sessions only, started by the bookkeeper | MSP | 4 December 2026 |
+| G2 | One principal has not turned on MFA in the accounting software | 8 | High | Enrol the principal; then make MFA mandatory for all users in the software's settings | Principal; bookkeeper | 4 December 2026 |
+| G3 | EDR missing from the plotter PC and one CAD workstation | 10 | High | Reinstall on the CAD workstation by 4 December. For the plotter PC, see G4: replacing it with a supported PC that has EDR closes this gap; isolating it leaves question 10 at Partial | MSP | 4 December 2026 (CAD workstation) |
+| G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 12, 13 | High | Replace the PC, or move it to its own network that can reach only the plotter and the print queue, with no access to the staff network or the internet. Isolation reduces the risk but does not close the gap: questions 12 and 13 stay Partial and No until the PC is replaced or enrolled in extended security updates | MSP; principal to approve cost | 8 January 2027 |
+| G5 | DMARC is in monitoring mode only | 9 | Medium | Review the DMARC reports for two weeks, then move to quarantine and later to reject | MSP | 8 January 2027 |
+| G6 | Cloud backup immutability is not turned on | 17 | High | Turn on immutability with a 30-day period and confirm in the console | MSP | 4 December 2026 |
+| G7 | No full restore test in the last 12 months | 19, 20 | Medium | Restore the file server to a test machine, time it, and record the result | MSP | 18 December 2026 |
+| G8 | Two staff have not completed the 2026 training | 24 | Low | Complete the training | Office manager | 4 December 2026 |
+| G9 | Call-back check is unwritten, and one person can release any payment alone | 25, 26 | High | Write a half-page payment procedure; turn on dual approval in the bank portal above an amount the principals choose | Principals; bookkeeper | 18 December 2026 |
+| G10 | No adopted or tested incident response plan | 27, 28 | Medium | Principals adopt the one-page plan below; fill in the contact numbers; hold a one-hour walk-through with the MSP | Principals; MSP | 18 December 2026 |
 
 **Not listed as gaps for this renewal:** question 11 (no alert review outside business hours), question 12 (CAD software updates not tracked), question 15 (local administrator rights on the three CAD workstations), question 23 (no network segmentation) and question 29 (payroll and accounting vendors not reviewed). Each needs budget or a longer project. They were raised with the principals and the MSP for after the renewal, and the answers stay as written until they are fixed.
 
@@ -496,15 +496,15 @@ Drafted for adoption by the principals (gap G10). Names and numbers are complete
 
 | Role | Who | What they do |
 | --- | --- | --- |
-| Incident lead | Principal (name) | Decides, approves spending, speaks to clients |
-| Deputy | Office manager (name) | Leads if the principal cannot be reached; keeps the incident log |
-| IT response | Kestrel Ridge IT help desk, 555-0100 | Contains the problem, preserves evidence, restores systems |
-| Insurer | Breach hotline on the policy schedule (policy number: see the copy kept in the office safe) | Appoints legal counsel and forensic help. Call before hiring anyone else |
-| Bank | Fraud line on the back of the bank token | Recalls or freezes a fraudulent payment |
+| Incident lead | Principal (name, mobile number) | Decides, approves spending, speaks to clients |
+| Deputy | Office manager (name, mobile number) | Leads if the principal cannot be reached; keeps the incident log |
+| IT response | Kestrel Ridge IT help desk, 555-0100, business hours. Out of hours: the MSP's emergency number (to be confirmed with the MSP); if there is none, call the insurer's breach hotline | Contains the problem, preserves evidence, restores systems |
+| Insurer | Breach hotline (number) and policy number (number), both from the policy schedule | Appoints legal counsel and forensic help. Call before hiring anyone else |
+| Bank | Fraud line (number), also on the back of the bank token | Recalls or freezes a fraudulent payment |
 
 1. **Report it at once.** Anyone who sees something wrong (a ransom note, a strange sign-in alert, a payment they did not make, a lost laptop) calls the MSP help desk and tells the incident lead. Do not wait to be sure.
 2. **Disconnect, do not switch off.** Unplug the network cable or turn off Wi-Fi on the affected computer. Leave it powered on, and do not delete anything, so that evidence is kept.
-3. **Contain.** The MSP isolates affected devices, resets the passwords of affected accounts, signs those accounts out everywhere, and checks for mail-forwarding rules and new administrator accounts.
+3. **Contain.** The MSP isolates affected devices, resets the passwords of affected accounts, signs those accounts out everywhere, and checks for new inbox rules (forwarding, moving or deleting mail), new MFA methods, newly approved apps and new administrator accounts.
 4. **Call the insurer's breach hotline** before hiring a lawyer, a forensic firm or a ransom negotiator. The policy may pay only for firms the insurer approves.
 5. **If money has been sent,** call the bank's fraud line immediately and ask for a recall. Every hour matters.
 6. **Work out what was affected.** With the MSP and the insurer's advisers, list the systems, the accounts and the kinds of information involved, and keep a dated log of every action.
@@ -551,7 +551,7 @@ Answers that changed during review. On real work, these notes go to the MSP or t
 | --- | --- |
 | Q6 | The MSP's first draft answered Yes, because the VPN requires MFA. The installed software report showed a vendor's remote support tool with unattended, password-only access. The answer was changed to Partial and the tool became gap G1. |
 | Q10 | The draft said EDR was on "all endpoints". The device list showed 20 of 22, so the answer gives the count and names the two devices. |
-| Q13 | The plotter PC was missing from the first inventory because it is not used for email. It was added after the EDR device list and the network scan were compared. |
+| Q13 | The plotter PC was missing from the first inventory because it is not used for email. It was added after the EDR device list and the network diagram were compared. |
 | Q17 | The draft said backups were "immutable". The cloud copy is separate and protected by MFA, but the immutability setting was off. The answer says exactly that. |
 | Q19 | The draft said restores are "tested regularly". File restores are routine, but the last full restore test was 14 months ago. The answer gives both dates. |
 | Q27 | The plan in this pack was written during the engagement. The answer stays No until the principals adopt it, because the application asks about the position on the day it is signed. |
