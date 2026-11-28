@@ -60,7 +60,7 @@ tr { break-inside: avoid; }
 <thead><tr><th style="width:22%">Role</th><th>Responsibility under this policy</th></tr></thead>
 <tr><td>Owner</td><td>Approves this policy, every exception and any new AI tool that would handle client data.</td></tr>
 <tr><td>Security lead</td><td>Owns this policy and the AI tool register (Annex A). Reviews new tool requests, checks vendor terms every six months, and leads the response to AI-related incidents.</td></tr>
-<tr><td>Service manager</td><td>Makes sure technicians follow section 4, reviews AI-assisted changes before they reach more than one client, and includes this policy in onboarding.</td></tr>
+<tr><td>Service manager</td><td>Makes sure technicians follow section 4, approves AI-assisted changes before they reach more than one client (section 4.1), and includes this policy in onboarding.</td></tr>
 <tr><td>All staff</td><td>Use only approved tools, follow the data rules in section 3, check AI output before relying on it, and report problems at once under section 7.</td></tr>
 </table>
 
@@ -80,7 +80,7 @@ tr { break-inside: avoid; }
 <ul>
 <li>Read and understand every line before running it. If you cannot explain what a line does, do not run it.</li>
 <li>Test on a single lab or non-production device first. Never deploy an AI-written script through the RMM platform to more than one device without testing.</li>
-<li>A second technician reviews any AI-assisted script before it runs on a server, on more than one client, or on more than 10 devices. The change ticket records that AI was used and who reviewed it.</li>
+<li>A second technician reviews any AI-assisted script before it runs on a server, on more than one client, or on more than 10 devices. The service manager also approves any run on more than one client. The change ticket records that AI was used, who reviewed it, how to undo the change and how to check that it worked.</li>
 <li>Check that every module, package or download an AI tool suggests exists on its official source and comes from the expected publisher. AI tools sometimes name packages that do not exist, and attackers register those names.</li>
 </ul>
 <h3>4.2 AI agents and automation</h3>
@@ -96,7 +96,7 @@ tr { break-inside: avoid; }
 <h2>5. Other uses</h2>
 <ul>
 <li><strong>Client messages.</strong> An AI tool may help draft a reply. The sender reads and corrects it, and the rules in section 3 apply to anything pasted in. We do not use an AI chatbot to answer clients on our behalf.</li>
-<li><strong>Meeting notes.</strong> AI note-takers may be used in internal meetings. On a client call, one is used only if the client agrees at the start of the call; the technician records that agreement in the ticket.</li>
+<li><strong>Meeting notes.</strong> AI note-takers may be used in internal meetings only. They are not used on client calls, because those calls carry client data and the note-taker is not approved for it (Annex A).</li>
 <li><strong>Security awareness work.</strong> AI may help write phishing simulation emails only for a campaign the client has approved in writing. We never create a voice, image or video that imitates a real person.</li>
 <li><strong>Hiring and staff decisions.</strong> AI tools are not used to screen candidates or to make decisions about pay, performance or dismissal.</li>
 <li><strong>New AI features in existing tools.</strong> When a vendor adds an AI feature to a tool we or our clients use, it is treated as a new AI tool. Where the admin settings allow, it stays off in our tenant until reviewed. In client tenants, we tell the client and follow their decision.</li>
@@ -120,8 +120,8 @@ tr { break-inside: avoid; }
 <div class="box">
 <h3>If something goes wrong</h3>
 <ul>
-<li><strong>A secret was entered into any AI tool:</strong> treat it as exposed. Rotate the password, key or token at once, then tell the security lead.</li>
-<li><strong>Client data went into a tool not approved for it:</strong> tell the security lead within one hour. Do not delete the conversation until the security lead has recorded it; it may be needed to find out what was shared.</li>
+<li><strong>A secret was entered into any AI tool:</strong> treat it as exposed. Rotate the password, key or token at once, end its active sessions and check its logs for misuse, then tell the security lead. If it is a client's production credential, tell the client before rotating so the change does not cause an outage.</li>
+<li><strong>Client data went into a tool not approved for it:</strong> tell the security lead within one hour. Do not delete the conversation until the security lead has recorded it; it may be needed to find out what was shared. After that, delete it and ask the vendor to delete it where the plan allows.</li>
 <li><strong>An AI-assisted change caused an outage or a security problem:</strong> roll it back if it is safe to do so, and follow the incident response plan.</li>
 </ul>
 <p style="margin:0">The security lead decides whether the client must be told, following the client's contract and the incident response plan. Reporting your own mistake promptly is never a disciplinary matter in itself; hiding one is.</p>
@@ -139,10 +139,10 @@ tr { break-inside: avoid; }
 <table class="grid">
 <thead><tr><th style="width:27%">Tool (by type)</th><th style="width:13%">Status</th><th style="width:15%">Highest data</th><th>Conditions</th></tr></thead>
 <tr><td>Chat assistant, business plan, company accounts</td><td class="ok">Approved</td><td>Internal</td><td>Single sign-on only. The plan does not train on our data. Client details removed first (section 3).</td></tr>
-<tr><td>Ticket summaries and reply drafts in the PSA platform</td><td class="ok">Approved</td><td>Client data</td><td>Covered by our PSA contract and listed in our subprocessor list. Clients may opt out. Secrets in tickets are still redacted.</td></tr>
+<tr><td>Ticket summaries and reply drafts in the PSA platform</td><td class="ok">Approved</td><td>Client data</td><td>Covered by our PSA contract and listed in our subprocessor list. Clients may opt out. Off by default for clients under HIPAA or the FTC Safeguards Rule unless their contract, including any business associate agreement, covers it. Technicians redact secrets in tickets before using the feature.</td></tr>
 <tr><td>Script suggestions in the RMM platform</td><td class="lim">Limited</td><td>Client data</td><td>Suggestions only. Section 4.1 testing and review apply. Autonomous actions stay off.</td></tr>
-<tr><td>Coding assistant for our internal automation repository</td><td class="ok">Approved</td><td>Internal</td><td>No secrets in the repository. Code review before merge.</td></tr>
-<tr><td>AI meeting note-taker</td><td class="lim">Limited</td><td>Internal</td><td>Client calls only with the client's agreement, recorded in the ticket.</td></tr>
+<tr><td>Coding assistant for our internal automation repository</td><td class="ok">Approved</td><td>Internal</td><td>No secrets in the repository. Not run in a session or folder that holds client credentials or admin tokens. A technician approves each command it runs. Code review before merge.</td></tr>
+<tr><td>AI meeting note-taker</td><td class="lim">Limited</td><td>Internal</td><td>Internal meetings only. Not used on client calls.</td></tr>
 <tr><td>Free or personal AI accounts, AI browser extensions</td><td class="no">Not approved</td><td>None</td><td>Not used for work, on any device.</td></tr>
 </table>
 
