@@ -6,14 +6,33 @@ hide:
 ---
 
 <div class="jts-hero" markdown>
+<div class="jts-hero__pitch" markdown>
 
 # Pass your customers' security reviews and close the deal
 
-Security questionnaires, starter policies, AI use policies, public security pages and FTC Safeguards Rule WISPs for small firms: startups, small finance firms, MSPs and vCISO partners. Done in days, written by a human who checks every claim.
+Written security documentation for small firms, done in days by a human who checks every claim.
 
 [Get a questionnaire handled](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }
 [Book a 15-minute call](https://cal.com/lloyd-johnson){ .md-button }
 
+</div>
+<!-- Keep this excerpt identical to question 19 in sample-questionnaire.md. The evidence row is left out to keep the sheet short. -->
+<div class="jts-sheet" markdown>
+<div class="jts-sheet__head" markdown>
+
+[Sample questionnaire](sample-questionnaire.md) for a fictional SaaS company, question 19 of 50
+
+</div>
+
+**How do your customers' users sign in to the product?**
+
+With email and password plus optional authenticator-app MFA, or with Sign in with Google. SAML single sign-on and admin-enforced MFA are planned for Q1 2027.
+
+- **Status** *Partial*
+- **SOC 2** `CC6.1`
+- **NIST CSF 2.0** `PR.AA-03`
+
+</div>
 </div>
 
 ## Who it's for
@@ -24,7 +43,7 @@ Security questionnaires, starter policies, AI use policies, public security page
 
     ---
 
-    A prospect sent a 200-row spreadsheet and the deal is waiting on it. You have no security team and no SOC 2 report yet.
+    A prospect sent a spreadsheet with 200 rows and the deal is waiting on it. You have no security team and no SOC 2 report yet.
 
     [Security questionnaires](questionnaires.md)
 
@@ -40,15 +59,23 @@ Security questionnaires, starter policies, AI use policies, public security page
 
     ---
 
-    Vanta and Drata partners, fractional CISOs and MSPs: hand off policy adaptation and questionnaire drafts, delivered under your name.
+    If you are a Vanta or Drata partner, a fractional CISO or an MSP, hand off policy adaptation and questionnaire drafts and deliver them under your name.
 
     [Partner work](partners.md)
+
+- **Tax and small finance firms that need a WISP**
+
+    ---
+
+    You need a written information security program (WISP) under the FTC Safeguards Rule and don't have time to write one.
+
+    [WISP packs](wisp.md)
 
 </div>
 
 ## How it works
 
-1. **Send what you have.** The questionnaire, plus anything already written: your website, existing policies, a short call or a few emailed answers about how you run things.
+1. **Send what you have.** Send the questionnaire and anything already written, such as your website and existing policies. A short call or a few emailed answers about how you run things covers the rest.
 2. **I draft and verify.** Every answer is written from your facts. Anything I can't confirm is flagged for you, never invented. Framework references are checked against the source text.
 3. **You review and send.** You get the completed file, a short list of open questions, and reusable answers for the next review.
 
@@ -58,30 +85,59 @@ Security questionnaires, starter policies, AI use policies, public security page
 | --- | --- | --- |
 | **Questionnaire pilot** | The first 25 to 30 questions of a customer questionnaire answered from your facts, so you can judge the work | From USD 150 |
 | **Full security questionnaire** | One customer questionnaire of up to about 100 questions (spreadsheet or portal), plus a reusable answer library | From USD 350 |
-| **Starter policy pack** | 10 to 16 security policies tailored to a small team: information security, access control, acceptable use, change management, incident response and more | From USD 600 |
-| **Public security page** | A plain-English security page for your website that matches what your policies actually say | From USD 250 as an add-on |
+| **Starter policy pack** | 10 to 16 security policies tailored to a small team, covering information security, access control, acceptable use, change management, incident response and more | From USD 600 |
+| **Public security page** | A security page for your website, written in plain English, that matches what your policies actually say | From USD 250 as an add-on |
 | **AI use policy** | An AI use policy and an inventory of the AI tools your team uses, with ready answers for the AI section of questionnaires | From USD 300 |
-| **Security-review readiness check** | A short paid diagnostic: what a buyer's review will ask, what you can already answer, and what to fix first | From USD 300 |
+| **Security-review readiness check** | A short paid diagnostic that tells you what a buyer's review will ask, what you can already answer and what to fix first | From USD 300 |
 
 Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) for a fixed quote. Every price is fixed and agreed before work starts.
 
 ## Proof
 
-- **[Sample security questionnaire](sample-questionnaire.md)**: 50 questions answered for a fictional seed-stage SaaS company, each with its status, the evidence behind it and the related SOC 2 and NIST CSF 2.0 references, all checked against the source documents.
-- **[Sample policy, security page, WISP and insurance pack](samples.md)**: an access control policy, an AI use policy with an AI tool inventory, a public security page, a written information security plan for a tax practice and a cyber insurance renewal pack, each written for a fictional business and each stating what is in place, partial and planned.
-- **[Sample procedures](samples.md#security-procedures)**: six standard operating procedures written to one template and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2. These are illustrative examples, not client work.
+- The [sample security questionnaire](sample-questionnaire.md) answers 50 questions for a fictional SaaS company at seed stage. Each answer gives its status, the evidence behind it and the related SOC 2 and NIST CSF 2.0 references, all checked against the source documents.
+- The [sample policy, security page, WISP and insurance pack](samples.md) are an access control policy, an AI use policy with an AI tool inventory, a public security page, a written information security plan for a tax practice and a cyber insurance renewal pack. Each is written for a fictional business and states what is in place, partial and planned.
+- The [sample procedures](samples.md#security-procedures) are six standard operating procedures written to one template and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2. They are illustrative examples, not client work.
+
+<!-- Keep this excerpt identical to question 47 in sample-questionnaire.md. -->
+<div class="jts-sheet jts-sheet--proof" markdown>
+<div class="jts-sheet__head" markdown>
+
+[Sample questionnaire](sample-questionnaire.md) for a fictional SaaS company, question 47 of 50
+
+</div>
+
+**Do you have a business continuity and disaster recovery plan, and is it tested?**
+
+Partly. The written plan sets a recovery time objective (RTO) of 8 hours and a recovery point objective (RPO) of 1 hour. In August 2026 we restored the production database from backup to a new instance in 47 minutes. A full failover to the second region has not been tested yet; that test is planned for Q2 2027.
+
+- **Status** *Partial*
+- **Evidence available** Business Continuity Plan; restore test record
+- **SOC 2** `A1.3` `CC9.1`
+- **NIST CSF 2.0** `ID.IM-04` `PR.DS-11`
+
+</div>
 
 ## Why work with me
 
-- **A US-registered business.** johnsontechnicalsystems LLC is a New York LLC with an EIN. US invoicing, W-9 on request.
-- **Overnight turnaround.** I work from Manila, so a questionnaire sent at the end of your US workday is often back the next morning.
-- **A writer who checks.** Trained in English and technical communication. AI helps with first drafts; every claim and control reference is checked by hand before you see it.
-- **Your documents stay private.** NDA by default, one encrypted folder per client, deleted at the end of the job. See [how I handle your data](security.md).
-- **Veteran-owned.** Run by a US military veteran.
+<div class="jts-ledger" markdown>
+
+- **US-registered business** johnsontechnicalsystems LLC is a New York LLC with an EIN, so you get US invoicing and a W-9 on request.
+- **Overnight turnaround** I work from Manila, so a questionnaire sent at the end of your US workday is often back the next morning.
+- **A writer who checks** I trained in English and technical communication. AI helps with first drafts, and I check every claim and control reference by hand before you see it.
+- **Private documents** I sign an NDA by default, keep one encrypted folder per client and delete it at the end of the job. See [how I handle your data](security.md).
+- **Veteran-owned** The business is owned and run by a US military veteran.
+
+</div>
 
 ## Other services
 
-[Partner overflow work](partners.md) · [WISP packs for tax and finance firms](wisp.md) · [Cyber insurance renewal packs](insurance-pack.md) · [AI use policy](ai-policy.md) · [Automation for veterinary clinics](automation.md)
+I also take on the work below.
+
+- [Partner overflow work](partners.md)
+- [WISP packs for tax and finance firms](wisp.md)
+- [Cyber insurance renewal packs](insurance-pack.md)
+- [AI use policy](ai-policy.md)
+- [Automation for veterinary clinics](automation.md)
 
 ## Contact
 

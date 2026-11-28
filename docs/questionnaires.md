@@ -11,11 +11,11 @@ For software, AI and other small firms that have a deal waiting on a security re
 
 ## The problem
 
-Enterprise and mid-market buyers send a security questionnaire before they sign: a spreadsheet, a SIG Lite or CAIQ-style form, or a vendor portal with 50 to 300 questions. Founders and owners end up answering it at midnight, guessing at wording, and promising controls that don't exist yet. Wrong answers can lose the deal or come back later as a contract problem.
+Enterprise and mid-market buyers send a security questionnaire before they sign. It arrives as a spreadsheet, a form in the style of SIG Lite or CAIQ, or a vendor portal with 50 to 300 questions. Founders and owners end up answering it at midnight, guessing at wording, and promising controls that don't exist yet. Wrong answers can lose the deal or come back later as a contract problem.
 
 ## What I do
 
-- Answer every question from facts you give me: a short intake form or call, your website, your cloud setup and any existing documents
+- Answer every question from facts you give me through a short intake form or call, your website, your cloud setup and any existing documents
 - Write answers that are accurate today and say plainly what is planned, rather than overstating
 - Flag every question I can't answer from your facts, so nothing is invented
 - Point to the policy or practice that backs each answer
@@ -23,19 +23,23 @@ Enterprise and mid-market buyers send a security questionnaire before they sign:
 
 ## Price and timing
 
+<div class="jts-prices" markdown>
+
 | Package | Price | Typical turnaround |
 | --- | --- | --- |
-| Questionnaire pilot: the first 25 to 30 questions, so you can judge the work | From USD 150 | 1 to 2 business days |
+| Questionnaire pilot (the first 25 to 30 questions, so you can judge the work) | From USD 150 | 1 to 2 business days |
 | Full security questionnaire, up to about 100 questions, any format | From USD 350 | 3 to 5 business days, faster for short ones |
 | Add a starter policy pack (10 to 16 tailored policies), so your answers have documents behind them | From USD 600 | 1 to 2 weeks |
 | Add a public security page for your website | From USD 250 | 2 to 3 business days |
 | Not sure where you stand? Security-review readiness check | From USD 300 | 2 to 3 business days |
 
+</div>
+
 Longer than 100 questions, or a vendor portal? You get a fixed quote after I see it or after a [15-minute call](https://cal.com/lloyd-johnson).
 
 ## Sample
 
-See a [fully answered sample questionnaire](sample-questionnaire.md) for a fictional seed-stage SaaS company: 50 questions, each with its status, evidence and SOC 2 and NIST CSF 2.0 references. It comes as a web page, a spreadsheet and a PDF.
+See a [fully answered sample questionnaire](sample-questionnaire.md) for a fictional SaaS company at seed stage. It has 50 questions, each with its status, evidence and SOC 2 and NIST CSF 2.0 references. It comes as a web page, a spreadsheet and a PDF.
 
 ## What this is not
 
