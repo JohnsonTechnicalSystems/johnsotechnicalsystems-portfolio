@@ -19,7 +19,7 @@ Security questionnaires, starter policies, AI use policies, public security page
 <div class="jts-sheet" markdown>
 <div class="jts-sheet__head" markdown>
 
-[Sample questionnaire](sample-questionnaire.md), question 47 of 50
+[Sample questionnaire](sample-questionnaire.md) for a fictional company, question 47 of 50
 
 </div>
 
@@ -91,11 +91,15 @@ Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) 
 
 ## Why work with me
 
-- johnsontechnicalsystems LLC is a New York LLC with an EIN, so you get US invoicing and a W-9 on request.
-- I work from Manila, so a questionnaire sent at the end of your US workday is often back the next morning.
-- I trained in English and technical communication. AI helps with first drafts, and I check every claim and control reference by hand before you see it.
-- Your documents stay private. I sign an NDA by default, keep one encrypted folder per client and delete it at the end of the job. See [how I handle your data](security.md).
-- The business is owned and run by a US military veteran.
+<div class="jts-ledger" markdown>
+
+- **US-registered business** johnsontechnicalsystems LLC is a New York LLC with an EIN, so you get US invoicing and a W-9 on request.
+- **Overnight turnaround** I work from Manila, so a questionnaire sent at the end of your US workday is often back the next morning.
+- **A writer who checks** I trained in English and technical communication. AI helps with first drafts, and I check every claim and control reference by hand before you see it.
+- **Private documents** I sign an NDA by default, keep one encrypted folder per client and delete it at the end of the job. See [how I handle your data](security.md).
+- **Veteran-owned** The business is owned and run by a US military veteran.
+
+</div>
 
 ## Other services
 
