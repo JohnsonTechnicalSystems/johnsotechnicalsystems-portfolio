@@ -40,17 +40,8 @@
   --md-code-font: "IBM Plex Mono";
 }
 
-/* Homepage hero */
-.jts-hero {
-  padding: 1.5rem 0 1rem;
-}
-.jts-hero h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 0.6rem;
-}
-.jts-hero p {
+/* Homepage hero buttons and intro text (layout and heading are under "Homepage character") */
+.jts-hero__pitch p {
   font-size: 1.1rem;
   max-width: 40rem;
 }
@@ -60,8 +51,7 @@
   padding-right: 1.4em;
 }
 @media screen and (max-width: 600px) {
-  .jts-hero h1 { font-size: 1.7rem; }
-  .jts-hero .md-button { padding-left: 1.2em; padding-right: 1.2em; }
+  .md-typeset .jts-hero .md-button { padding-left: 1.2em; padding-right: 1.2em; }
 }
 
 /* Buttons: keep a gap when two buttons sit side by side or wrap onto two lines */
@@ -86,7 +76,7 @@
 }
 
 /* ---------- Homepage character ----------
-   The homepage opens on a real answered question from the sample questionnaire,
+   The homepage opens on an answered question from the fictional sample questionnaire,
    set as a sheet of paper on a faint spreadsheet grid. Colours follow the theme. */
 :root {
   --jts-ink: #1b2140;
@@ -134,6 +124,7 @@
 .md-typeset .jts-hero h1 {
   color: var(--jts-ink);
   font-size: 2.5rem;
+  font-weight: 700;
   letter-spacing: -0.015em;
   line-height: 1.12;
   margin: 0 0 1rem;
@@ -214,13 +205,13 @@
 /* "Who it's for": three ruled columns instead of boxed cards */
 .md-typeset:has(.jts-hero) .grid.cards > ul > li {
   border: 0;
-  border-top: 3px solid var(--md-primary-fg-color);
+  border-top: 3px solid var(--md-typeset-a-color);
   border-radius: 0;
   padding: 0.9rem 0 0;
   box-shadow: none;
 }
 .md-typeset:has(.jts-hero) .grid.cards > ul > li:hover {
-  border-color: var(--md-primary-fg-color);
+  border-color: var(--md-typeset-a-color);
   box-shadow: none;
 }
 .md-typeset:has(.jts-hero) .grid.cards > ul > li > hr { display: none; }
@@ -248,7 +239,7 @@
   font-size: 2.6rem;
   font-weight: 300;
   line-height: 1;
-  color: var(--md-primary-fg-color);
+  color: var(--md-typeset-a-color);
   margin-bottom: 0.5rem;
 }
 .md-typeset:has(.jts-hero) > ol > li > strong:first-child { display: block; }
@@ -324,7 +315,8 @@
     border: 0;
     padding: 0.1rem 0;
   }
-  .md-typeset .jts-sheet > ul > li { padding-left: 8.4rem; }
+  .md-typeset .jts-sheet > ul > li { padding-left: 1.1rem; }
+  .md-typeset .jts-sheet > ul > li > strong { position: static; display: block; }
 }
 
 /* ---------- Shared across pages ---------- */
