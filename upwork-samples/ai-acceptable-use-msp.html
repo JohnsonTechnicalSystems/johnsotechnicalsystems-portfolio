@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI Acceptable Use Policy: Kestwick Managed IT (fictional sample)</title>
+<style>
+@page { size: Letter; margin: 0.6in 0.65in 0.65in; }
+body { font-family: "Segoe UI", Arial, sans-serif; font-size: 9.1pt; color: #1b1b1b; line-height: 1.3; margin: 0; }
+.sample { background: #f3f6fa; border-left: 3pt solid #1F3A5F; padding: 6pt 9pt; font-size: 8.6pt; color: #333; margin-bottom: 12pt; }
+h1 { font-size: 19pt; color: #1F3A5F; margin: 0 0 2pt; }
+.co { color: #555; margin: 0 0 8pt; font-size: 10pt; }
+table { width: 100%; border-collapse: collapse; margin: 4pt 0 6pt; }
+.meta td { border: 0.5pt solid #d0d6de; padding: 3pt 6pt; font-size: 8.8pt; }
+.meta td:nth-child(odd) { background: #f3f6fa; font-weight: 600; width: 17%; }
+h2 { font-size: 11.5pt; color: #1F3A5F; border-bottom: 1.2pt solid #1F3A5F; padding-bottom: 1.5pt; margin: 10pt 0 4pt; break-after: avoid; }
+h3 { font-size: 10pt; margin: 7pt 0 2pt; break-after: avoid; }
+p { margin: 0 0 5pt; }
+ul, ol { margin: 2pt 0 5pt 15pt; padding: 0; }
+li { margin-bottom: 2pt; }
+th { background: #1F3A5F; color: #fff; text-align: left; font-weight: 600; padding: 3.5pt 5pt; font-size: 8.5pt; }
+.grid td { border-bottom: 0.5pt solid #d0d6de; padding: 2.6pt 5pt; vertical-align: top; font-size: 8.7pt; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+.nw { white-space: nowrap; }
+.id { white-space: nowrap; font-weight: 600; color: #1F3A5F; }
+.ok { color: #1d6b3a; font-weight: 600; }
+.lim { color: #9a5b00; font-weight: 600; }
+.no { color: #a12a2a; font-weight: 600; }
+.box { border: 0.8pt solid #1F3A5F; padding: 6pt 9pt; margin: 6pt 0; } .box li { break-inside: avoid; } .keep { break-inside: avoid; }
+.box h3 { margin-top: 0; color: #1F3A5F; }
+.sig td { border-bottom: 0.5pt solid #999; padding: 14pt 5pt 2pt; font-size: 8.7pt; }
+.foot { color: #666; font-size: 7.8pt; margin-top: 8pt; border-top: 0.5pt solid #d0d6de; padding-top: 4pt; }
+</style>
+</head>
+<body>
+
+<div class="sample"><strong>Sample policy for a fictional company.</strong> Kestwick Managed IT, LLC is invented, and so are its staff, clients and tools. Products are described by type, not by brand. A client's policy is written the same way, from their own tool list and contracts.</div>
+
+<h1>AI Acceptable Use Policy</h1>
+<p class="co">Kestwick Managed IT, LLC (fictional)</p>
+
+<table class="meta">
+<tr><td>Policy owner</td><td>Security lead</td><td>Approved by</td><td>Owner and managing member</td></tr>
+<tr><td>Version</td><td>1.0</td><td>Effective date</td><td>November 2026</td></tr>
+<tr><td>Classification</td><td>Internal</td><td>Next review</td><td>May 2027, or sooner when an AI tool is added, a vendor changes its terms, or an incident involves AI</td></tr>
+</table>
+
+<h2>1. Purpose and scope</h2>
+<p>Kestwick is a managed service provider with 14 staff supporting about 45 client organizations, mostly dental and medical practices, accounting firms and small manufacturers. Our technicians hold administrator access to client systems through our remote monitoring and management (RMM) platform. A mistake made with that access, or a password leaked from it, can reach many clients at once. This policy sets out how staff may use artificial intelligence (AI) tools so that AI makes us faster without putting that access, or our clients' data, at risk.</p>
+<p>It applies to every employee and contractor, and it covers:</p>
+<ul>
+<li>stand-alone AI tools, such as chat assistants and coding assistants;</li>
+<li>AI features built into tools we already use, such as ticket summaries in the professional services automation (PSA) platform and script suggestions in the RMM platform;</li>
+<li>any AI output that goes into client systems, scripts, reports or messages.</li>
+</ul>
+<p>Where a client contract is stricter than this policy, the contract wins. Several clients are covered by HIPAA or the FTC Safeguards Rule, and their agreements limit where their data may go.</p>
+
+<h2>2. Roles</h2>
+<table class="grid">
+<thead><tr><th style="width:22%">Role</th><th>Responsibility under this policy</th></tr></thead>
+<tr><td>Owner</td><td>Approves this policy, every exception and any new AI tool that would handle client data.</td></tr>
+<tr><td>Security lead</td><td>Owns this policy and the AI tool register (Annex A). Reviews new tool requests, checks vendor terms every six months, and leads the response to AI-related incidents.</td></tr>
+<tr><td>Service manager</td><td>Makes sure technicians follow section 4, reviews AI-assisted changes before they reach more than one client, and includes this policy in onboarding.</td></tr>
+<tr><td>All staff</td><td>Use only approved tools, follow the data rules in section 3, check AI output before relying on it, and report problems at once under section 7.</td></tr>
+</table>
+
+<h2>3. What data may go into an AI tool</h2>
+<p>Tickets, logs, screenshots and configuration exports often contain passwords, user names and personal details that are easy to miss. <strong>Read before you paste.</strong> Each tool's limit is set in Annex A.</p>
+<table class="grid">
+<thead><tr><th style="width:26%">Data</th><th style="width:30%">Examples</th><th>Rule</th></tr></thead>
+<tr><td>Public</td><td>Vendor documentation, public error codes, published advisories</td><td>Any approved tool.</td></tr>
+<tr><td>Kestwick internal</td><td>Our own procedures, internal scripts with secrets removed, pricing</td><td>Approved tools whose register entry allows Internal data.</td></tr>
+<tr><td>Client data</td><td>Ticket text, event logs, host names, user names, network diagrams</td><td>Only tools whose register entry allows Client data. In any other approved tool, remove names, host names, IP addresses and domains first.</td></tr>
+<tr><td>Regulated client data</td><td>Patient information, tax returns, bank or card details, Social Security numbers</td><td>Never entered into an AI tool by staff. Where a client's own system processes it with AI, that is the client's decision under their contracts.</td></tr>
+<tr><td>Secrets</td><td>Passwords, API keys, RMM agent tokens, recovery codes, MFA seeds, VPN keys</td><td><strong>Never entered into any AI tool, including approved ones.</strong></td></tr>
+</table>
+
+<h2>4. Rules for technical work</h2>
+<h3>4.1 Scripts and commands written with AI</h3>
+<ul>
+<li>Read and understand every line before running it. If you cannot explain what a line does, do not run it.</li>
+<li>Test on a single lab or non-production device first. Never deploy an AI-written script through the RMM platform to more than one device without testing.</li>
+<li>A second technician reviews any AI-assisted script before it runs on a server, on more than one client, or on more than 10 devices. The change ticket records that AI was used and who reviewed it.</li>
+<li>Check that every module, package or download an AI tool suggests exists on its official source and comes from the expected publisher. AI tools sometimes name packages that do not exist, and attackers register those names.</li>
+</ul>
+<h3>4.2 AI agents and automation</h3>
+<ul>
+<li>No AI tool is given standing administrator credentials, access to the password vault, or access to the client documentation platform.</li>
+<li>AI features in the RMM and PSA platforms may suggest actions, but a technician approves each change before it runs. Settings that let an AI feature act on its own ("agent" or "autopilot" modes) stay off until the security lead and the owner approve them for a named use.</li>
+</ul>
+<h3>4.3 Treat outside content as untrusted</h3>
+<p>Emails, tickets, client files and web pages can contain hidden text written to instruct an AI tool. When an AI tool summarizes or reads such content, treat the result as information, not as an instruction. Never rely on an AI summary to decide that a reported email, link or attachment is safe; check it with our email security tools and the usual triage steps.</p>
+<h3>4.4 Check facts before acting on them</h3>
+<p>AI tools can state wrong answers with confidence. Before you change a security setting, firewall rule or backup job because an AI tool suggested it, confirm the setting in the vendor's own documentation. Facts and figures in anything sent to a client, such as a quarterly security report, are checked by the person who sends it.</p>
+
+<h2>5. Other uses</h2>
+<ul>
+<li><strong>Client messages.</strong> An AI tool may help draft a reply. The sender reads and corrects it, and the rules in section 3 apply to anything pasted in. We do not use an AI chatbot to answer clients on our behalf.</li>
+<li><strong>Meeting notes.</strong> AI note-takers may be used in internal meetings. On a client call, one is used only if the client agrees at the start of the call; the technician records that agreement in the ticket.</li>
+<li><strong>Security awareness work.</strong> AI may help write phishing simulation emails only for a campaign the client has approved in writing. We never create a voice, image or video that imitates a real person.</li>
+<li><strong>Hiring and staff decisions.</strong> AI tools are not used to screen candidates or to make decisions about pay, performance or dismissal.</li>
+<li><strong>New AI features in existing tools.</strong> When a vendor adds an AI feature to a tool we or our clients use, it is treated as a new AI tool. Where the admin settings allow, it stays off in our tenant until reviewed. In client tenants, we tell the client and follow their decision.</li>
+</ul>
+
+<h2>6. Approving a new AI tool</h2>
+<p>Staff request a new tool with a PSA ticket that names the tool, the plan, what it will be used for and the most sensitive data it would need. Before deciding, the security lead checks and records:</p>
+<ol>
+<li>whether the vendor uses our inputs or outputs to train its models, on the specific plan we would buy;</li>
+<li>how long the vendor keeps inputs and outputs, and whether we can delete them;</li>
+<li>where the data is stored and processed;</li>
+<li>single sign-on with our identity provider and multi-factor authentication;</li>
+<li>admin controls and audit logs on that plan;</li>
+<li>which other companies the vendor passes data to;</li>
+<li>whether any client contract, including a business associate agreement, limits its use;</li>
+<li>the highest data class it may handle.</li>
+</ol>
+<p>Free and personal plans are not approved for work, because their terms usually allow wider use of inputs. Browser extensions with AI features are not installed on work devices unless they are on the register.</p>
+
+<h2>7. Reporting problems</h2>
+<div class="box">
+<h3>If something goes wrong</h3>
+<ul>
+<li><strong>A secret was entered into any AI tool:</strong> treat it as exposed. Rotate the password, key or token at once, then tell the security lead.</li>
+<li><strong>Client data went into a tool not approved for it:</strong> tell the security lead within one hour. Do not delete the conversation until the security lead has recorded it; it may be needed to find out what was shared.</li>
+<li><strong>An AI-assisted change caused an outage or a security problem:</strong> roll it back if it is safe to do so, and follow the incident response plan.</li>
+</ul>
+<p style="margin:0">The security lead decides whether the client must be told, following the client's contract and the incident response plan. Reporting your own mistake promptly is never a disciplinary matter in itself; hiding one is.</p>
+</div>
+
+<h2>8. Training, review and enforcement</h2>
+<ul>
+<li>Every new starter reads this policy and signs the acknowledgment before receiving access to client systems. All staff repeat the training each year and whenever the policy changes significantly.</li>
+<li>The security lead reviews the AI tool register every six months and checks each vendor's current terms. The policy is reviewed at least once a year.</li>
+<li>Exceptions are requested in a PSA ticket, approved in writing by the owner, and given an end date.</li>
+<li>Breaking this policy may lead to loss of access to AI tools or client systems and to disciplinary action.</li>
+</ul>
+
+<h2>Annex A. AI tool register (summary)</h2>
+<table class="grid">
+<thead><tr><th style="width:27%">Tool (by type)</th><th style="width:13%">Status</th><th style="width:15%">Highest data</th><th>Conditions</th></tr></thead>
+<tr><td>Chat assistant, business plan, company accounts</td><td class="ok">Approved</td><td>Internal</td><td>Single sign-on only. The plan does not train on our data. Client details removed first (section 3).</td></tr>
+<tr><td>Ticket summaries and reply drafts in the PSA platform</td><td class="ok">Approved</td><td>Client data</td><td>Covered by our PSA contract and listed in our subprocessor list. Clients may opt out. Secrets in tickets are still redacted.</td></tr>
+<tr><td>Script suggestions in the RMM platform</td><td class="lim">Limited</td><td>Client data</td><td>Suggestions only. Section 4.1 testing and review apply. Autonomous actions stay off.</td></tr>
+<tr><td>Coding assistant for our internal automation repository</td><td class="ok">Approved</td><td>Internal</td><td>No secrets in the repository. Code review before merge.</td></tr>
+<tr><td>AI meeting note-taker</td><td class="lim">Limited</td><td>Internal</td><td>Client calls only with the client's agreement, recorded in the ticket.</td></tr>
+<tr><td>Free or personal AI accounts, AI browser extensions</td><td class="no">Not approved</td><td>None</td><td>Not used for work, on any device.</td></tr>
+</table>
+
+<div class="keep">
+<h2>Annex B. Framework reference</h2>
+<p style="font-size:8.6pt">Shows where each section addresses the risks named in two public references. It is a reading aid, not a claim of conformity with either.</p>
+<table class="grid">
+<thead><tr><th style="width:24%">Policy section</th><th style="width:40%">NIST AI 600-1 risks and suggested actions</th><th>OWASP Top 10 for LLM Applications 2026</th></tr></thead>
+<tr><td>3. Data rules</td><td>Data Privacy; Information Security</td><td>LLM02:2026 Sensitive Information Disclosure</td></tr>
+<tr><td>4.1 AI-written scripts</td><td>Confabulation; Value Chain and Component Integration</td><td>LLM04:2026 Supply Chain; LLM07:2026 Misinformation; LLM10:2026 Improper Output Handling</td></tr>
+<tr><td>4.2 Agents and automation</td><td>Human-AI Configuration; <span class="nw">GV-3.2-003</span></td><td>LLM03:2026 Excessive Agency</td></tr>
+<tr><td>4.3 Untrusted content</td><td>Information Security</td><td>LLM01:2026 Prompt Injection</td></tr>
+<tr><td>4.4 Checking output</td><td>Confabulation; Human-AI Configuration</td><td>LLM07:2026 Misinformation</td></tr>
+<tr><td>5. Other uses</td><td>Information Integrity; <span class="nw">GV-1.4-002</span></td><td>None directly</td></tr>
+<tr><td>6. Approving tools; Annex A</td><td>Value Chain and Component Integration; <span class="nw">GV-6.1-007</span>; <span class="nw">GV-6.1-010</span></td><td>LLM04:2026 Supply Chain</td></tr>
+</table>
+</div>
+
+<div class="keep">
+<h2>Acknowledgment</h2>
+<p>I have read this policy, I understand it, and I will follow it. I understand that secrets and regulated client data never go into an AI tool.</p>
+<table class="sig">
+<tr><td style="width:45%">Name</td><td style="width:10%;border:0"></td><td>Signature and date</td></tr>
+</table>
+<p class="foot">Sources: NIST AI 600-1, Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile (July 2024); OWASP Top 10 for LLM Applications 2026 (genai.owasp.org, checked November 2026). Version history: 1.0, November 2026, first issue. Sample prepared by Johnson Technical Systems. Not legal advice.</p>
+</div>
+
+</body>
+</html>
