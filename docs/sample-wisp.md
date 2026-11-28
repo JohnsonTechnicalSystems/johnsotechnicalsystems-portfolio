@@ -46,7 +46,7 @@ The owner is the Qualified Individual, responsible for overseeing, carrying out 
 | Owner (Qualified Individual) | All systems; administrator in the tax software, and in Microsoft 365 through a separate administrator account | Approves access and changes, reviews logs, runs the yearly risk review, leads incident response |
 | Office manager | Microsoft 365, client portal, and scheduling and billing in the tax software; no administrator rights | Onboards and offboards staff from the checklist, keeps the training and visitor records, handles paper files |
 | Seasonal preparers (2) | Microsoft 365; tax software and client portal for assigned clients only | Follow the code of conduct in section 10; report anything suspicious at once |
-| Outside IT provider | Microsoft 365 and device management, through a separate named administrator account with multi-factor authentication | Maintains devices, updates and backups; reports security alerts to the owner the same day |
+| Outside IT provider | Microsoft 365 and device management, through a separate named administrator account with multi-factor authentication for each assigned technician | Maintains devices, updates and backups; reports security alerts to the owner the same day |
 
 ## 3. Risk assessment
 
@@ -70,7 +70,7 @@ The owner reviews these risks every October before filing season, and again afte
 | Client portal (part of the tax software) | Vendor-hosted | Documents clients upload; signed engagement letters and e-file authorizations |
 | Microsoft 365 Business Premium | Microsoft-hosted | Email, scanned documents in OneDrive, bookkeeping files |
 | Four laptops (owner, office manager, two preparers) | Office; owner's laptop also at home | Access to the systems above; nothing stored locally by policy |
-| Office scanner and printer | Office | Passes scans to OneDrive; its memory is wiped before disposal |
+| Office scanner and printer | Office | Sends scans to a firm laptop, which saves them to OneDrive; keeps no copies, and its memory is wiped before disposal |
 | Locked file cabinets | Office back room | Paper documents from clients who do not use the portal, kept until scanned and returned or shredded |
 | Cloud backup service | Vendor-hosted | Encrypted daily copies of Microsoft 365 email and OneDrive |
 | Office router and firewall | Office | Separate staff and guest Wi-Fi networks |
@@ -79,8 +79,8 @@ The owner reviews these risks every October before filing season, and again afte
 
 ### 5.1 Access control and multi-factor authentication
 
-- Each person has their own account in every system. Accounts are never shared, and each person gets only the access their role needs (section 2). The only exception is the router's single administrator login (5.4).
-- Multi-factor authentication is required on Microsoft 365, laptop sign-in (Windows Hello for Business), the tax software, the client portal, the cloud backup service, the IRS e-Services account and the firm's bank. Authenticator apps or security keys are used, not text messages, where the service allows it. Where a system cannot use multi-factor authentication, such as the router, the owner approves in writing an alternative control that is reasonably equivalent or more secure, as § 314.4(c)(5) allows.
+- Each person has their own account in every system. Accounts are never shared, and each person gets only the access their role needs (section 2). The only exceptions are the single administrator logins on the router and the scanner (5.4).
+- Multi-factor authentication is required on Microsoft 365, laptop sign-in (Windows Hello for Business), the tax software, the client portal, the cloud backup service, the IRS e-Services account and the firm's bank. Authenticator apps or security keys are used, not text messages, where the service allows it. Where a system cannot use multi-factor authentication, such as the router or the scanner, the owner approves in writing an alternative control that is reasonably equivalent or more secure, as § 314.4(c)(5) allows.
 - The owner reviews who has access to each system every January and every October.
 
 ### 5.2 Encryption and sending client information
@@ -90,7 +90,7 @@ The owner reviews these risks every October before filing season, and again afte
 
 ### 5.3 Retention and disposal
 
-- Returns and workpapers are kept for seven years after filing, because clients regularly need them for amended returns, notices and loan applications. This is the firm's recorded business reason for keeping them past the two-year disposal limit in § 314.4(c)(6).
+- Returns and workpapers are kept for seven years after filing, because clients regularly need them for amended returns, notices and loan applications. This is the firm's recorded business reason for keeping them past the two-year disposal limit in § 314.4(c)(6). Signed engagement letters, e-file authorizations and bookkeeping files follow the same seven-year rule, counted from the filing of the return they support. Copies of identity documents are deleted or shredded once the client's identity is verified.
 - Records of current and former clients are deleted, or shredded if on paper, within 90 days after their seven years end, unless a legal hold applies. This applies in every place they are kept: the tax software, the client portal, and Microsoft 365 email and OneDrive. Copies in the cloud backups expire within one year after that, when the backup history rolls over (5.4). Paper from clients is scanned and returned or shredded within 30 days.
 - The owner reviews this retention schedule every October and removes anything kept without a business reason, as § 314.4(c)(6)(ii) requires.
 - Shredding is done by a bonded service, which provides a certificate for each pickup. Laptops and the scanner are wiped by the IT provider before re-use or disposal.
@@ -100,7 +100,7 @@ The owner reviews these risks every October before filing season, and again afte
 - Only firm laptops managed through Intune may access client information. Each runs Microsoft Defender for Business, installs updates automatically and locks after 5 minutes. A lost laptop can be wiped remotely through Intune. Staff do daily work without administrator rights.
 - Incoming email is filtered for phishing and malware by the email protection included in the firm's Microsoft 365 plan.
 - The IT provider backs up Microsoft 365 email and OneDrive every day to a separate cloud backup service. Backups are encrypted, use their own sign-in with multi-factor authentication, cannot be deleted from the firm's Microsoft 365 accounts, and keep one year of history. The tax software vendor backs up the returns and portal data it hosts, under the license agreement.
-- Clients and visitors use the guest Wi-Fi, which cannot reach the staff network. The router's administrator password is unique, held by the IT provider and the owner, and changed when IT provider staff change. The router can be managed only from the staff network, not from the internet, and its firmware is kept up to date.
+- Clients and visitors use the guest Wi-Fi, which cannot reach the staff network. The router and scanner administrator passwords are unique, held by the IT provider and the owner, and changed when IT provider staff change. The router and scanner can be managed only from the staff network, not from the internet, and their firmware is kept up to date.
 - Remote work is allowed only on a firm laptop over a home network or a phone hotspot, never on public Wi-Fi.
 - Paper files stay in locked cabinets when not in use. Visitors are escorted and signed in.
 
@@ -122,28 +122,28 @@ The owner and the IT provider check the key safeguards every October: multi-fact
 
 - Every staff member completes security training at hire and before each filing season, covering phishing, the IRS's warnings on scams aimed at tax professionals, the risks found in the October review, and this plan. Each person signs and dates a record of the training.
 - Seasonal preparers sign a confidentiality agreement and the code of conduct before they receive access.
-- Access is removed at the end of a person's last shift, or at once when someone is let go. The office manager starts the checklist; the owner disables tax software and portal accounts and the IT provider disables Microsoft 365. Seasonal accounts are disabled after the April and October deadlines and re-enabled only when the person returns.
+- Access is removed at the end of a person's last shift, or at once when someone is let go. The office manager starts the checklist; the owner disables tax software and portal accounts and the IT provider disables Microsoft 365 and signs out all active sessions. The firm laptop and office keys are collected the same day; a laptop not returned is locked or wiped through Intune. If the office manager or the IT provider is leaving, the owner runs the checklist, using the owner's separate Microsoft 365 administrator account. Seasonal accounts are disabled after the April and October deadlines and re-enabled only when the person returns.
 - The owner keeps current on threats through IRS e-News for Tax Professionals and the IRS Security Summit alerts.
 
 ## 8. Service providers
 
 | Provider | Service | How it is checked |
 | --- | --- | --- |
-| Tax software vendor | Tax preparation, e-file and client portal | Security terms in the license agreement; multi-factor authentication enforced; reviewed every October |
+| Tax software vendor | Tax preparation, e-file and client portal | License agreement requires the vendor to maintain safeguards; multi-factor authentication enforced; reviewed every October |
 | Microsoft | Microsoft 365 email, storage and device management | Microsoft's Data Protection Addendum commits it to safeguards; published security and compliance reports; reviewed every October |
-| Outside IT provider | Device and Microsoft 365 administration | Contract requires safeguards, confidentiality, same-day alert reporting and security-trained staff; staff qualifications and ongoing training confirmed at selection and each October; access reviewed each January and October |
-| Cloud backup service | Daily backup of Microsoft 365 | Chosen and managed by the IT provider; its contract requires safeguards; encryption confirmed; reviewed every October |
+| Outside IT provider | Device and Microsoft 365 administration | Contract requires safeguards, confidentiality, same-day alert reporting, security-trained staff, and same-day notice when an assigned technician leaves or changes role; staff qualifications and ongoing training confirmed at selection and each October; access reviewed each January and October |
+| Cloud backup service | Daily backup of Microsoft 365 | Chosen and managed by the IT provider, whose contract passes the safeguard terms on to the backup vendor and gives the owner direct access to the backups if the IT provider is replaced; encryption confirmed; reviewed every October |
 | Shredding service | On-site shredding | Bonded; contract requires confidentiality and secure destruction; certificate of destruction for each pickup; reviewed every October |
 
 ## 9. Responding to a security incident
 
 Firms of this size are exempt from the written incident response plan in § 314.4(h), but the IRS urges tax professionals to know these steps before they are needed. The owner leads the response.
 
-1. **Contain:** disconnect affected devices from the network, change passwords from a clean device, sign out all active sessions, record and then remove any sign-in methods, app permissions or mail-forwarding rules the firm did not set up, and call the IT provider. Do not wipe anything until the cause is known.
-2. **Report to the IRS** through the local IRS Stakeholder Liaison, no later than the next business day after the incident is confirmed, so the IRS can protect clients' accounts from fraudulent returns. Also contact the local FBI office, and the Secret Service if directed, and file a report with the local police.
+1. **Contain:** disconnect affected devices from the network, change passwords from a clean device, sign out all active sessions, record and then remove any sign-in methods, app permissions or mail-forwarding rules the firm did not set up, and call the IT provider. Export and keep the Microsoft 365 sign-in and audit logs and the tax software activity report, because Microsoft 365 keeps sign-in logs for only 30 days. Do not wipe anything until the cause is known.
+2. **Report to the IRS** through the local IRS Stakeholder Liaison, as soon as possible and no later than the next business day after the incident is confirmed, so the IRS can protect clients' accounts from fraudulent returns. Also contact the local FBI office, and the Secret Service if directed, and file a report with the local police.
 3. **Report to the states** where the firm prepares returns, using the contacts listed by the Federation of Tax Administrators, and the state attorneys general where state law requires it.
 4. **Tell the insurer** before hiring outside response firms, since the policy may require its approved vendors.
-5. **Notify the FTC** if unencrypted information about 500 or more consumers was acquired without authorization: as soon as possible, and no later than 30 days after discovery, through the FTC's online form. Under § 314.2(m), unauthorized access to unencrypted information counts as acquisition unless the firm has reliable evidence that the information was not, or could not reasonably have been, acquired. Encrypted information counts as unencrypted if the key was also accessed. This applies to firms of every size.
+5. **Notify the FTC** if unencrypted information about 500 or more consumers was acquired without authorization: as soon as possible, and no later than 30 days after discovery, through the FTC's online form. Discovery is the first day anyone working for the firm, including the IT provider, knows of the event, not the day the owner confirms it. Under § 314.2(m), unauthorized access to unencrypted information counts as acquisition unless the firm has reliable evidence that the information was not, or could not reasonably have been, acquired. Encrypted information counts as unencrypted if the key was also accessed. This applies to firms of every size.
 6. **Notify affected clients** under state breach notification laws, as advised by counsel.
 7. **Learn:** record what happened and what was done, fix the weakness, and update this plan.
 
