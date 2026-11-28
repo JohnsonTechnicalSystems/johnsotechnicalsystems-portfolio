@@ -16,3 +16,12 @@ Covers the quarterly rule review required by the Security+ Frameworks milestone.
 
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
+
+## Pull requests
+
+- Make every change on a new branch. Open it as a pull request against `main` with the label `needs-review`.
+- Never push directly to `main`, turn on auto-merge, or merge a pull request yourself.
+- If the `needs-review` label cannot be added, stop and report the error. Do not leave the pull request unlabeled.
+- The review loop on Lloyd's PC then reviews it and swaps the label to `ai-reviewed`. Lloyd merges.
+- Do not change labels after you open the pull request. If you push more commits, tell Lloyd, who re-applies `needs-review` for another pass.
+- Do not add a "Generated with Claude Code" line or Claude session links to pull request descriptions or comments.
