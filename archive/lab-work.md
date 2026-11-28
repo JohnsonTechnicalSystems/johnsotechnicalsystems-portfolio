@@ -1,3 +1,5 @@
+<!-- Archived 2026-11-26: removed from the site as study material rather than a client-facing sample. Not built into the site; links below were relative to docs/. -->
+
 # Lab work
 
 > **Illustrative examples.** These labs back the [sample procedures](samples.md). They are portfolio work, not client environments.

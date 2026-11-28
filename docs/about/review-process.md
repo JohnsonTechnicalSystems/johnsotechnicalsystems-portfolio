@@ -26,6 +26,10 @@ SOP-001, SOP-002, and SOP-003 document systems the author built and faults the a
 
 None of these documents contain client data, and none are client deliverables.
 
+## Evidence handling
+
+Published evidence is redacted before it is committed. Public IP addresses are replaced with documentation ranges (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24), and serial numbers, wireless keys, account names, and hostnames that identify a real location are removed.
+
 ## Limits
 
 These documents are portfolio samples. They are not legal advice, an audit opinion, or a certification. Control mappings record the author's intent and should be confirmed by a qualified assessor for any real environment.

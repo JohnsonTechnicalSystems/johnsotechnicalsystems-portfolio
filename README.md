@@ -18,7 +18,7 @@ Every client document is checked by hand against primary sources and mapped to N
 
 ## Portfolio samples
 
-The site publishes worked samples under Samples: a completed security questionnaire for a fictional company, and the standard operating procedures below. They are illustrative examples, not client work. The SOPs are written from one [template](docs/templates/sop-template.md).
+The site publishes worked samples under Samples, each for a fictional business: a completed security questionnaire, an AI use policy with an AI tool inventory, a public security page, a cyber insurance renewal pack, an access control policy, a WISP for a tax practice, and the standard operating procedures below. They are illustrative examples, not client work.
 
 > **Check each document's status before relying on it.** Approved documents have been checked against primary sources and confirmed by the owner. Drafts have not, so do not rely on a Draft as authoritative.
 
@@ -57,10 +57,9 @@ These documents are portfolio samples, not legal advice, an audit opinion, or a 
 docs/                 Site content (built with Zensical from mkdocs.yml)
   index.md            Home page and document list
   questionnaires.md, partners.md, wisp.md, insurance-pack.md, ai-policy.md, automation.md   Service pages
-  samples.md, lab-work.md   Samples overview and lab work
+  samples.md          Samples overview
   security.md, legal/   Data handling, Terms and Privacy
   sops/               SOP-001 to SOP-006
-  templates/          SOP template
   about/              Review process, AI use, and limits
 .github/workflows/    Lint, build and status-sync checks; deploys the site from main
 scripts/              sync_status.py keeps SOP status lists in step with the SOPs
