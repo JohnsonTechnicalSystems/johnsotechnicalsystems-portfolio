@@ -45,7 +45,7 @@ One encrypted folder per partner or client, shared only with you. Client documen
 
 ## Sample work
 
-See the [sample security questionnaire](sample-questionnaire.md) and the [sample procedures](samples.md).
+See the [sample security questionnaire](sample-questionnaire.md), the [sample access control policy](sample-access-control-policy.md), the [sample WISP](sample-wisp.md), the [sample cyber insurance renewal pack](sample-insurance-renewal-pack.md) and the [other samples](samples.md). All were written for fictional businesses.
 
 [Email me about overflow work](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20overflow%20work){ .md-button .md-button--primary }
 

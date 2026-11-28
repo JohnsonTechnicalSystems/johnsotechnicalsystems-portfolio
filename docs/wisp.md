@@ -46,6 +46,10 @@ Smaller firms get some relief: firms holding customer information on fewer than 
 
 </div>
 
+## Sample
+
+See a [sample WISP](sample-wisp.md) for a fictional four-person tax and bookkeeping firm. It covers each element of the Safeguards Rule and shows which parts a firm with fewer than 5,000 consumers is exempt from. It comes as a web page and a PDF.
+
 ## What this is not
 
 This is documentation and preparation help. It is not legal advice, and it is not an FTC or IRS review or approval. You review and adopt the plan, and you are responsible for following it.

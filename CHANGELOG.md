@@ -2,6 +2,14 @@
 
 All documents remain Drafts until their status field says otherwise.
 
+## 2026-11-26: Add five samples; remove the SOP template and lab work pages
+
+- New samples, each for a fictional business and each with a PDF download: an AI use policy with an AI tool inventory, a public security page with a claim check, and a cyber insurance renewal pack (30 application answers, evidence summary, gap list and one-page incident response plan). The inventory and the renewal pack also come as spreadsheets.
+- Two samples first written for Upwork are now on the site: an access control policy and a written information security plan (WISP) for a tax practice. In the WISP, the incident steps now follow the IRS data theft page (contact the local FBI office; the Secret Service if directed), and the IRS Publication 4557 revision is corrected to Rev. 6-2024.
+- NIST CSF 2.0 and NIST AI RMF 1.0 identifiers in the new samples were checked against NIST CSWP 29 and NIST AI 100-1; the Safeguards Rule citations in the WISP were rechecked against 16 CFR Part 314.
+- The samples index now lists the security and compliance documents first, with the service each one relates to. The AI use policy, WISP, insurance pack, partner and home pages link to the new samples.
+- Removed the SOP template and lab work pages from the site (moved to archive/). They read as study material, not client-facing samples. The evidence-handling note from the lab work page is now on the review process page.
+
 ## 2026-11-26: Broaden the sharing image and description to small firms
 
 - The social share image now reads "For small firms" in place of "For early-stage software and AI companies". The headline, colors, font and 1200x630 size are unchanged.

@@ -95,7 +95,8 @@ Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) 
 ## Proof
 
 - The [sample security questionnaire](sample-questionnaire.md) answers 50 questions for a fictional SaaS company at seed stage. Each answer gives its status, the evidence behind it and the related SOC 2 and NIST CSF 2.0 references, all checked against the source documents.
-- The [sample procedures](samples.md) are six standard operating procedures written to one template and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2. They are illustrative examples, not client work.
+- The [sample policy, security page, WISP and insurance pack](samples.md) are an access control policy, an AI use policy with an AI tool inventory, a public security page, a written information security plan for a tax practice and a cyber insurance renewal pack. Each is written for a fictional business and states what is in place, partial and planned.
+- The [sample procedures](samples.md#security-procedures) are six standard operating procedures written to one template and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2. They are illustrative examples, not client work.
 
 <!-- Keep this excerpt identical to question 47 in sample-questionnaire.md. -->
 <div class="jts-sheet jts-sheet--proof" markdown>
