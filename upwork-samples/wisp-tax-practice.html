@@ -5,7 +5,7 @@
 <title>Written Information Security Plan: Cobbleton Tax &amp; Bookkeeping (fictional sample)</title>
 <style>
 @page { size: Letter; margin: 0.55in 0.6in 0.6in; }
-body { font-family: "Segoe UI", Arial, sans-serif; font-size: 8.8pt; color: #1b1b1b; line-height: 1.24; margin: 0; }
+body { font-family: "Segoe UI", Arial, sans-serif; font-size: 8.8pt; color: #1b1b1b; line-height: 1.23; margin: 0; }
 .sample { background: #f3f6fa; border-left: 3pt solid #1F3A5F; padding: 6pt 9pt; font-size: 8.6pt; color: #333; margin-bottom: 12pt; }
 h1 { font-size: 19pt; color: #1F3A5F; margin: 0 0 2pt; }
 .co { color: #555; margin: 0 0 8pt; font-size: 10pt; }
@@ -102,8 +102,8 @@ tr { break-inside: avoid; }
 <h3>5.3 Retention and disposal</h3>
 <ul>
 <li>Returns and workpapers are kept for seven years after filing, because clients regularly need them for amended returns, notices and loan applications. This is the firm's recorded business reason for keeping them past the two-year disposal limit in § 314.4(c)(6).</li>
-<li>Records of former clients are deleted, or shredded if on paper, within 90 days after the seven years end. This applies in every place they are kept: the tax software, the client portal, Microsoft 365 email and OneDrive, and the cloud backups. Paper from clients is scanned and returned or shredded within 30 days.</li>
-<li>The owner reviews this retention schedule every October and removes anything kept without a business reason.</li>
+<li>Records of former clients are deleted, or shredded if on paper, within 90 days after the seven years end, unless a legal hold applies. This applies in every place they are kept: the tax software, the client portal, Microsoft 365 email and OneDrive, and the cloud backups. Paper from clients is scanned and returned or shredded within 30 days.</li>
+<li>The owner reviews this retention schedule every October and removes anything kept without a business reason, as § 314.4(c)(6)(ii) requires.</li>
 <li>Shredding is done by a bonded service, which provides a certificate for each pickup. Laptops and the scanner are wiped by the IT provider before re-use or disposal.</li>
 </ul>
 
@@ -111,7 +111,7 @@ tr { break-inside: avoid; }
 <ul>
 <li>Only firm laptops managed through Intune may access client information. Each runs Microsoft Defender for Business, installs updates automatically and locks after 5 minutes. A lost laptop can be wiped remotely through Intune. Staff do daily work without administrator rights.</li>
 <li>Incoming email is filtered for phishing and malware by the email protection included in the firm's Microsoft 365 plan.</li>
-<li>The IT provider backs up Microsoft 365 email and OneDrive every day to a separate cloud backup service. Backups are encrypted, cannot be deleted from the firm's Microsoft 365 accounts, and are kept for the retention periods in 5.3.</li>
+<li>The IT provider backs up Microsoft 365 email and OneDrive every day to a separate cloud backup service. Backups are encrypted, use their own sign-in with multi-factor authentication, cannot be deleted from the firm's Microsoft 365 accounts, and are kept for the retention periods in 5.3. The tax software vendor backs up the returns and portal data it hosts, under the license agreement.</li>
 <li>Clients and visitors use the guest Wi-Fi, which cannot reach the staff network. The router's administrator password is unique and held by the IT provider and the owner.</li>
 <li>Remote work is allowed only on a firm laptop over a home network or a phone hotspot, never on public Wi-Fi.</li>
 <li>Paper files stay in locked cabinets when not in use. Visitors are escorted and signed in.</li>
@@ -156,7 +156,7 @@ tr { break-inside: avoid; }
 <li><strong>Report to the IRS</strong> through the local IRS Stakeholder Liaison, so the IRS can protect clients' accounts from fraudulent returns. Also contact the local FBI office, and the Secret Service if directed, and file a report with the local police.</li>
 <li><strong>Report to the states</strong> where the firm prepares returns, using the contacts listed by the Federation of Tax Administrators.</li>
 <li><strong>Tell the insurer</strong> before hiring outside response firms, since the policy may require its approved vendors.</li>
-<li><strong>Notify the FTC</strong> if unencrypted information about 500 or more consumers was acquired without authorization: as soon as possible, and no later than 30 days after discovery, through the FTC's online form. Any unauthorized access to unencrypted information counts as acquisition unless the firm has reliable evidence that none occurred. Encrypted information counts as unencrypted if the key was also accessed. This applies to firms of every size.</li>
+<li><strong>Notify the FTC</strong> if unencrypted information about 500 or more consumers was acquired without authorization: as soon as possible, and no later than 30 days after discovery, through the FTC's online form. Under § 314.2(m), unauthorized access to unencrypted information counts as acquisition unless the firm has reliable evidence that the information was not, or could not reasonably have been, acquired. Encrypted information counts as unencrypted if the key was also accessed. This applies to firms of every size.</li>
 <li><strong>Notify affected clients</strong> under state breach notification laws, as advised by counsel.</li>
 <li><strong>Learn:</strong> record what happened and what was done, fix the weakness, and update this plan.</li>
 </ol>
