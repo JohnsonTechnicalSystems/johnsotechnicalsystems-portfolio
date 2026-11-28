@@ -21,6 +21,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 - Each SOP's Document Control table is the source of truth for its Version and Status.
 - After changing an SOP's Version or Status, or adding an SOP, run `python scripts/sync_status.py` and commit the result. It updates the README index, the Status column in `docs/samples.md`, and the status line in `docs/about/review-process.md`. CI fails if they are out of step.
+- The script does not add rows to `docs/samples.md`. When you add an SOP, add its row there by hand first; the script fails until that row exists.
 
 ## Pull requests
 

@@ -8,7 +8,7 @@ Sep 29, 2026 · @Lloyd
 | --- | --- |
 | Document ID | SOP-003 |
 | Version | 0.2 (Draft) |
-| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
+| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
 | Review cycle | Every 6 months, and after every new incident worth a case entry |
 | Classification | Internal / Portfolio sample |
 | Related | SOP-001 Secure Remote Access; SOP-002 Local LLM Inference Stack |

@@ -14,11 +14,11 @@ Written security documentation for small firms: startups, small finance firms, M
 - **Partner overflow work** for MSPs and vCISOs
 - **Automation** around the tools a firm already uses
 
-Every document is checked by hand against primary sources and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2 where a control applies.
+Every client document is checked by hand against primary sources and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2 where a control applies.
 
 ## Portfolio samples
 
-The site publishes worked samples under Samples: a completed security questionnaire for a fictional company, and the standard operating procedures below. They are illustrative examples, not client work. Each SOP follows one [template](docs/templates/sop-template.md).
+The site publishes worked samples under Samples: a completed security questionnaire for a fictional company, and the standard operating procedures below. They are illustrative examples, not client work. The SOPs are written from one [template](docs/templates/sop-template.md).
 
 > **Check each document's status before relying on it.** Approved documents have been checked against primary sources and confirmed by the owner. Drafts have not, so do not rely on a Draft as authoritative.
 
@@ -32,7 +32,7 @@ The status and version of each SOP come from the SOP's own Document Control tabl
 | --- | --- | --- | --- |
 | [SOP-001: Secure Remote Access to Windows Workstations](docs/sops/sop-001-secure-remote-access.md) | Approved | 1.0 | Microsoft Remote Desktop documentation, NIST SP 800-53, ISO/IEC 27001:2022, CIS Controls v8, AICPA SOC 2 |
 | [SOP-002: Local LLM Inference Stack: Operation & Troubleshooting](docs/sops/sop-002-local-llm-inference-stack.md) | Draft | 0.2 | Ollama, Open WebUI, and Tailscale documentation, NIST SP 800-53, ISO/IEC 27001:2022 |
-| [SOP-003: Network Troubleshooting Runbook](docs/sops/sop-003-network-troubleshooting-runbook.md) | Draft | 0.2 | NIST SP 800-53, ISO/IEC 27001:2022 |
+| [SOP-003: Network Troubleshooting Runbook](docs/sops/sop-003-network-troubleshooting-runbook.md) | Draft | 0.2 | CompTIA Network+ N10-009 troubleshooting methodology, NIST SP 800-53, ISO/IEC 27001:2022 |
 | [SOP-004: Cat6 Cable Termination and Testing (T568B)](docs/sops/sop-004-cat6-termination-and-testing.md) | Draft | 0.1 | ANSI/TIA-568, ANSI/TIA-606, NIST SP 800-53 |
 | [SOP-005: VLAN Creation and Segmentation on a Managed Switch](docs/sops/sop-005-vlan-creation-and-segmentation.md) | Draft | 0.2 | Cisco IOS documentation, NIST SP 800-53, AICPA SOC 2 |
 | [SOP-006: Endpoint Isolation During a Suspected Compromise](docs/sops/sop-006-endpoint-isolation.md) | Approved | 1.0 | NIST SP 800-61 Rev. 3, NIST SP 800-53, AICPA SOC 2 |

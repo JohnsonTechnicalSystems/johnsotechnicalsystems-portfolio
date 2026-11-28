@@ -14,7 +14,7 @@ Current status: SOP-001 and SOP-006 are Approved. SOP-002, SOP-003, SOP-004 and 
 | Reviewed | Every factual claim, command, and control reference checked by the author against primary sources: NIST SP 800-53 Rev 5, ISO/IEC 27001:2022, AICPA Trust Services Criteria, vendor documentation, and the relevant standard |
 | Approved | Reviewed, the environment it describes confirmed by the owner, and issued as version 1.0 or later with an effective date and next review date |
 
-A document moves up a status through a commit that records what was checked and against which source. The commit history is the audit trail for each review.
+A document moves up a status through a pull request that records what was checked and against which source. The merged pull requests and their commits are the audit trail for each review.
 
 ## Use of AI
 

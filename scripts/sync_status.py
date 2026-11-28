@@ -28,9 +28,21 @@ PROCESS = ROOT / "docs" / "about" / "review-process.md"
 STATUSES = ("Draft", "Reviewed", "Approved")
 
 
+def control_table(text):
+    # The Document Control table is the first table in every SOP. Reading only
+    # that table stops a later row such as "| Status | ... |" being picked up.
+    block = []
+    for line in text.splitlines():
+        if line.startswith("|"):
+            block.append(line)
+        elif block:
+            break
+    return "\n".join(block)
+
+
 def field(text, name):
     # [ \t] rather than \s at line ends: \s would also match the newline.
-    m = re.search(rf"^\|[ \t]*{re.escape(name)}[ \t]*\|[ \t]*(.+?)[ \t]*\|[ \t]*$", text, re.M)
+    m = re.search(rf"^\|[ \t]*{re.escape(name)}[ \t]*\|[ \t]*([^|]+?)[ \t]*\|[ \t]*$", text, re.M)
     return m.group(1).strip() if m else ""
 
 
@@ -38,16 +50,21 @@ def read_sops():
     sops = []
     for path in sorted(SOPS.glob("sop-*.md")):
         text = path.read_text(encoding="utf-8")
-        title = re.search(r"^# (.+)$", text, re.M).group(1).strip()
-        version_cell = field(text, "Version")
-        version = re.match(r"[\d.]+", version_cell)
-        status = field(text, "Status")
-        if not status:
-            status = next((s for s in STATUSES if s.lower() in version_cell.lower()), "")
+        h1 = re.search(r"^# (.+)$", text, re.M)
+        if not h1:
+            sys.exit(f"{path.name}: no '# ' title line")
+        title = h1.group(1).strip()
+        table = control_table(text)
+        version_cell = field(table, "Version")
+        version = re.match(r"\d+(?:\.\d+)*", version_cell)
+        in_version = next((s for s in STATUSES if s.lower() in version_cell.lower()), "")
+        status = field(table, "Status") or in_version
         if not version or status not in STATUSES:
             sys.exit(f"{path.name}: could not read Version/Status "
                      f"(Version='{version_cell}', Status='{status}')")
-        sops.append({"id": field(text, "Document ID") or title.split(":")[0],
+        if in_version and in_version != status:
+            sys.exit(f"{path.name}: Status '{status}' conflicts with Version '{version_cell}'")
+        sops.append({"id": field(table, "Document ID") or title.split(":")[0],
                      "title": title, "file": path.name,
                      "version": version.group(0), "status": status})
     return sops
@@ -77,15 +94,23 @@ def readme_index(text, sops):
 
 
 def samples_status(text, sops):
+    # Assumes Status is the last column of each sample table.
     by_file = {s["file"]: s["status"] for s in sops}
+    seen = set()
 
     def fix(m):
         line, file = m.group(0), m.group(1)
         if file not in by_file:
             return line
+        seen.add(file)
         return re.sub(r"\|[ \t]*[^|]*?[ \t]*\|[ \t]*$", f"| {by_file[file]} |", line)
 
-    return re.sub(r"^\| \[[^\]]+\]\(sops/([^)]+)\)[^\n]*\|[ \t]*$", fix, text, flags=re.M)
+    new = re.sub(r"^\| \[[^\]]+\]\(sops/([^)]+)\)[^\n]*\|[ \t]*$", fix, text, flags=re.M)
+    missing = sorted(set(by_file) - seen)
+    if missing:
+        sys.exit("docs/samples.md: no table row for " + ", ".join(missing)
+                 + ". Add a row by hand; this script only updates the Status column.")
+    return new
 
 
 def summary_line(sops):
@@ -105,7 +130,10 @@ def summary_line(sops):
 
 
 def main():
-    check = "--check" in sys.argv
+    args = sys.argv[1:]
+    if args not in ([], ["--check"]):
+        sys.exit("Usage: python scripts/sync_status.py [--check]")
+    check = args == ["--check"]
     sops = read_sops()
     changes = {
         README: readme_index,
