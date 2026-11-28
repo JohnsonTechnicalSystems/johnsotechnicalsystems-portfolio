@@ -129,12 +129,12 @@ Partly. The VPN requires a Microsoft 365 sign-in with MFA. However, the accounti
 
 **7. Is MFA required for all administrator accounts?**
 
-Partly. In Microsoft 365, every administrator account requires MFA. The MSP's technicians use separate, named administrator accounts, and there are two global administrator accounts and one emergency account. The emergency account signs in with either of two FIDO2 security keys. Each principal keeps one offline, so the account can still be used if one principal cannot be reached. The MSP's administrator sign-ins to the firewall and to both cloud backup consoles also require MFA. The exception is the accounting software: the principal who has not enrolled in MFA is one of its two administrators. See question 8 and gap G2. Local administrator rights on the three CAD workstations are covered in question 15.
+Partly. In Microsoft 365, every administrator account requires MFA. The MSP's technicians use separate, named administrator accounts, and there are two global administrator accounts and one emergency account. The emergency account signs in with either of two FIDO2 security keys. Each principal keeps one offline, so the account can still be used if one principal cannot be reached. The MSP's administrator sign-ins to its remote management and EDR consoles, the firewall and both cloud backup consoles also require MFA. The exception is the accounting software: the principal who has not enrolled in MFA is one of its two administrators. See question 8 and gap G2. Local administrator rights on the three CAD workstations are covered in question 15.
 
 <div class="jts-meta" markdown>
 
 - **Status** Partial
-- **Evidence** Administrator role report and firewall administrator settings, 12 November 2026; cloud backup console settings and accounting software user list, 13 November 2026
+- **Evidence** Administrator role report, firewall administrator settings and MSP console sign-in settings, 12 November 2026; cloud backup console settings and accounting software user list, 13 November 2026
 - **Confirmed by** MSP report; bookkeeper's screenshots
 - **NIST CSF 2.0** PR.AA-03, PR.AA-05
 
@@ -458,7 +458,7 @@ What proves each group of answers, where it came from and when it was captured. 
 | Control | Evidence | Source | Captured | Questions |
 | --- | --- | --- | --- | --- |
 | Business, data and IT support | Company profile; data inventory; payroll provider employee count; HR folder permissions report; accounting software payment settings; MSP service agreement | Principal; office manager; bookkeeper; contract | November 2026 | 1 to 4 |
-| MFA on email and administrator accounts | Conditional access policy export; MFA registration report; administrator role report; firewall administrator settings | Microsoft 365 admin center and firewall, exported by the MSP | 12 November 2026 | 5, 7 |
+| MFA on email and administrator accounts | Conditional access policy export; MFA registration report; administrator role report; firewall administrator settings; MSP console sign-in settings | Microsoft 365 admin center, firewall and MSP consoles, exported by the MSP | 12 November 2026 | 5, 7 |
 | MFA on remote access and cloud applications | VPN configuration; installed software report; payroll and accounting user settings | MSP tools; screenshots from the bookkeeper | 12 and 13 November 2026 | 6, 7, 8 |
 | Email protection | Email security policy export; SPF, DKIM and DMARC records | Microsoft 365 admin center; public DNS | 10 November 2026 | 9 |
 | EDR coverage and alert handling | EDR device list; response policy; MSP service agreement | EDR console; contract | 12 November 2026 | 10, 11 |
@@ -480,7 +480,7 @@ Controls the application asks about that are not fully in place. Deal with them 
 | G1 | Remote support tool on the bookkeeper's PC allows unattended access with a password only | 6 | High | Remove the tool, or set it to attended sessions only, started by the bookkeeper | MSP | 4 December 2026 |
 | G2 | One principal, who is an administrator of the accounting software, has not turned on MFA in it | 7, 8 | High | Enrol the principal; then make MFA mandatory for all users in the software's settings | Principal; bookkeeper | 4 December 2026 |
 | G3 | EDR missing from the plotter PC and one CAD workstation | 10 | High | Reinstall on the CAD workstation by 4 December. For the plotter PC, see G4: replacing it with a supported PC that has EDR closes this gap; isolating it leaves question 10 at Partial | MSP | 4 December 2026 (CAD workstation) |
-| G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 12, 13 | High | Replace the PC, or move it to its own network that can reach only the plotter and the print queue, with no access to the staff network or the internet (the MSP first confirms the firewall and switch can do this). Isolation reduces the risk but does not close the gap: question 13 stays No until the PC is replaced or enrolled in extended security updates. Question 12 stays Partial after that too, because CAD software updates are not tracked (see the note below) | MSP; principal to approve cost | 8 January 2027 |
+| G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 12, 13 | High | Replace the PC, or move it to its own network that can reach only the plotter and the print queue, with no access to the staff network or the internet (the MSP first confirms the firewall and switch can do this). Isolation reduces the risk but does not close the gap: question 13 stays No until the PC is replaced or enrolled in Microsoft's paid extended security updates, which are temporary: they run for at most three years after end of support. Question 12 stays Partial after that too, because CAD software updates are not tracked (see the note below) | MSP; principal to approve cost | 8 January 2027 |
 | G5 | DMARC is in monitoring mode only | 9 | Medium | Review the DMARC reports for two weeks and confirm that every service that sends mail for the firm (accounting, payroll, marketing) passes. Then move to quarantine and later to reject. If legitimate mail is blocked, return to p=none and fix that sender | MSP | 8 January 2027 |
 | G6 | Immutability is not turned on in either cloud backup service, and the firm holds no copy of the backup encryption keys | 17, 18 | High | Before turning it on, confirm with each provider whether it changes the price; it cannot be undone for the period set. Turn on immutability with a 30-day period in both services and confirm in each console. Put sealed copies of the encryption keys in the office safe and at a principal's home, and use them in the G7 restore test | MSP; principal | 4 December 2026 |
 | G7 | No full restore test in the last 12 months | 19, 20 | Medium | Restore the file server to a test machine, and one Microsoft 365 mailbox and one shared folder to a test account. Time each and record the results | MSP | 18 December 2026 |
@@ -550,7 +550,7 @@ Answers that changed during review. On real work, these notes go to the MSP or t
 | Question | What changed in review |
 | --- | --- |
 | Q6 | The MSP's first draft answered Yes, because the VPN requires MFA. The installed software report showed a vendor's remote support tool with unattended, password-only access. The answer was changed to Partial and the tool became gap G1. |
-| Q7 | The draft answered Yes from the Microsoft 365 administrator role report alone. The question asks about all administrator accounts, so the firewall, the backup consoles and the accounting software were checked too. One administrator of the accounting software has no MFA, so the answer is Partial until gap G2 is closed. |
+| Q7 | The draft answered Yes from the Microsoft 365 administrator role report alone. The question asks about all administrator accounts, so the MSP's own consoles, the firewall, the backup consoles and the accounting software were checked too. One administrator of the accounting software has no MFA, so the answer is Partial until gap G2 is closed. |
 | Q10 | The draft said EDR was on "all endpoints". The device list showed 20 of 22, so the answer gives the count and names the two devices. |
 | Q13 | The plotter PC was missing from the first inventory because it is not used for email. It was added after the EDR device list and the network diagram were compared. |
 | Q17 | The draft said backups were "immutable". The cloud copies are separate and protected by MFA, but the immutability setting was off in both services. The answer says exactly that. |
@@ -561,6 +561,7 @@ Answers that changed during review. On real work, these notes go to the MSP or t
 ## Sources
 
 - **NIST CSF references:** NIST CSWP 29, The NIST Cybersecurity Framework (CSF) 2.0, February 26, 2024.
+- **Windows 10 extended security updates:** Microsoft Learn, Extended Security Updates (ESU) program for Windows 10 (learn.microsoft.com/windows/whats-new/extended-security-updates), checked November 2026.
 - **Windows 10 end of support:** Microsoft Lifecycle, Windows 10 Home and Pro, which gives the end of support date as October 14, 2025 (learn.microsoft.com/lifecycle/products/windows-10-home-and-pro).
 
 ## Want one like this for your business or your clients?
