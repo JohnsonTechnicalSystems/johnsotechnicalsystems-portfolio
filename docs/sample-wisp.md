@@ -106,7 +106,7 @@ The owner reviews these risks every October before filing season, and again afte
 
 ### 5.5 Monitoring, logging and change management
 
-- Every week the IT provider checks each mailbox for forwarding rules the firm did not set up and reviews the Microsoft 365 sign-in logs and audit log for bulk downloads, outside sharing and unusual mailbox access, and tells the owner the same day if anything looks wrong. Security alerts that the firm's Microsoft 365 plan provides go to the owner and the IT provider.
+- Every week the IT provider checks each mailbox for forwarding rules the firm did not set up and reviews the Microsoft 365 sign-in logs and the audit log, which the IT provider has turned on, for bulk downloads, outside sharing and unusual mailbox access, and tells the owner the same day if anything looks wrong. Security alerts that the firm's Microsoft 365 plan provides go to the owner and the IT provider.
 - The owner reviews the tax software's user activity report every week during filing season and the October extension period, and every month the rest of the year.
 - Any change to systems, such as new software, a new user or a firewall change, is approved by the owner and recorded in the change log before it is made.
 
@@ -170,7 +170,7 @@ Firms of this size are exempt from the written incident response plan in § 314.
 | § 314.4(i) | Annual written report to the board | Exempt under § 314.6 (fewer than 5,000 consumers) | 12 |
 | § 314.4(j) | Notifying the FTC of a notification event | Required for every firm | 9 |
 
-The exemptions come from § 314.6, which applies to financial institutions that maintain customer information about fewer than 5,000 consumers. Under § 314.2, a tax preparation service that completes income tax returns is a financial institution. Sources: 16 CFR Part 314 (eCFR, checked November 2026); IRS Publication 5708 (Rev. 8-2024); IRS Publication 4557 (Rev. 6-2024); Form W-12 (Rev. October 2026), line 11; IRS, Data theft information for tax professionals (irs.gov, checked November 2026). Sample by Johnson Technical Systems for a fictional company, November 2026. Not legal or tax advice, and not an audit; a real plan should be reviewed by counsel.
+The exemptions come from § 314.6, which applies to financial institutions that maintain customer information about fewer than 5,000 consumers. Under § 314.2, a tax preparation service that completes income tax returns is a financial institution. Sources: 16 CFR Part 314 (eCFR, checked November 2026); IRS Publication 5708 (Rev. 8-2024); IRS Publication 4557 (Rev. 6-2024); IRS Publication 1345 (Rev. 10-2026); Form W-12 (Rev. October 2026), line 11; IRS, Data theft information for tax professionals (irs.gov, checked November 2026). Sample by Johnson Technical Systems for a fictional company, November 2026. Not legal or tax advice, and not an audit; a real plan should be reviewed by counsel.
 
 ## 12. Review and implementation
 

@@ -31,3 +31,12 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - The review loop on Lloyd's PC then reviews it and swaps the label to `ai-reviewed`. Lloyd merges.
 - Do not change labels after you open the pull request. If you push more commits, tell Lloyd, who re-applies `needs-review` for another pass.
 - Do not add a "Generated with Claude Code" line or Claude session links to pull request descriptions or comments.
+
+## Sample pages and their downloads
+
+- Five sample pages are generated, each with its downloads in `docs/downloads/`: the AI use policy, the public security page, the insurance renewal pack, the access control policy and the WISP. The generator is outside this repo, in `Business - Johnson Technical Systems\site-samples\`. Its README says how to run it.
+- After every change to one of these samples, re-sync everything that copies it, in the same pull request where possible: change the generator's data (for the WISP, change `upwork-samples/wisp-tax-practice.html`), run the build, and commit the page together with its regenerated downloads. Do not leave a page that differs from its PDF or spreadsheet.
+- A build rewrites every sample. Commit only the files for the sample you changed and restore the rest with `git checkout`.
+- The build copies the WISP source to the Upwork folder and exports that folder's PDF again. Commit the generator's own changes in the `site-samples` repository.
+- If you cannot run the build (for example in a cloud session, or when only the page was edited during review), say so in the pull request and tell Lloyd which downloads are now out of date.
+- Copies already uploaded to an outside service, such as Upwork, cannot be re-synced from here. Tell Lloyd which ones need uploading again.
