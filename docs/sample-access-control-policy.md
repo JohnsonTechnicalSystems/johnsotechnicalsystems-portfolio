@@ -122,7 +122,7 @@ Each requirement leaves a record. These are the records an auditor or customer r
 | CSF PR.AA-05 | Access permissions are defined in policy, managed, enforced and reviewed, with least privilege and separation of duties | 4.3 to 4.6 |
 | CSF GV.PO-01 | Cybersecurity policy is established, communicated and enforced | 7 |
 
-Sources: AICPA, 2017 Trust Services Criteria (with March 2020 updates); NIST CSWP 29, The NIST Cybersecurity Framework (CSF) 2.0, February 26, 2024. The descriptions above are summaries; see the source documents for the exact wording.
+Sources: AICPA, 2017 Trust Services Criteria (With Revised Points of Focus – 2022); NIST CSWP 29, The NIST Cybersecurity Framework (CSF) 2.0, February 26, 2024. The descriptions above are summaries; see the source documents for the exact wording.
 
 ## 7. Enforcement and review
 

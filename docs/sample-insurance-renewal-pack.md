@@ -11,7 +11,7 @@ description: "A cyber insurance renewal pack for a fictional 19-person firm: 30 
 
 ## About this sample
 
-- Brindlemoor Architects, LLC and Kestrel Ridge IT are fictional. Their facts, dates and figures were invented for this sample, and any resemblance to a real business is unintended. Domains use the reserved .example name.
+- Brindlemoor Architects, LLC and Kestrel Ridge IT are fictional. Their facts, dates and figures were invented for this sample, and any resemblance to a real business is unintended. The phone number uses the 555-01xx range reserved for fictional use.
 - The questions were written by Johnson Technical Systems in the style of common cyber insurance applications. They are not copied from any insurer's form. On real work, the answers are written against the insurer's own form, question by question.
 - An answer is Yes only when the control is in place and there is evidence of it on the date shown. A control that is planned is answered No or Partial until it is done.
 - The NIST CSF 2.0 references show where each topic sits in the framework, for readers who use it. Insurers do not ask for them. They are not an assessment.
@@ -33,7 +33,7 @@ This is the intake summary the answers are written from.
 
 ## 2. Summary for the principals
 
-Of the 30 questions, 7 are answered Yes, 12 Partial and 5 No; 5 are descriptive and 1 does not apply. Ten gaps are listed in section 5. Six are rated High, and five of those can be closed before the application is due on 15 January 2027 without new spending; the sixth, the plotter PC, needs a decision on cost. Each answer in this pack describes the position in November 2026. Before signing, the answers must be updated to the position on that day: a gap that has been closed, with evidence, becomes Yes, and a gap that is still open stays as it is.
+Of the 30 questions, 7 are answered Yes, 12 Partial and 5 No; 5 are descriptive and 1 does not apply. Ten gaps are listed in section 5. Six are rated High, and five of those can be closed before the application is due on 15 January 2027 without new spending; the sixth, the plotter PC (G4), needs a decision on cost. The plotter PC part of G3 depends on that decision too. Five weaker answers are not listed as gaps for this renewal; see the note under section 5. Each answer in this pack describes the position in November 2026. Before signing, the answers must be updated to the position on that day: a gap that has been closed, with evidence, becomes Yes, and a gap that is still open stays as it is.
 
 ## 3. Application answers
 
@@ -87,7 +87,7 @@ Partly. The VPN requires a Microsoft 365 sign-in with MFA. However, the accounti
 
 **7. Is MFA required for all administrator accounts?**
 
-Yes. The MSP's technicians use separate, named administrator accounts with MFA. There are two global administrator accounts and one emergency account, whose password is held offline by a principal.
+Yes. The MSP's technicians use separate, named administrator accounts with MFA. There are two global administrator accounts and one emergency account. The emergency account signs in with a FIDO2 security key, which a principal keeps offline with its password.
 
 **Status:** Yes · **Evidence:** Administrator role report, 12 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.AA-03, PR.AA-05
 
@@ -119,7 +119,7 @@ Partly. The MSP reviews EDR alerts during business hours, Monday to Friday. Outs
 
 **12. Are critical security updates installed within 30 days?**
 
-Partly. Windows and Microsoft 365 updates are installed by the MSP: in October 2026, 96% of devices were updated within 14 days and the rest within 30. Updates to the CAD software are installed by staff when prompted and are not tracked.
+Partly. Windows and Microsoft 365 updates are installed by the MSP: in October 2026, all 21 supported Windows devices were updated within 30 days, 20 of them within 14 days. The plotter PC gets no Windows security updates; see question 13 and gap G4. Updates to the CAD software are installed by staff when prompted and are not tracked.
 
 **Status:** Partial · **Evidence:** Patch compliance report, October 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** ID.RA-01, PR.PS-02
 
@@ -247,6 +247,7 @@ What proves each group of answers, where it came from and when it was captured. 
 
 | Control | Evidence | Source | Captured | Questions |
 | --- | --- | --- | --- | --- |
+| Business, data and IT support | Company profile; data inventory; payroll provider employee count; HR folder permissions report; accounting software payment settings; MSP service agreement | Principal; office manager; bookkeeper; contract | November 2026 | 1 to 4 |
 | MFA on email and administrator accounts | Conditional access policy export; MFA registration report; administrator role report | Microsoft 365 admin center, exported by the MSP | 12 November 2026 | 5, 7 |
 | MFA on remote access and cloud applications | VPN configuration; installed software report; payroll and accounting user settings | MSP tools; screenshots from the bookkeeper | 12 and 13 November 2026 | 6, 8 |
 | Email protection | Email security policy export; SPF, DKIM and DMARC records | Microsoft 365 admin center; public DNS | 10 November 2026 | 9 |
@@ -257,6 +258,7 @@ What proves each group of answers, where it came from and when it was captured. 
 | Network | Firewall rule export; external scan report; wireless configuration; network diagram | Firewall; external scanner | 10 November 2026 | 21 to 23 |
 | Training | Training completion report; phishing simulation results | MSP training platform | 14 November 2026 | 24 |
 | Payment controls | Bank portal user roles; notes of the call with the bookkeeper | Bank portal; call notes | 13 November 2026 | 25, 26 |
+| Incident response plan and vendors | Notes of the call with the principal; MSP service agreement | Call notes; contract | 13 November 2026 | 27 to 29 |
 | Incident history | MSP incident ticket; email to the broker | MSP ticketing system; principal's email | March and April 2025 | 30 |
 
 ## 5. Gap list
@@ -267,14 +269,16 @@ Controls the application asks about that are not fully in place, in the order to
 | --- | --- | --- | --- | --- | --- | --- |
 | G1 | Remote support tool on the bookkeeper's PC allows unattended access with a password only | 6 | High | Remove the tool, or set it to attended sessions only, started by the bookkeeper | MSP | 5 December 2026 |
 | G2 | One principal has not turned on MFA in the accounting software | 8 | High | Enrol the principal; then make MFA mandatory for all users in the software's settings | Principal; bookkeeper | 5 December 2026 |
-| G3 | EDR missing from the plotter PC and one CAD workstation | 10 | High | Reinstall on the CAD workstation. For the plotter PC, see G4 | MSP | 5 December 2026 |
-| G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 13, 23 | High | Replace the PC, or move it to its own network that can reach only the plotter and the print queue | MSP; principal to approve cost | 9 January 2027 |
+| G3 | EDR missing from the plotter PC and one CAD workstation | 10 | High | Reinstall on the CAD workstation by 5 December. For the plotter PC, see G4: replacing it with a supported PC that has EDR closes this gap; isolating it leaves question 10 at Partial | MSP | 5 December 2026 (CAD workstation) |
+| G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 13 | High | Replace the PC, or move it to its own network that can reach only the plotter and the print queue | MSP; principal to approve cost | 9 January 2027 |
 | G5 | DMARC is in monitoring mode only | 9 | Medium | Review the DMARC reports for two weeks, then move to quarantine and later to reject | MSP | 9 January 2027 |
 | G6 | Cloud backup immutability is not turned on | 17 | High | Turn on immutability with a 30-day period and confirm in the console | MSP | 5 December 2026 |
 | G7 | No full restore test in the last 12 months | 19, 20 | Medium | Restore the file server to a test machine, time it, and record the result | MSP | 19 December 2026 |
 | G8 | Two staff have not completed the 2026 training | 24 | Low | Complete the training | Office manager | 5 December 2026 |
 | G9 | Call-back check is unwritten, and one person can release any payment alone | 25, 26 | High | Write a half-page payment procedure; turn on dual approval in the bank portal above an amount the principals choose | Principals; bookkeeper | 19 December 2026 |
 | G10 | No adopted or tested incident response plan | 27, 28 | Medium | Principals adopt the one-page plan below; fill in the contact numbers; hold a one-hour walk-through with the MSP | Principals; MSP | 19 December 2026 |
+
+**Not listed as gaps for this renewal:** question 11 (no alert review outside business hours), question 12 (CAD software updates not tracked), question 15 (local administrator rights on the three CAD workstations), question 23 (no network segmentation) and question 29 (payroll and accounting vendors not reviewed). Each needs budget or a longer project. They were raised with the principals and the MSP for after the renewal, and the answers stay as written until they are fixed.
 
 ## 6. One-page incident response plan
 

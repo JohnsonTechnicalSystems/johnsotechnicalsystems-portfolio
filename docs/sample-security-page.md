@@ -13,7 +13,7 @@ description: "A public security page for a fictional seed-stage software company
 
 - Quorrel, Inc. is a fictional company. Its facts, dates and figures were invented for this sample. Domains use the reserved .example name.
 - The page was written from scratch by Johnson Technical Systems, from the same facts as the sample security questionnaire, so the two documents agree with each other.
-- A public security page makes no framework claims, so this sample cites no standards. Its only source is the sample questionnaire, and the claim check table shows which answer backs each statement.
+- A public security page makes no framework claims, so this sample cites no standards. Its sources are the sample questionnaire and the sample Access Control Policy and AI Use Policy, and the claim check table shows which answer or policy backs each statement.
 - The page text is what a visitor would read on the company's website. The claim check and reviewer notes are working papers that go to the client, not onto the website.
 
 ## Security at Quorrel
@@ -75,11 +75,13 @@ Each statement on the page, the questionnaire answer or policy that backs it, an
 
 | Statement on the page | Backed by | Evidence |
 | --- | --- | --- |
+| No payment card details held; billing runs through the payment provider | Q1 | Architecture and data-flow diagram; payment provider agreement |
 | Data is stored in AWS in Northern Virginia, with encrypted backups in Oregon | Q2, Q46 | Architecture and data-flow diagram; backup configuration |
 | Three engineers have production access; support staff see documents only after the customer grants access | Q3, Q16; Access Control Policy 4.4 | Access list; support-access log |
 | Each customer's data is kept separate and tested on every build | Q23 | Design note; cross-tenant test results |
 | Deleted within 30 days; backups expire within a further 35 days | Q24 | Data Retention Policy; deletion job logs |
 | Contract text goes to one LLM provider; not used for training; kept up to 30 days | Q26, Q27, Q28; AI Use Policy 6 | Provider agreement clauses; subprocessor list |
+| Every extracted term is labelled as AI-generated and links to its source text | Q29; AI Use Policy 6 | Product screenshots; output schema |
 | Encrypted at rest with AES-256 and in transit with TLS 1.2 or higher | Q20, Q21 | Encryption settings; external scan result |
 | Multi-factor authentication on every staff account, without text-message codes | Q15; Access Control Policy 4.2 | Enforcement settings |
 | Only company laptops reach production; they are encrypted and centrally managed | Q35, Q20 | MDM compliance report |
@@ -94,6 +96,7 @@ Each statement on the page, the questionnaire answer or policy that backs it, an
 | No SOC 2 report yet; Type I examination planned for Q2 2027 | Q4 | Readiness timeline |
 | Single sign-on for customers, laptop EDR and failover test are planned, with dates | Q19, Q35, Q47 | Roadmap entries |
 | Subprocessor list is public, with 30 days' notice of additions | Q42 | Public subprocessor page |
+| Under NDA: questionnaire, policies, penetration test letter, data processing agreement and certificate of cyber insurance | Q5, Q34, Q49, Q50 | Policy set; penetration test summary letter; DPA; certificate of insurance |
 
 ## Reviewer notes
 
@@ -111,6 +114,7 @@ What changed between the company's first draft and this page. On real work, thes
 ## Sources
 
 - **Company facts:** Johnson Technical Systems, Sample security questionnaire for Quorrel, Inc. (fictional), version 1.0, November 2026. Question numbers in the claim check refer to that document.
+- **Policies:** Johnson Technical Systems, Sample access control policy and Sample AI use policy for Quorrel, Inc. (fictional). Section numbers in the claim check refer to those documents.
 - **Standards:** none cited. This page makes no framework claims.
 
 ## Want one like this for your company?

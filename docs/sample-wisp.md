@@ -53,7 +53,7 @@ The owner reviews these risks every October before filing season, and again afte
 
 | Risk | Rating | Main safeguards (section) |
 | --- | --- | --- |
-| Phishing email steals a staff password, often posing as a client or the IRS | High | Multi-factor authentication everywhere, training before each season, email filtering (5.1, 7) |
+| Phishing email steals a staff password, often posing as a client or the IRS | High | Multi-factor authentication everywhere, training before each season, email filtering (5.1, 5.5, 7) |
 | Lost or stolen laptop | Medium | Full-disk encryption, remote wipe, no client files saved locally (5.2, 5.4) |
 | Ransomware or malware | Medium | Endpoint protection, automatic updates, no administrator rights for daily work, cloud backups (5.4, 6) |
 | Client documents sent by plain email | Medium | Client portal for all uploads; encrypted email when email is unavoidable (5.2) |
@@ -72,6 +72,7 @@ The owner reviews these risks every October before filing season, and again afte
 | Office scanner and printer | Office | Passes scans to OneDrive; its memory is wiped before disposal |
 | Locked file cabinets | Office back room | Paper documents from clients who do not use the portal, kept until scanned and returned or shredded |
 | Office router and firewall | Office | Separate staff and guest Wi-Fi networks |
+| Cloud backup service (supplied by the IT provider) | Provider-hosted | Daily encrypted copies of Microsoft 365 email and OneDrive |
 
 ## 5. Safeguards
 
@@ -89,18 +90,21 @@ The owner reviews these risks every October before filing season, and again afte
 ### 5.3 Retention and disposal
 
 - Returns and workpapers are kept for seven years after filing, because clients regularly need them for amended returns, notices and loan applications. This is the firm's recorded business reason for keeping them past the two-year disposal limit in § 314.4(c)(6).
-- Records of former clients are deleted, or shredded if on paper, within 90 days after the seven years end. Paper from clients is scanned and returned or shredded within 30 days.
+- Records of current and former clients are deleted, or shredded if on paper, within 90 days after their seven years end, unless a legal hold applies. Paper from clients is scanned and returned or shredded within 30 days.
+- The owner reviews this retention schedule every October, as § 314.4(c)(6)(ii) requires.
 - Shredding is done by a bonded service, which provides a certificate for each pickup. Laptops and the scanner are wiped by the IT provider before re-use or disposal.
 
 ### 5.4 Devices, network and remote work
 
-- Only firm laptops managed through Intune may access client information. Each runs Microsoft Defender for Business, installs updates automatically and locks after 5 minutes. Staff do daily work without administrator rights.
+- Only firm laptops managed through Intune, which can wipe a lost laptop remotely, may access client information. Each runs Microsoft Defender for Business, installs updates automatically and locks after 5 minutes. Staff do daily work without administrator rights.
 - Clients and visitors use the guest Wi-Fi, which cannot reach the staff network. The router's administrator password is unique and held by the IT provider and the owner.
 - Remote work is allowed only on a firm laptop over a home network or a phone hotspot, never on public Wi-Fi.
 - Paper files stay in locked cabinets when not in use. Visitors are escorted and signed in.
+- The IT provider backs up Microsoft 365 email and OneDrive every day to a separate cloud backup service. The copies are encrypted and use their own sign-in with multi-factor authentication, so an attacker in Microsoft 365 cannot delete them. The tax software vendor backs up the returns and portal data it hosts, under the license agreement.
 
 ### 5.5 Monitoring, logging and change management
 
+- Microsoft 365 filters incoming email for phishing and for malicious links and attachments.
 - Microsoft 365 alerts on risky sign-ins and new mail-forwarding rules go to the owner and the IT provider. During filing season, the owner reviews the tax software's user activity report every week.
 - Any change to systems, such as new software, a new user or a firewall change, is approved by the owner and recorded in the change log before it is made.
 
@@ -125,7 +129,7 @@ The owner and the IT provider check the key safeguards every October: multi-fact
 | --- | --- | --- |
 | Tax software vendor | Tax preparation, e-file and client portal | Security terms in the license agreement; multi-factor authentication enforced; reviewed every October |
 | Microsoft | Microsoft 365 email, storage and device management | Microsoft's published security and compliance reports; reviewed every October |
-| Outside IT provider | Device and Microsoft 365 administration | Contract requires safeguards, confidentiality and same-day alert reporting; access reviewed each January and October |
+| Outside IT provider | Device and Microsoft 365 administration; cloud backup | Contract requires safeguards, confidentiality and same-day alert reporting; access reviewed each January and October |
 | Shredding service | On-site shredding | Bonded; certificate of destruction for each pickup |
 
 ## 9. Responding to a security incident
@@ -136,7 +140,7 @@ Firms of this size are exempt from the written incident response plan in § 314.
 2. **Report to the IRS** through the local IRS Stakeholder Liaison, so the IRS can protect clients' accounts from fraudulent returns. Also contact the local FBI office, and the Secret Service if directed, and file a report with the local police.
 3. **Report to the states** where the firm prepares returns, using the contacts listed by the Federation of Tax Administrators.
 4. **Tell the insurer** before hiring outside response firms, since the policy may require its approved vendors.
-5. **Notify the FTC** if unencrypted information about 500 or more consumers was taken: as soon as possible, and no later than 30 days after discovery, through the FTC's online form. This applies to firms of every size.
+5. **Notify the FTC** if unencrypted information about 500 or more consumers was taken: as soon as possible, and no later than 30 days after discovery, through the FTC's online form. This applies to firms of every size. Under § 314.2(m), information counts as unencrypted if the attacker got the encryption key, and unauthorized access counts as taking it unless the firm has reliable evidence that the information was not, and could not reasonably have been, acquired.
 6. **Notify affected clients** under state breach notification laws, as advised by counsel.
 7. **Learn:** record what happened and what was done, fix the weakness, and update this plan.
 
@@ -167,7 +171,7 @@ The exemptions come from § 314.6, which applies to financial institutions that 
 
 ## 12. Review and implementation
 
-The owner reviews this plan every October before filing season, after any security event, and after any major change, and records the review in the version history. Staff must follow this plan; breaking it can lead to loss of access and to dismissal. This plan takes effect on the date signed below.
+The owner reviews this plan every October before filing season, after any security event, and after any major change, and records the review in the version history. Staff must follow this plan; breaking it can lead to loss of access and to dismissal. Each version takes effect on the effective date in Document control, once the owner approves it.
 
 | Version | Date | Change |
 | --- | --- | --- |

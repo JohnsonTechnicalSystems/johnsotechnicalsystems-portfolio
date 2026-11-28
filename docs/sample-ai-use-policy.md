@@ -87,7 +87,7 @@ How Quorrel's customers use AI in their own businesses is outside the scope of t
 
 ### 5.4 Customer communications
 
-An AI tool may help draft a reply to a customer, provided no customer document or extracted term is entered into it and the sender reads and corrects the draft before sending.
+An AI tool may help draft a reply to a customer, provided no customer data is entered into it (section 5.2): no customer documents, extracted terms, emails, support tickets or details that identify the customer. Only generic text is used, and the sender reads and corrects the draft before sending.
 
 ### 5.5 Recording and transcribing meetings
 
@@ -197,7 +197,7 @@ One row for each AI tool in use, requested or refused. The spreadsheet download 
 
 | # | Tool | Used for and by | Highest data class | Vendor terms: training and retention | Sign-in | Status | Decision and next review |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Third-party large language model (LLM) API, commercial agreement | Extracting contract terms inside Quorrel Intake. Used by: the application only; no person uses it directly | Confidential | Training: No. The agreement prohibits it. Retention: up to 30 days for abuse monitoring, then deleted | API key held in AWS Secrets Manager | Approved | CTO and CEO, August 2026. Next review: May 2027 |
+| 1 | Third-party large language model (LLM) API, commercial agreement | Extracting contract terms inside Quorrel Intake. Used by: the application only; no person uses it directly | Confidential | Training: No. The agreement prohibits it. Retention: up to 30 days for abuse monitoring, then deleted | API key held in AWS Secrets Manager | Approved | CTO and CEO, August 2026; re-checked November 2026. Next review: May 2027 |
 | 2 | AI coding assistant, business plan | Code suggestions and chat in the editor. Used by: 7 engineers | Internal | Training: No, under the business plan terms (checked November 2026). Retention: not kept after the response is returned, under the plan terms | Company GitHub accounts, two-factor authentication enforced | Approved | CTO, November 2026. Next review: May 2027 |
 | 3 | General-purpose AI chat assistant, team plan | Drafting, summarising and research. Used by: all 11 employees | Internal | Training: No. Training is switched off for the whole workspace (checked November 2026). Retention: deleted 30 days after a user deletes a conversation | Google sign-in with 2-Step Verification | Approved | CTO, November 2026. Next review: May 2027 |
 | 4 | AI features in the team chat tool | Channel summaries and search. Used by: all 11 employees | Internal | Training: No, under the vendor's terms (checked November 2026). Retention: follows the workspace retention setting | Google sign-in | Approved | CTO, November 2026. Next review: May 2027 |
