@@ -33,14 +33,14 @@ This is the intake summary the answers are written from.
 
 ## 2. Summary for the principals
 
-Of the 30 questions, 7 are answered Yes, 12 Partial and 5 No; 5 are descriptive and 1 does not apply. Ten gaps are listed in section 5. Six are rated High, and five of those can be closed before the application is due on 15 January 2027 without new spending; the sixth, the plotter PC (G4), needs a decision on cost. The plotter PC part of G3 depends on that decision too. Five weaker answers are not listed as gaps for this renewal; see the note under section 5. Each answer in this pack describes the position in November 2026. Before signing, the answers must be updated to the position on that day: a gap that has been closed, with evidence, becomes Yes, and a gap that is still open stays as it is.
+Of the 30 questions, 6 are answered Yes, 13 Partial and 5 No; 5 are descriptive and 1 does not apply. Ten gaps are listed in section 5. Six are rated High, and five of those can be closed before the application is due on 15 January 2027 without new spending; the sixth, the plotter PC (G4), needs a decision on cost. The plotter PC part of G3 depends on that decision too. Five weaker answers are not listed as gaps for this renewal; see the note under section 5. Each answer in this pack describes the position in November 2026. Before signing, the answers must be updated to the position on that day: a gap that has been closed, with evidence, becomes Yes, and a gap that is still open stays as it is.
 
 ## 3. Application answers
 
 | Status | Meaning | Count |
 | --- | --- | --- |
-| Yes | In place today, with evidence. | 7 |
-| Partial | Partly in place; the answer says what is and is not. | 12 |
+| Yes | In place today, with evidence. | 6 |
+| Partial | Partly in place; the answer says what is and is not. | 13 |
 | No | Not in place on the date of this pack. | 5 |
 | N/A | Does not apply, with the reason. | 1 |
 | Info | A descriptive question with no yes or no answer. | 5 |
@@ -129,13 +129,13 @@ Partly. The VPN requires a Microsoft 365 sign-in with MFA. However, the accounti
 
 **7. Is MFA required for all administrator accounts?**
 
-Yes. The MSP's technicians use separate, named administrator accounts with MFA. There are two global administrator accounts and one emergency account. The emergency account signs in with a FIDO2 security key, which a principal keeps offline with its password.
+Partly. In Microsoft 365, every administrator account requires MFA. The MSP's technicians use separate, named administrator accounts, and there are two global administrator accounts and one emergency account. The emergency account signs in with a FIDO2 security key, which one principal keeps offline. The other principal holds its PIN, so that no one person has both. The MSP's administrator sign-ins to the firewall and to both cloud backup consoles also require MFA. The exception is the accounting software: the principal who has not enrolled in MFA is one of its two administrators. See question 8 and gap G2. Local administrator rights on the three CAD workstations are covered in question 15.
 
 <div class="jts-meta" markdown>
 
-- **Status** Yes
-- **Evidence** Administrator role report, 12 November 2026
-- **Confirmed by** MSP report
+- **Status** Partial
+- **Evidence** Administrator role report and firewall administrator settings, 12 November 2026; cloud backup console settings and accounting software user list, 13 November 2026
+- **Confirmed by** MSP report; bookkeeper's screenshots
 - **NIST CSF 2.0** PR.AA-03, PR.AA-05
 
 </div>
@@ -263,12 +263,12 @@ Yes. The file server is backed up every night to a storage device in the office 
 
 **17. Is at least one backup copy offline or immutable, so that an attacker cannot change or delete it?**
 
-Partly. The cloud copy is separate from the office network and uses its own sign-in with MFA. Its immutability setting, which stops backups being deleted before a set date, is available but not turned on. See gap G6.
+Partly. Both cloud backup services are separate from the office network and use their own sign-ins with MFA. Immutability, which stops backups being deleted before a set date, is available in both services but is turned on in neither. See gap G6.
 
 <div class="jts-meta" markdown>
 
 - **Status** Partial
-- **Evidence** Cloud backup console settings, 13 November 2026
+- **Evidence** Cloud backup console settings for both services, 13 November 2026
 - **Confirmed by** MSP report
 - **NIST CSF 2.0** PR.DS-11
 
@@ -276,7 +276,7 @@ Partly. The cloud copy is separate from the office network and uses its own sign
 
 **18. Are backups encrypted?**
 
-Yes. Both the office copy and the cloud copies are encrypted, and the MSP holds the encryption keys in its password manager.
+Yes. The office copy and both cloud copies are encrypted. The MSP holds the encryption keys in its password manager. The firm has no copy of its own, so it depends on the MSP to restore. See gap G6.
 
 <div class="jts-meta" markdown>
 
@@ -289,7 +289,7 @@ Yes. Both the office copy and the cloud copies are encrypted, and the MSP holds 
 
 **19. Have you tested restoring from backup in the last 12 months?**
 
-Partly. Individual files are restored on request; the most recent was on 3 November 2026. The last full restore of the file server was tested in September 2025, which is 14 months ago. See gap G7.
+Partly. Individual files are restored on request; the most recent was on 3 November 2026. The last full restore of the file server was tested in September 2025, which is 14 months ago. A full restore of a Microsoft 365 mailbox has not been tested. See gap G7.
 
 <div class="jts-meta" markdown>
 
@@ -458,7 +458,7 @@ What proves each group of answers, where it came from and when it was captured. 
 | Control | Evidence | Source | Captured | Questions |
 | --- | --- | --- | --- | --- |
 | Business, data and IT support | Company profile; data inventory; payroll provider employee count; HR folder permissions report; accounting software payment settings; MSP service agreement | Principal; office manager; bookkeeper; contract | November 2026 | 1 to 4 |
-| MFA on email and administrator accounts | Conditional access policy export; MFA registration report; administrator role report | Microsoft 365 admin center, exported by the MSP | 12 November 2026 | 5, 7 |
+| MFA on email and administrator accounts | Conditional access policy export; MFA registration report; administrator role report; firewall administrator settings | Microsoft 365 admin center and firewall, exported by the MSP | 12 November 2026 | 5, 7 |
 | MFA on remote access and cloud applications | VPN configuration; installed software report; payroll and accounting user settings | MSP tools; screenshots from the bookkeeper | 12 and 13 November 2026 | 6, 8 |
 | Email protection | Email security policy export; SPF, DKIM and DMARC records | Microsoft 365 admin center; public DNS | 10 November 2026 | 9 |
 | EDR coverage and alert handling | EDR device list; response policy; MSP service agreement | EDR console; contract | 12 November 2026 | 10, 11 |
@@ -478,12 +478,12 @@ Controls the application asks about that are not fully in place. Deal with them 
 | # | Gap | Questions | Priority | What to do | Owner | Target date |
 | --- | --- | --- | --- | --- | --- | --- |
 | G1 | Remote support tool on the bookkeeper's PC allows unattended access with a password only | 6 | High | Remove the tool, or set it to attended sessions only, started by the bookkeeper | MSP | 4 December 2026 |
-| G2 | One principal has not turned on MFA in the accounting software | 8 | High | Enrol the principal; then make MFA mandatory for all users in the software's settings | Principal; bookkeeper | 4 December 2026 |
+| G2 | One principal, who is an administrator of the accounting software, has not turned on MFA in it | 7, 8 | High | Enrol the principal; then make MFA mandatory for all users in the software's settings | Principal; bookkeeper | 4 December 2026 |
 | G3 | EDR missing from the plotter PC and one CAD workstation | 10 | High | Reinstall on the CAD workstation by 4 December. For the plotter PC, see G4: replacing it with a supported PC that has EDR closes this gap; isolating it leaves question 10 at Partial | MSP | 4 December 2026 (CAD workstation) |
 | G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 12, 13 | High | Replace the PC, or move it to its own network that can reach only the plotter and the print queue, with no access to the staff network or the internet. Isolation reduces the risk but does not close the gap: questions 12 and 13 stay Partial and No until the PC is replaced or enrolled in extended security updates | MSP; principal to approve cost | 8 January 2027 |
 | G5 | DMARC is in monitoring mode only | 9 | Medium | Review the DMARC reports for two weeks, then move to quarantine and later to reject | MSP | 8 January 2027 |
-| G6 | Cloud backup immutability is not turned on | 17 | High | Turn on immutability with a 30-day period and confirm in the console | MSP | 4 December 2026 |
-| G7 | No full restore test in the last 12 months | 19, 20 | Medium | Restore the file server to a test machine, time it, and record the result | MSP | 18 December 2026 |
+| G6 | Immutability is not turned on in either cloud backup service, and the firm holds no copy of the backup encryption keys | 17, 18 | High | Turn on immutability with a 30-day period in both services and confirm in each console. Put a sealed copy of the encryption keys in the office safe | MSP | 4 December 2026 |
+| G7 | No full restore test in the last 12 months | 19, 20 | Medium | Restore the file server to a test machine and one Microsoft 365 mailbox to a test account, time both, and record the results | MSP | 18 December 2026 |
 | G8 | Two staff have not completed the 2026 training | 24 | Low | Complete the training | Office manager | 4 December 2026 |
 | G9 | Call-back check is unwritten, and one person can release any payment alone | 25, 26 | High | Write a half-page payment procedure; turn on dual approval in the bank portal above an amount the principals choose | Principals; bookkeeper | 18 December 2026 |
 | G10 | No adopted or tested incident response plan | 27, 28 | Medium | Principals adopt the one-page plan below; fill in the contact numbers; hold a one-hour walk-through with the MSP | Principals; MSP | 18 December 2026 |
@@ -498,11 +498,11 @@ Drafted for adoption by the principals (gap G10). Names and numbers are complete
 | --- | --- | --- |
 | Incident lead | Principal (name, mobile number) | Decides, approves spending, speaks to clients |
 | Deputy | Office manager (name, mobile number) | Leads if the principal cannot be reached; keeps the incident log |
-| IT response | Kestrel Ridge IT help desk, 555-0100, business hours. Out of hours: the MSP's emergency number (to be confirmed with the MSP); if there is none, call the insurer's breach hotline | Contains the problem, preserves evidence, restores systems |
+| IT response | Kestrel Ridge IT help desk, 555-0100, business hours, Monday to Friday. The MSP has no out-of-hours line (see question 11). Outside business hours, call the insurer's breach hotline | Contains the problem, preserves evidence, restores systems |
 | Insurer | Breach hotline (number) and policy number (number), both from the policy schedule | Appoints legal counsel and forensic help. Call before hiring anyone else |
 | Bank | Fraud line (number), also on the back of the bank token | Recalls or freezes a fraudulent payment |
 
-1. **Report it at once.** Anyone who sees something wrong (a ransom note, a strange sign-in alert, a payment they did not make, a lost laptop) calls the MSP help desk and tells the incident lead. Do not wait to be sure.
+1. **Report it at once.** Anyone who sees something wrong (a ransom note, a strange sign-in alert, a payment they did not make, a lost laptop) calls the MSP help desk and tells the incident lead. Outside business hours, call the incident lead, who calls the insurer's breach hotline. Do not wait to be sure.
 2. **Disconnect, do not switch off.** Unplug the network cable or turn off Wi-Fi on the affected computer. Leave it powered on, and do not delete anything, so that evidence is kept.
 3. **Contain.** The MSP isolates affected devices, resets the passwords of affected accounts, signs those accounts out everywhere, and checks for new inbox rules (forwarding, moving or deleting mail), new MFA methods, newly approved apps and new administrator accounts.
 4. **Call the insurer's breach hotline** before hiring a lawyer, a forensic firm or a ransom negotiator. The policy may pay only for firms the insurer approves.
@@ -550,9 +550,10 @@ Answers that changed during review. On real work, these notes go to the MSP or t
 | Question | What changed in review |
 | --- | --- |
 | Q6 | The MSP's first draft answered Yes, because the VPN requires MFA. The installed software report showed a vendor's remote support tool with unattended, password-only access. The answer was changed to Partial and the tool became gap G1. |
+| Q7 | The draft answered Yes from the Microsoft 365 administrator role report alone. The question asks about all administrator accounts, so the firewall, the backup consoles and the accounting software were checked too. One administrator of the accounting software has no MFA, so the answer is Partial until gap G2 is closed. |
 | Q10 | The draft said EDR was on "all endpoints". The device list showed 20 of 22, so the answer gives the count and names the two devices. |
 | Q13 | The plotter PC was missing from the first inventory because it is not used for email. It was added after the EDR device list and the network diagram were compared. |
-| Q17 | The draft said backups were "immutable". The cloud copy is separate and protected by MFA, but the immutability setting was off. The answer says exactly that. |
+| Q17 | The draft said backups were "immutable". The cloud copies are separate and protected by MFA, but the immutability setting was off in both services. The answer says exactly that. |
 | Q19 | The draft said restores are "tested regularly". File restores are routine, but the last full restore test was 14 months ago. The answer gives both dates. |
 | Q27 | The plan in this pack was written during the engagement. The answer stays No until the principals adopt it, because the application asks about the position on the day it is signed. |
 | Q30 | The principal's first answer was "no incidents". The MSP's ticket history showed the March 2025 mailbox compromise. It is disclosed, with what was done about it. |
