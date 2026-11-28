@@ -9,7 +9,6 @@ Sep 29, 2026 · @Lloyd
 | Document ID | SOP-005 |
 | Version | 0.2 (Draft) |
 | Owner | Lloyd Johnson, Johnson Technical Systems LLC |
-| Milestone | Subnetting & VLANs |
 | Review cycle | Every 6 months, or after any switch platform or IOS upgrade |
 | Classification | Internal / Portfolio sample |
 | Related | SOP-004 Cat6 Cable Termination; SOP-003 Network Troubleshooting Runbook |

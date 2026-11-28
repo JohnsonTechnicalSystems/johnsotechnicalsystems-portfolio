@@ -9,7 +9,6 @@
 | Document ID | SOP-00N |
 | Version | 0.1 (Draft) |
 | Owner | Lloyd Johnson, Johnson Technical Systems LLC |
-| Milestone | Network+ Fundamentals / Subnetting & VLANs / Security+ Frameworks / Network Operations & Troubleshooting |
 | Review cycle | [e.g. Every 6 months, or after any upgrade or new failure mode] |
 | Classification | Internal / Portfolio sample |
 | Related | [SOP-00X Title; ...] |

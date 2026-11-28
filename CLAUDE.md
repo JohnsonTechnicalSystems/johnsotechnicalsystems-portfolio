@@ -12,7 +12,7 @@ Example:
 ```
 Add SOP-007 for firewall rule review
 
-Covers the quarterly rule review required by the Security+ Frameworks milestone.
+Gives small offices a repeatable quarterly review of firewall rules.
 
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```

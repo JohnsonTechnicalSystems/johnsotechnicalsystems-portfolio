@@ -9,7 +9,6 @@ Sep 29, 2026 · @Lloyd
 | Document ID | SOP-002 |
 | Version | 0.2 (Draft) |
 | Owner | Lloyd Johnson, Johnson Technical Systems LLC |
-| Milestone | Network Operations & Troubleshooting |
 | Review cycle | Every 6 months, or after any stack upgrade or new failure mode |
 | Classification | Internal / Portfolio sample |
 | Related | SOP-001 Secure Remote Access to Windows Workstations |
@@ -31,7 +30,7 @@ Ollama serves models on the host GPU; Open WebUI runs in Docker and reaches Olla
 | Host | Windows 11 Pro, Ryzen 7 7800X3D, RTX 5080 (16 GB) |
 | Inference engine | Ollama, native on host, port 11434 |
 | Interface | Open WebUI container `open-webui`, image pinned to a release tag (record it here), host `127.0.0.1:3001` to container 8080, volume `open-webui` |
-| Primary model | gpt-oss:20b (custom SOP Drafter and Network+ Tutor models built on it) |
+| Primary model | gpt-oss:20b (a custom SOP Drafter model is built on it) |
 | Remote access | Tailscale Serve (`tailscale serve --bg 3001`); UI at `https://<host>.<tailnet>.ts.net` |
 | Auto-start | Docker Desktop at login; container `--restart always`; host power plan never sleeps |
 
@@ -95,7 +94,7 @@ Then rerun step 7 with the previous release tag.
 The stack passes only when every check holds.
 
 - [ ] Existing chats, custom models, and knowledge bases are present after any upgrade
-- [ ] A 10-question quiz prompt to the Network+ Tutor returns all 10 questions, fully formatted
+- [ ] A long-form prompt to the SOP Drafter (for example, a full SOP section) returns a complete, fully formatted answer without truncation
 - [ ] The same prompt works from a remote client over cellular data (Tailscale path, not LAN)
 - [ ] Port 3001 is not reachable from another device on the local network that is not on the tailnet
 - [ ] Port 3001 is not reachable from the public internet (no router port forward exists)
