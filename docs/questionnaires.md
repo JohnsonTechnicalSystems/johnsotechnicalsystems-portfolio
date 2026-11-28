@@ -35,7 +35,7 @@ Enterprise and mid-market buyers send a security questionnaire before they sign.
 
 </div>
 
-Longer than 100 questions, or a vendor portal? You get a fixed quote after I see it or after a [15-minute call](https://cal.com/lloyd-johnson).
+Longer than 100 questions, or a complex vendor portal? You get a fixed quote after I see it or after a [15-minute call](https://cal.com/lloyd-johnson).
 
 ## Sample
 
