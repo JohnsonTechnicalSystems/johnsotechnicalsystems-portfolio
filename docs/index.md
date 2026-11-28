@@ -16,10 +16,11 @@ Security questionnaires, starter policies, AI use policies, public security page
 [Book a 15-minute call](https://cal.com/lloyd-johnson){ .md-button }
 
 </div>
+<!-- Keep this excerpt identical to question 47 in sample-questionnaire.md. -->
 <div class="jts-sheet" markdown>
 <div class="jts-sheet__head" markdown>
 
-[Sample questionnaire](sample-questionnaire.md), question 47 of 50
+[Sample questionnaire](sample-questionnaire.md) for a fictional SaaS company, question 47 of 50
 
 </div>
 
