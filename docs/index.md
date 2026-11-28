@@ -93,7 +93,7 @@ Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) 
 
 - johnsontechnicalsystems LLC is a New York LLC with an EIN, so you get US invoicing and a W-9 on request.
 - I work from Manila, so a questionnaire sent at the end of your US workday is often back the next morning.
-- I trained in English and technical communication and am studying for CompTIA Security+. AI helps with first drafts, and I check every claim and control reference by hand before you see it.
+- I trained in English and technical communication. AI helps with first drafts, and I check every claim and control reference by hand before you see it.
 - Your documents stay private. I sign an NDA by default, keep one encrypted folder per client and delete it at the end of the job. See [how I handle your data](security.md).
 - The business is owned and run by a US military veteran.
 
