@@ -2,7 +2,11 @@
 
 ## Document status
 
-As of November 2026, SOP-001 and SOP-006 are Approved. SOP-002 to SOP-005 are Drafts.
+<!-- sop-status:start -->
+
+Current status: SOP-001 and SOP-006 are Approved. SOP-002, SOP-003, SOP-004 and SOP-005 are Drafts.
+
+<!-- sop-status:end -->
 
 | Status | Meaning |
 | --- | --- |

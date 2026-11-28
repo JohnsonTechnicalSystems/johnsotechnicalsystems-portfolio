@@ -27,6 +27,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check SOP status lists match the SOPs
+        run: python scripts/sync_status.py --check
+
       - name: Build site (fails on broken internal links)
         run: |
           pip install zensical==0.0.67

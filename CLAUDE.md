@@ -17,6 +17,11 @@ Covers the quarterly rule review required by the Security+ Frameworks milestone.
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
 
+## SOP status lists
+
+- Each SOP's Document Control table is the source of truth for its Version and Status.
+- After changing an SOP's Version or Status, or adding an SOP, run `python scripts/sync_status.py` and commit the result. It updates the README index, the Status column in `docs/samples.md`, and the status line in `docs/about/review-process.md`. CI fails if they are out of step.
+
 ## Pull requests
 
 - Make every change on a new branch. Open it as a pull request against `main` with the label `needs-review`.
