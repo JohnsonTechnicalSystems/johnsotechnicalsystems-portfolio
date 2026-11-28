@@ -31,7 +31,7 @@ Follow the steps in order. If a theory fails at step 3, return to step 2; if no 
 6. **Verify full system functionality** and, if applicable, implement preventive measures.
 7. **Document findings, actions, outcomes, and lessons learned.**
 
-Source: CompTIA Network+ N10-009 exam objectives, 5.1. Verify wording against the current objectives PDF before marking Reviewed.
+Source: this follows widely used structured troubleshooting practice, including the OSI-based top-down, bottom-up, and divide-and-conquer approaches. Before marking Reviewed, check each step against a published vendor troubleshooting reference and record that reference here.
 
 ## 4. Diagnostic Commands by Layer
 

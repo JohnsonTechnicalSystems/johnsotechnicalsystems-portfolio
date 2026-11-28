@@ -32,7 +32,7 @@ The status and version of each SOP come from the SOP's own Document Control tabl
 | --- | --- | --- | --- |
 | [SOP-001: Secure Remote Access to Windows Workstations](docs/sops/sop-001-secure-remote-access.md) | Approved | 1.0 | Microsoft Remote Desktop documentation, NIST SP 800-53, ISO/IEC 27001:2022, CIS Controls v8, AICPA SOC 2 |
 | [SOP-002: Local LLM Inference Stack: Operation & Troubleshooting](docs/sops/sop-002-local-llm-inference-stack.md) | Draft | 0.2 | Ollama, Open WebUI, and Tailscale documentation, NIST SP 800-53, ISO/IEC 27001:2022 |
-| [SOP-003: Network Troubleshooting Runbook](docs/sops/sop-003-network-troubleshooting-runbook.md) | Draft | 0.2 | CompTIA Network+ N10-009 troubleshooting methodology, NIST SP 800-53, ISO/IEC 27001:2022 |
+| [SOP-003: Network Troubleshooting Runbook](docs/sops/sop-003-network-troubleshooting-runbook.md) | Draft | 0.2 | Structured troubleshooting practice (OSI-based), NIST SP 800-53, ISO/IEC 27001:2022 |
 | [SOP-004: Cat6 Cable Termination and Testing (T568B)](docs/sops/sop-004-cat6-termination-and-testing.md) | Draft | 0.1 | ANSI/TIA-568, ANSI/TIA-606, NIST SP 800-53 |
 | [SOP-005: VLAN Creation and Segmentation on a Managed Switch](docs/sops/sop-005-vlan-creation-and-segmentation.md) | Draft | 0.2 | Cisco IOS documentation, NIST SP 800-53, AICPA SOC 2 |
 | [SOP-006: Endpoint Isolation During a Suspected Compromise](docs/sops/sop-006-endpoint-isolation.md) | Approved | 1.0 | NIST SP 800-61 Rev. 3, NIST SP 800-53, AICPA SOC 2 |
