@@ -51,25 +51,53 @@ Of the 30 questions, 7 are answered Yes, 12 Partial and 5 No; 5 are descriptive 
 
 An architecture firm with 19 staff and one office. We hold client project files, drawings and contracts, and HR and payroll records for our own staff. We do not hold payment card data or health records.
 
-**Status:** Info · **Evidence:** Company profile; data inventory · **Confirmed by:** Principal · **NIST CSF 2.0:** ID.AM-07
+<div class="jts-meta" markdown>
+
+- **Status** Info
+- **Evidence** Company profile; data inventory
+- **Confirmed by** Principal
+- **NIST CSF 2.0** ID.AM-07
+
+</div>
 
 **2. About how many records containing personal information do you hold?**
 
 HR and payroll records for about 60 current and former employees, including Social Security numbers. These are held by our payroll provider, with copies of onboarding forms in a restricted HR folder in Microsoft 365. We also hold business contact details for about 900 client and consultant contacts.
 
-**Status:** Info · **Evidence:** Payroll provider employee count; HR folder permissions report · **Confirmed by:** Office manager · **NIST CSF 2.0:** ID.AM-07
+<div class="jts-meta" markdown>
+
+- **Status** Info
+- **Evidence** Payroll provider employee count; HR folder permissions report
+- **Confirmed by** Office manager
+- **NIST CSF 2.0** ID.AM-07
+
+</div>
 
 **3. Do you accept, process or store payment card data?**
 
 No. Clients pay by check or bank transfer. We do not take card payments.
 
-**Status:** N/A · **Evidence:** Accounting software payment settings · **Confirmed by:** Bookkeeper · **NIST CSF 2.0:** None
+<div class="jts-meta" markdown>
+
+- **Status** N/A
+- **Evidence** Accounting software payment settings
+- **Confirmed by** Bookkeeper
+- **NIST CSF 2.0** None
+
+</div>
 
 **4. Who manages your IT and security?**
 
 Kestrel Ridge IT, a managed service provider, under a monthly contract that covers the help desk, device management, patching, backups, the firewall and security monitoring during business hours. We have no IT staff of our own. The office manager is the MSP's main contact.
 
-**Status:** Info · **Evidence:** MSP service agreement · **Confirmed by:** MSP; office manager · **NIST CSF 2.0:** GV.SC-04, GV.RR-02
+<div class="jts-meta" markdown>
+
+- **Status** Info
+- **Evidence** MSP service agreement
+- **Confirmed by** MSP; office manager
+- **NIST CSF 2.0** GV.SC-04, GV.RR-02
+
+</div>
 
 ### Email and sign-in
 
@@ -77,31 +105,66 @@ Kestrel Ridge IT, a managed service provider, under a monthly contract that cove
 
 Yes. A conditional access policy requires MFA for all 19 users, and older sign-in methods that cannot use MFA are blocked. All 19 users are registered for MFA.
 
-**Status:** Yes · **Evidence:** Conditional access policy export; MFA registration report, 12 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.AA-03
+<div class="jts-meta" markdown>
+
+- **Status** Yes
+- **Evidence** Conditional access policy export; MFA registration report, 12 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.AA-03
+
+</div>
 
 **6. Is MFA required for all remote access to your network?**
 
 Partly. The VPN requires a Microsoft 365 sign-in with MFA. However, the accounting software vendor's remote support tool is installed on the bookkeeper's PC and allows unattended access with a password only. See gap G1.
 
-**Status:** Partial · **Evidence:** VPN configuration; installed software report, 12 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.AA-03
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** VPN configuration; installed software report, 12 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.AA-03
+
+</div>
 
 **7. Is MFA required for all administrator accounts?**
 
 Yes. The MSP's technicians use separate, named administrator accounts with MFA. There are two global administrator accounts and one emergency account. The emergency account signs in with a FIDO2 security key, which a principal keeps offline with its password.
 
-**Status:** Yes · **Evidence:** Administrator role report, 12 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.AA-03, PR.AA-05
+<div class="jts-meta" markdown>
+
+- **Status** Yes
+- **Evidence** Administrator role report, 12 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.AA-03, PR.AA-05
+
+</div>
 
 **8. Is MFA required for cloud applications that hold financial or personal data?**
 
 Partly. The payroll provider enforces MFA for every user. The accounting software offers MFA, and it is turned on for two of its three users; one principal has not enrolled. See gap G2.
 
-**Status:** Partial · **Evidence:** Payroll security settings; accounting software user list, 13 November 2026 · **Confirmed by:** Bookkeeper; screenshots · **NIST CSF 2.0:** PR.AA-03
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** Payroll security settings; accounting software user list, 13 November 2026
+- **Confirmed by** Bookkeeper; screenshots
+- **NIST CSF 2.0** PR.AA-03
+
+</div>
 
 **9. Do you filter email for malicious links and attachments, and use SPF, DKIM and DMARC?**
 
 Partly. Link and attachment scanning are turned on in Microsoft 365. SPF and DKIM are set up for our domain. DMARC is published in monitoring mode only (p=none), so messages that fail the check are still delivered. See gap G5.
 
-**Status:** Partial · **Evidence:** Email security policy export; DNS records, 10 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** DE.CM-01
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** Email security policy export; DNS records, 10 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** DE.CM-01
+
+</div>
 
 ### Computers and updates
 
@@ -109,37 +172,79 @@ Partly. Link and attachment scanning are turned on in Microsoft 365. SPF and DKI
 
 Partly. EDR is installed on 20 of 22 devices (21 computers and the file server). It is missing from the plotter PC and from one CAD workstation, where it was removed during troubleshooting in August 2026 and not put back. See gap G3.
 
-**Status:** Partial · **Evidence:** EDR device list, 12 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** DE.CM-09
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** EDR device list, 12 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** DE.CM-09
+
+</div>
 
 **11. Are security alerts monitored around the clock?**
 
 Partly. The MSP reviews EDR alerts during business hours, Monday to Friday. Outside those hours the EDR tool isolates a device automatically on a high-severity alert, but no one reviews alerts until the next business day.
 
-**Status:** Partial · **Evidence:** MSP service agreement; EDR response policy · **Confirmed by:** MSP · **NIST CSF 2.0:** DE.CM-09, DE.AE-02
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** MSP service agreement; EDR response policy
+- **Confirmed by** MSP
+- **NIST CSF 2.0** DE.CM-09, DE.AE-02
+
+</div>
 
 **12. Are critical security updates installed within 30 days?**
 
 Partly. Windows and Microsoft 365 updates are installed by the MSP: in October 2026, all 21 supported Windows devices were updated within 30 days, 20 of them within 14 days. The plotter PC gets no Windows security updates; see question 13 and gap G4. Updates to the CAD software are installed by staff when prompted and are not tracked.
 
-**Status:** Partial · **Evidence:** Patch compliance report, October 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** ID.RA-01, PR.PS-02
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** Patch compliance report, October 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** ID.RA-01, PR.PS-02
+
+</div>
 
 **13. Is all of your software still supported by its vendor?**
 
 No. The plotter PC runs Windows 10, which reached end of support on October 14, 2025. It is not enrolled in extended security updates and it is on the staff network. See gap G4.
 
-**Status:** No · **Evidence:** Operating system inventory, 12 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.PS-02, ID.AM-08
+<div class="jts-meta" markdown>
+
+- **Status** No
+- **Evidence** Operating system inventory, 12 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.PS-02, ID.AM-08
+
+</div>
 
 **14. Are laptops encrypted?**
 
 Yes. Full-disk encryption (BitLocker) is turned on and reported as compliant on all 12 laptops, enforced through device management.
 
-**Status:** Yes · **Evidence:** Device compliance report, 12 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.DS-01
+<div class="jts-meta" markdown>
+
+- **Status** Yes
+- **Evidence** Device compliance report, 12 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.DS-01
+
+</div>
 
 **15. Do staff work without administrator rights on their computers?**
 
 Partly. 16 staff are standard users. The three CAD workstation users have local administrator rights so that they can install plug-ins.
 
-**Status:** Partial · **Evidence:** Local administrators report, 12 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.AA-05
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** Local administrators report, 12 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.AA-05
+
+</div>
 
 ### Backups
 
@@ -147,31 +252,66 @@ Partly. 16 staff are standard users. The three CAD workstation users have local 
 
 Yes. The file server is backed up every night to a storage device in the office and to a cloud backup service. Microsoft 365 mailboxes and files are backed up daily by a separate cloud backup service.
 
-**Status:** Yes · **Evidence:** Backup job history, October and November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.DS-11
+<div class="jts-meta" markdown>
+
+- **Status** Yes
+- **Evidence** Backup job history, October and November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.DS-11
+
+</div>
 
 **17. Is at least one backup copy offline or immutable, so that an attacker cannot change or delete it?**
 
 Partly. The cloud copy is separate from the office network and uses its own sign-in with MFA. Its immutability setting, which stops backups being deleted before a set date, is available but not turned on. See gap G6.
 
-**Status:** Partial · **Evidence:** Cloud backup console settings, 13 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.DS-11
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** Cloud backup console settings, 13 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.DS-11
+
+</div>
 
 **18. Are backups encrypted?**
 
 Yes. Both the office copy and the cloud copies are encrypted, and the MSP holds the encryption keys in its password manager.
 
-**Status:** Yes · **Evidence:** Backup configuration, 13 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.DS-11, PR.DS-01
+<div class="jts-meta" markdown>
+
+- **Status** Yes
+- **Evidence** Backup configuration, 13 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.DS-11, PR.DS-01
+
+</div>
 
 **19. Have you tested restoring from backup in the last 12 months?**
 
 Partly. Individual files are restored on request; the most recent was on 3 November 2026. The last full restore of the file server was tested in September 2025, which is 14 months ago. See gap G7.
 
-**Status:** Partial · **Evidence:** Restore tickets; September 2025 restore test record · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.DS-11
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** Restore tickets; September 2025 restore test record
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.DS-11
+
+</div>
 
 **20. How long would it take to recover your critical systems?**
 
 About two business days for the file server. This estimate is based on the September 2025 test, in which the data restore took 9 hours, plus time to rebuild the server. It is an estimate, not a guarantee. Email and Microsoft 365 files do not depend on the office.
 
-**Status:** Info · **Evidence:** September 2025 restore test record · **Confirmed by:** MSP · **NIST CSF 2.0:** RC.RP-01
+<div class="jts-meta" markdown>
+
+- **Status** Info
+- **Evidence** September 2025 restore test record
+- **Confirmed by** MSP
+- **NIST CSF 2.0** RC.RP-01
+
+</div>
 
 ### Network and remote access
 
@@ -179,19 +319,40 @@ About two business days for the file server. This estimate is based on the Septe
 
 Yes. The MSP manages the firewall. There are no inbound port forwards, and an external scan on 10 November 2026 found no remote desktop or other management ports open.
 
-**Status:** Yes · **Evidence:** Firewall rule export; external scan report, 10 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.IR-01
+<div class="jts-meta" markdown>
+
+- **Status** Yes
+- **Evidence** Firewall rule export; external scan report, 10 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.IR-01
+
+</div>
 
 **22. Is guest Wi-Fi separated from your business network?**
 
 Yes. Guests use a separate network that cannot reach staff devices or the file server.
 
-**Status:** Yes · **Evidence:** Wireless configuration export · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.IR-01
+<div class="jts-meta" markdown>
+
+- **Status** Yes
+- **Evidence** Wireless configuration export
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.IR-01
+
+</div>
 
 **23. Is your internal network segmented, so that servers are separated from staff computers?**
 
 No. The file server, staff computers, the plotter PC and the printers share one network.
 
-**Status:** No · **Evidence:** Network diagram, November 2026 · **Confirmed by:** MSP · **NIST CSF 2.0:** PR.IR-01
+<div class="jts-meta" markdown>
+
+- **Status** No
+- **Evidence** Network diagram, November 2026
+- **Confirmed by** MSP
+- **NIST CSF 2.0** PR.IR-01
+
+</div>
 
 ### People and payments
 
@@ -199,19 +360,40 @@ No. The file server, staff computers, the plotter PC and the printers share one 
 
 Partly. Training is assigned every year through the MSP's training platform, and phishing simulations run every quarter. 17 of 19 staff have completed the 2026 training; two are outstanding. See gap G8.
 
-**Status:** Partial · **Evidence:** Training completion report, 14 November 2026 · **Confirmed by:** MSP report · **NIST CSF 2.0:** PR.AT-01
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** Training completion report, 14 November 2026
+- **Confirmed by** MSP report
+- **NIST CSF 2.0** PR.AT-01
+
+</div>
 
 **25. Do you confirm requests to change bank details or to send money by calling a known number?**
 
 Partly. The bookkeeper does call back on a number already on file, but the practice is not written down and no one else is trained to do it when she is away. See gap G9.
 
-**Status:** Partial · **Evidence:** Call with the bookkeeper, 13 November 2026 · **Confirmed by:** Bookkeeper · **NIST CSF 2.0:** None
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** Call with the bookkeeper, 13 November 2026
+- **Confirmed by** Bookkeeper
+- **NIST CSF 2.0** None
+
+</div>
 
 **26. Do payments above a set amount need approval from a second person?**
 
 No. The bookkeeper can create and release bank transfers of any amount alone. See gap G9.
 
-**Status:** No · **Evidence:** Bank portal user roles, 13 November 2026 · **Confirmed by:** Bookkeeper; screenshot · **NIST CSF 2.0:** PR.AA-05
+<div class="jts-meta" markdown>
+
+- **Status** No
+- **Evidence** Bank portal user roles, 13 November 2026
+- **Confirmed by** Bookkeeper; screenshot
+- **NIST CSF 2.0** PR.AA-05
+
+</div>
 
 ### Incident response and vendors
 
@@ -219,19 +401,40 @@ No. The bookkeeper can create and release bank transfers of any amount alone. Se
 
 No. There was no written plan at the time of this review. A one-page plan was drafted as part of this pack and is included below. The answer becomes Yes once the principals adopt it and staff have been told where it is. See gap G10.
 
-**Status:** No · **Evidence:** Call with the principal, 13 November 2026 · **Confirmed by:** Principal · **NIST CSF 2.0:** ID.IM-04
+<div class="jts-meta" markdown>
+
+- **Status** No
+- **Evidence** Call with the principal, 13 November 2026
+- **Confirmed by** Principal
+- **NIST CSF 2.0** ID.IM-04
+
+</div>
 
 **28. Have you tested your incident response plan in the last 12 months?**
 
 No. There has been no plan to test. A one-hour walk-through with the MSP is proposed under gap G10.
 
-**Status:** No · **Evidence:** Call with the principal, 13 November 2026 · **Confirmed by:** Principal · **NIST CSF 2.0:** ID.IM-02
+<div class="jts-meta" markdown>
+
+- **Status** No
+- **Evidence** Call with the principal, 13 November 2026
+- **Confirmed by** Principal
+- **NIST CSF 2.0** ID.IM-02
+
+</div>
 
 **29. Do your contracts with key vendors include security requirements, and do you review those vendors?**
 
 Partly. The MSP agreement includes confidentiality terms and a duty to report security incidents to us. We have not reviewed the security reports of the payroll provider or the accounting software vendor.
 
-**Status:** Partial · **Evidence:** MSP service agreement · **Confirmed by:** Office manager · **NIST CSF 2.0:** GV.SC-05, GV.SC-07
+<div class="jts-meta" markdown>
+
+- **Status** Partial
+- **Evidence** MSP service agreement
+- **Confirmed by** Office manager
+- **NIST CSF 2.0** GV.SC-05, GV.SC-07
+
+</div>
 
 ### History
 
@@ -239,7 +442,14 @@ Partly. The MSP agreement includes confidentiality terms and a duty to report se
 
 Yes, one incident. In March 2025 a staff member's mailbox was accessed after a phishing email, before MFA was required for every account. It was found two days later through an alert on a new mail-forwarding rule. The MSP reset the account, removed the rule and reviewed the sign-in logs, and found no access beyond that mailbox. No claim was made. The broker was told in April 2025. MFA has been required for all accounts since April 2025.
 
-**Status:** Info · **Evidence:** MSP incident ticket, March 2025; email to the broker, April 2025 · **Confirmed by:** MSP ticket; principal · **NIST CSF 2.0:** RS.MA-01, RS.CO-02
+<div class="jts-meta" markdown>
+
+- **Status** Info
+- **Evidence** MSP incident ticket, March 2025; email to the broker, April 2025
+- **Confirmed by** MSP ticket; principal
+- **NIST CSF 2.0** RS.MA-01, RS.CO-02
+
+</div>
 
 ## 4. Evidence summary
 

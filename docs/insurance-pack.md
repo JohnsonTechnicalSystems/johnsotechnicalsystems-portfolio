@@ -39,7 +39,7 @@ Delivered unbranded, in your format and under your name. I never contact your cl
 
 ## Sample
 
-See a [sample renewal pack](sample-insurance-renewal-pack.md) for a fictional 19-person architecture firm: 30 application questions answered from the facts, the evidence behind each answer, a gap list and a one-page incident response plan. It comes as a web page, a PDF and a spreadsheet.
+See a [sample renewal pack](sample-insurance-renewal-pack.md) for a fictional architecture firm of 19 people. It has 30 application questions answered from the facts, the evidence behind each answer, a gap list and an incident response plan of one page. It comes as a web page, a PDF and a spreadsheet.
 
 ## What this is not
 
