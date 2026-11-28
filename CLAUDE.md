@@ -16,3 +16,8 @@ Covers the quarterly rule review required by the Security+ Frameworks milestone.
 
 Co-Authored-By: Claude <noreply@anthropic.com>
 ```
+
+## Pull requests
+
+- Open every docs change as a pull request with the label `needs-review`. Never merge it yourself.
+- The review loop on Lloyd's PC then reviews it and swaps the label to `ai-reviewed`. Lloyd merges.
