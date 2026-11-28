@@ -116,7 +116,7 @@
 }
 @media screen and (min-width: 60em) {
   .jts-hero {
-    grid-template-columns: minmax(0, 11fr) minmax(0, 9fr);
+    grid-template-columns: minmax(0, 13fr) minmax(0, 8fr);
     gap: 3rem;
     padding: 3rem 0 3.5rem;
   }
@@ -141,10 +141,7 @@
   border-radius: 3px;
   font-size: 0.72rem;
   line-height: 1.55;
-  box-shadow:
-    5px 5px 0 -1px var(--jts-paper), 5px 5px 0 0 var(--jts-rule),
-    10px 10px 0 -1px var(--jts-paper), 10px 10px 0 0 var(--jts-rule),
-    0 18px 40px -18px rgba(27, 33, 64, 0.35);
+  box-shadow: 0 18px 40px -18px rgba(27, 33, 64, 0.35);
 }
 .md-typeset .jts-sheet > p,
 .md-typeset .jts-sheet > ul {

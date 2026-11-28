@@ -10,28 +10,27 @@ hide:
 
 # Pass your customers' security reviews and close the deal
 
-Security questionnaires, starter policies, AI use policies, public security pages and FTC Safeguards Rule WISPs for small firms such as startups, small finance firms, MSPs and vCISO partners. Done in days, written by a human who checks every claim.
+Written security documentation for small firms, done in days by a human who checks every claim.
 
 [Get a questionnaire handled](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }
 [Book a 15-minute call](https://cal.com/lloyd-johnson){ .md-button }
 
 </div>
-<!-- Keep this excerpt identical to question 47 in sample-questionnaire.md. -->
+<!-- Keep this excerpt identical to question 19 in sample-questionnaire.md. The evidence row is left out to keep the sheet short. -->
 <div class="jts-sheet" markdown>
 <div class="jts-sheet__head" markdown>
 
-[Sample questionnaire](sample-questionnaire.md) for a fictional SaaS company, question 47 of 50
+[Sample questionnaire](sample-questionnaire.md) for a fictional SaaS company, question 19 of 50
 
 </div>
 
-**Do you have a business continuity and disaster recovery plan, and is it tested?**
+**How do your customers' users sign in to the product?**
 
-Partly. The written plan sets a recovery time objective (RTO) of 8 hours and a recovery point objective (RPO) of 1 hour. In August 2026 we restored the production database from backup to a new instance in 47 minutes. A full failover to the second region has not been tested yet; that test is planned for Q2 2027.
+With email and password plus optional authenticator-app MFA, or with Sign in with Google. SAML single sign-on and admin-enforced MFA are planned for Q1 2027.
 
 - **Status** *Partial*
-- **Evidence available** Business Continuity Plan; restore test record
-- **SOC 2** `A1.3` `CC9.1`
-- **NIST CSF 2.0** `ID.IM-04` `PR.DS-11`
+- **SOC 2** `CC6.1`
+- **NIST CSF 2.0** `PR.AA-03`
 
 </div>
 </div>
