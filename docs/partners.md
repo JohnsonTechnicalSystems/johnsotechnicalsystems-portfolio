@@ -11,23 +11,31 @@ For Vanta and Drata partner agencies, fractional CISOs and vCISOs, small MSPs an
 
 ## What I take on
 
-- **Policy adaptation**: tailoring your policy templates to each client's size, stack and real practices
-- **Procedures**: standard operating procedures and runbooks that back the policies
-- **Evidence notes**: short write-ups explaining what each piece of evidence shows and which control it supports
-- **Questionnaire first drafts**: customer security questionnaires drafted from the client's facts, for your review
-- **Insurance and vendor questionnaires** for MSP clients: [cyber insurance renewal packs](insurance-pack.md) and vendor risk forms
-- **WISP packs** for your tax, mortgage and small finance clients under the [FTC Safeguards Rule](wisp.md)
+<div class="jts-ledger" markdown>
+
+- **Policy adaptation** Tailoring your policy templates to each client's size, stack and real practices
+- **Procedures** Standard operating procedures and runbooks that back the policies
+- **Evidence notes** Short notes explaining what each piece of evidence shows and which control it supports
+- **Questionnaire first drafts** Customer security questionnaires drafted from the client's facts, for your review
+- **Insurance and vendor questionnaires** For MSP clients, [cyber insurance renewal packs](insurance-pack.md) and vendor risk forms
+- **WISP packs** For your tax, mortgage and small finance clients under the [FTC Safeguards Rule](wisp.md)
+
+</div>
 
 ## How it works
 
-- **Turnaround:** 24 to 48 hours for most documents, often overnight for US time zones (I work from Manila).
-- **Unbranded delivery:** work goes out in your templates and under your name. Your clients don't hear from me.
-- **No poaching:** I never approach your clients directly, and I'll put that in writing.
-- **Paperwork:** subcontractor agreement and mutual NDA before any client data is shared. Veteran-owned US LLC with an EIN; W-9 on request.
+<div class="jts-ledger" markdown>
+
+- **Turnaround** 24 to 48 hours for most documents, often overnight for US time zones because I work from Manila.
+- **Unbranded delivery** Work goes out in your templates and under your name. Your clients don't hear from me.
+- **No poaching** I never approach your clients directly, and I'll put that in writing.
+- **Paperwork** A subcontractor agreement and mutual NDA come before any client data is shared. The business is a veteran-owned US LLC with an EIN, and a W-9 is available on request.
+
+</div>
 
 ## Rates
 
-Partner pricing is on request. [Ask for the partner sheet](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20sheet%20request) for hourly and per-deliverable rates.
+Partner pricing is on request. [Ask for the partner sheet](mailto:hello@johnsontechnicalsystems.com?subject=Partner%20sheet%20request) for rates by the hour and by deliverable.
 
 Your **first job is a paid trial at 25% off**, so you can judge the work before committing.
 
