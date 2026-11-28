@@ -283,3 +283,34 @@
   font-weight: 600;
   margin-top: 3rem;
 }
+
+/* "Other services": the link list runs across the page on wide screens */
+@media screen and (min-width: 60em) {
+  .md-typeset:has(.jts-hero) > h2#other-services + p + ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 2rem;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+  }
+  .md-typeset:has(.jts-hero) > h2#other-services + p + ul > li { margin: 0; }
+}
+
+/* Phone width: each package becomes a stacked block instead of three narrow columns */
+@media screen and (max-width: 600px) {
+  .md-typeset:has(.jts-hero) table:not([class]) thead { display: none; }
+  .md-typeset:has(.jts-hero) table:not([class]),
+  .md-typeset:has(.jts-hero) table:not([class]) tbody,
+  .md-typeset:has(.jts-hero) table:not([class]) tr,
+  .md-typeset:has(.jts-hero) table:not([class]) td { display: block; }
+  .md-typeset:has(.jts-hero) table:not([class]) tr {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--jts-rule);
+  }
+  .md-typeset:has(.jts-hero) table:not([class]) td {
+    border: 0;
+    padding: 0.1rem 0;
+  }
+  .md-typeset .jts-sheet > ul > li { padding-left: 8.4rem; }
+}

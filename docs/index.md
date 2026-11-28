@@ -86,8 +86,8 @@ Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) 
 
 ## Proof
 
-- The [sample security questionnaire](sample-questionnaire.md) answers 50 questions for a fictional SaaS company at seed stage. Each answer gives its status, the evidence behind it and the related framework references, which were checked against the source documents.
-- The [sample procedures](samples.md) are six standard operating procedures written to one template and mapped to recognised security frameworks. They are illustrative examples, not client work.
+- The [sample security questionnaire](sample-questionnaire.md) answers 50 questions for a fictional SaaS company at seed stage. Each answer gives its status, the evidence behind it and the related SOC 2 and NIST CSF 2.0 references, all checked against the source documents.
+- The [sample procedures](samples.md) are six standard operating procedures written to one template and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2. They are illustrative examples, not client work.
 
 ## Why work with me
 
@@ -99,7 +99,13 @@ Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) 
 
 ## Other services
 
-I also offer [partner overflow work](partners.md), [WISP packs for tax and finance firms](wisp.md), [cyber insurance renewal packs](insurance-pack.md), an [AI use policy](ai-policy.md) service and [automation for veterinary clinics](automation.md).
+I also take on the work below.
+
+- [Partner overflow work](partners.md)
+- [WISP packs for tax and finance firms](wisp.md)
+- [Cyber insurance renewal packs](insurance-pack.md)
+- [AI use policy](ai-policy.md)
+- [Automation for veterinary clinics](automation.md)
 
 ## Contact
 
