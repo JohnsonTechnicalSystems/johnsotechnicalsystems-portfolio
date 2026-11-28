@@ -15,7 +15,7 @@ description: "A cyber insurance renewal pack for a fictional 19-person firm: 30 
 - The questions were written by Johnson Technical Systems in the style of common cyber insurance applications. They are not copied from any insurer's form. On real work, the answers are written against the insurer's own form, question by question.
 - An answer is Yes only when the control is in place and there is evidence of it on the date shown. A control that is planned is answered No or Partial until it is done.
 - The NIST CSF 2.0 references show where each topic sits in the framework, for readers who use it. Insurers do not ask for them. They are not an assessment.
-- Every NIST CSF identifier, and the Windows 10 end-of-support date, was checked against the sources listed below in November 2026.
+- Every NIST CSF identifier, and the Windows 10 end-of-support and extended security update facts, were checked against the sources listed below in November 2026.
 - This is preparation help. It is not legal or insurance advice, and it does not guarantee coverage or a premium. The business reviews and signs its own application and is responsible for its answers.
 
 ## 1. Business profile
@@ -33,7 +33,7 @@ This is the intake summary the answers are written from.
 
 ## 2. Summary for the principals
 
-Of the 30 questions, 6 are answered Yes, 13 Partial and 5 No; 5 are descriptive and 1 does not apply. Ten gaps are listed in section 5. Six are rated High. Four of those (G1, G2, G6 and G9) can be closed before the application is due on 15 January 2027 without new spending. The plotter PC (G4) needs a decision on cost, and G3 can only be closed in part until that decision is made. Five weaker answers are not listed as gaps for this renewal; see the note under section 5. Each answer in this pack describes the position in November 2026. Before signing, the answers must be updated to the position on that day: a gap that has been closed, with evidence, becomes Yes, and a gap that is still open stays as it is.
+Of the 30 questions, 6 are answered Yes, 13 Partial and 5 No; 5 are descriptive and 1 does not apply. Ten gaps are listed in section 5. Six are rated High. Four of those (G1, G2, G6 and G9) can be closed before the application is due on 15 January 2027. G1 and G2 need no new spending. G6 and G9 are expected to need little or none, once the backup providers and the bank confirm their prices. The plotter PC (G4) needs a decision on cost, and G3 can only be closed in part until that decision is made. Five weaker answers are not listed as gaps for this renewal; see the note under section 5. Each answer in this pack describes the position in November 2026. Before signing, the answers must be updated to the position on that day: a gap that has been closed, with evidence, becomes Yes, and a gap that is still open stays as it is.
 
 ## 3. Application answers
 
@@ -129,7 +129,7 @@ Partly. The VPN requires a Microsoft 365 sign-in with MFA. However, the accounti
 
 **7. Is MFA required for all administrator accounts?**
 
-Partly. In Microsoft 365, every administrator account requires MFA. The MSP's technicians use separate, named administrator accounts, and there are two global administrator accounts and one emergency account. The emergency account signs in with either of two FIDO2 security keys. Each principal keeps one offline, so the account can still be used if one principal cannot be reached. The MSP's administrator sign-ins to its remote management and EDR consoles, the firewall and both cloud backup consoles also require MFA. The exception is the accounting software: the principal who has not enrolled in MFA is one of its two administrators. See question 8 and gap G2. Local administrator rights on the three CAD workstations are covered in question 15.
+Partly. In Microsoft 365, every administrator account requires MFA. The MSP's technicians use separate, named administrator accounts, and there are two global administrator accounts and one emergency account. The emergency account signs in with either of two FIDO2 security keys. Each principal keeps one offline, sealed with its PIN, so the account can still be used if one principal cannot be reached. The MSP's administrator sign-ins to its remote management and EDR consoles, the firewall and both cloud backup consoles also require MFA, and the payroll provider requires it for every user, its administrators included. The exception is the accounting software: the principal who has not enrolled in MFA is one of its two administrators. See question 8 and gap G2. Local administrator rights on the three CAD workstations are covered in question 15.
 
 <div class="jts-meta" markdown>
 
@@ -162,7 +162,7 @@ Partly. Link and attachment scanning are turned on in Microsoft 365. SPF and DKI
 - **Status** Partial
 - **Evidence** Email security policy export; DNS records, 10 November 2026
 - **Confirmed by** MSP report
-- **NIST CSF 2.0** DE.CM-01
+- **NIST CSF 2.0** DE.CM-09, PR.DS-02
 
 </div>
 
@@ -479,14 +479,14 @@ Controls the application asks about that are not fully in place. Deal with them 
 | --- | --- | --- | --- | --- | --- | --- |
 | G1 | Remote support tool on the bookkeeper's PC allows unattended access with a password only | 6 | High | Remove the tool, or set it to attended sessions only, started by the bookkeeper | MSP | 4 December 2026 |
 | G2 | One principal, who is an administrator of the accounting software, has not turned on MFA in it | 7, 8 | High | Enrol the principal; then make MFA mandatory for all users in the software's settings | Principal; bookkeeper | 4 December 2026 |
-| G3 | EDR missing from the plotter PC and one CAD workstation | 10 | High | Reinstall on the CAD workstation by 4 December. For the plotter PC, see G4: replacing it with a supported PC that has EDR closes this gap; isolating it leaves question 10 at Partial | MSP | 4 December 2026 (CAD workstation) |
-| G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 12, 13 | High | Replace the PC, or move it to its own network that can reach only the plotter and the print queue, with no access to the staff network or the internet (the MSP first confirms the firewall and switch can do this). Isolation reduces the risk but does not close the gap: question 13 stays No until the PC is replaced or enrolled in Microsoft's paid extended security updates, which are temporary: they run for at most three years after end of support. Question 12 stays Partial after that too, because CAD software updates are not tracked (see the note below) | MSP; principal to approve cost | 8 January 2027 |
-| G5 | DMARC is in monitoring mode only | 9 | Medium | Review the DMARC reports for two weeks and confirm that every service that sends mail for the firm (accounting, payroll, marketing) passes. Then move to quarantine and later to reject. If legitimate mail is blocked, return to p=none and fix that sender | MSP | 8 January 2027 |
-| G6 | Immutability is not turned on in either cloud backup service, and the firm holds no copy of the backup encryption keys | 17, 18 | High | Before turning it on, confirm with each provider whether it changes the price; it cannot be undone for the period set. Turn on immutability with a 30-day period in both services and confirm in each console. Put sealed copies of the encryption keys in the office safe and at a principal's home, and use them in the G7 restore test | MSP; principal | 4 December 2026 |
+| G3 | EDR missing from the plotter PC and one CAD workstation | 10 | High | Reinstall on the CAD workstation by 4 December. For the plotter PC, see G4: replacing it with a supported PC that has EDR closes this gap; isolating it leaves question 10 at Partial. If the PC is kept on extended security updates instead, install EDR on it if the EDR vendor still supports Windows 10 | MSP | 4 December 2026 (CAD workstation) |
+| G4 | Plotter PC runs Windows 10, which is out of support, on the staff network | 12, 13 | High | Before replacing the PC, confirm the plotter has a Windows 11 driver. Replace the PC, or move it to its own network that can reach only the plotter and the print queue, with no other access to the staff network and no internet access (the MSP first confirms the firewall and switch can do this, and where the print queue runs). Isolation reduces the risk but does not close the gap: question 13 stays No until the PC is replaced or enrolled in Microsoft's paid extended security updates. These are temporary and limited: they need Windows 10 version 22H2, must be paid from the first year even when bought later, cover only critical and important security fixes, and end in October 2028. If they are chosen, answer question 13 Yes and say that the PC is on extended security updates until October 2028. Question 12 stays Partial after that too, because CAD software updates are not tracked (see the note below) | MSP; principal to approve cost | 8 January 2027 |
+| G5 | DMARC is in monitoring mode only | 9 | Medium | First confirm that the DMARC record sends its reports to a mailbox the MSP reads. Review the DMARC reports for two weeks and confirm that every service that sends mail for the firm (accounting, payroll, marketing) passes. Then move to quarantine for part of the mail (with the pct= setting), then all of it, and later to reject. If legitimate mail is blocked, return to p=none and fix that sender | MSP | 8 January 2027 |
+| G6 | Immutability is not turned on in either cloud backup service, and the firm holds no copy of the backup encryption keys | 17, 18 | High | Before turning it on, confirm with each provider whether it changes the price; it cannot be undone for the period set. Turn on immutability with a 30-day period in both services and confirm in each console. Give the firm the encryption keys and a sign-in of its own, with MFA, to both cloud backup consoles and the office storage device. Use them in the G7 restore test, then seal copies in the office safe and at a principal's home | MSP; principal | 4 December 2026 (immutability); 18 December 2026 (keys and sign-ins) |
 | G7 | No full restore test in the last 12 months | 19, 20 | Medium | Restore the file server to a test machine, and one Microsoft 365 mailbox and one shared folder to a test account. Time each and record the results | MSP | 18 December 2026 |
 | G8 | Two staff have not completed the 2026 training | 24 | Low | Complete the training | Office manager | 4 December 2026 |
-| G9 | Call-back check is unwritten, and one person can release any payment alone | 25, 26 | High | Write a half-page payment procedure and train a second person to make the call-back check. Turn on dual approval in the bank portal above an amount the principals choose, with both principals set up as approvers | Principals; bookkeeper | 18 December 2026 |
-| G10 | No adopted or tested incident response plan | 27, 28 | Medium | Principals adopt the one-page plan below; fill in the contact numbers; tell staff where the plan is and how to report an incident; hold a one-hour walk-through with the MSP | Principals; MSP | 18 December 2026 |
+| G9 | Call-back check is unwritten, and one person can release any payment alone | 25, 26 | High | Write a half-page payment procedure and train a second person to make the call-back check. Confirm with the bank that the firm's account plan offers dual approval and whether it costs extra. Turn on dual approval in the bank portal above an amount the principals choose, with both principals set up as approvers | Principals; bookkeeper | 18 December 2026 |
+| G10 | No adopted or tested incident response plan | 27, 28 | Medium | Principals adopt the one-page plan below; fill in the contact numbers; tell staff where the plan is and how to report an incident, and have each of them save the incident lead, deputy and MSP numbers on their phone; hold a one-hour walk-through with the MSP | Principals; MSP | 18 December 2026 |
 
 **Not listed as gaps for this renewal:** question 11 (no alert review outside business hours), question 12 (CAD software updates not tracked), question 15 (local administrator rights on the three CAD workstations), question 23 (no network segmentation) and question 29 (payroll and accounting vendors not reviewed). Each needs budget or a longer project. They were raised with the principals and the MSP for after the renewal, and the answers stay as written until they are fixed.
 
@@ -510,7 +510,7 @@ Drafted for adoption by the principals (gap G10). Names and numbers are complete
 6. **Work out what was affected.** With the MSP and the insurer's advisers, list the systems, the accounts and the kinds of information involved, and keep a dated log of every action.
 7. **Notify.** Counsel appointed through the insurer advises whether clients, employees or regulators must be told, and by when. No one else sends notices or speaks to the press.
 8. **Recover.** The MSP restores from a backup taken before the incident, after checking that the backup is clean, and confirms that the way in has been closed.
-9. **Review within two weeks.** Record what happened, what worked and what did not, and update this plan and the gap list.
+9. **Review within two weeks.** Record what happened, what worked and what did not, and update this plan and the gap list. Review the plan and hold a walk-through with the MSP at least once a year, even if there has been no incident.
 
 A printed copy is kept in the office safe and at each principal's home, because the plan may be needed when the computers are not working.
 
@@ -531,10 +531,10 @@ A printed copy is kept in the office safe and at each principal's home, because 
 | PR.AA-05 | Access permissions are managed with least privilege and separation of duties |
 | PR.AT-01 | Personnel are given awareness and training |
 | PR.DS-01 | Data-at-rest is protected |
+| PR.DS-02 | Data-in-transit is protected |
 | PR.DS-11 | Backups of data are created, protected, maintained and tested |
 | PR.PS-02 | Software is maintained, replaced and removed commensurate with risk |
 | PR.IR-01 | Networks and environments are protected from unauthorized logical access and usage |
-| DE.CM-01 | Networks and network services are monitored to find potentially adverse events |
 | DE.CM-09 | Computing hardware and software are monitored to find potentially adverse events |
 | DE.AE-02 | Potentially adverse events are analyzed |
 | RS.MA-01 | The incident response plan is executed once an incident is declared |
