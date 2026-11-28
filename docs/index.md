@@ -6,6 +6,7 @@ hide:
 ---
 
 <div class="jts-hero" markdown>
+<div class="jts-hero__pitch" markdown>
 
 # Pass your customers' security reviews and close the deal
 
@@ -14,6 +15,24 @@ Security questionnaires, starter policies, AI use policies, public security page
 [Get a questionnaire handled](mailto:hello@johnsontechnicalsystems.com?subject=Security%20questionnaire){ .md-button .md-button--primary }
 [Book a 15-minute call](https://cal.com/lloyd-johnson){ .md-button }
 
+</div>
+<div class="jts-sheet" markdown>
+<div class="jts-sheet__head" markdown>
+
+[Sample questionnaire](sample-questionnaire.md), question 47 of 50
+
+</div>
+
+**Do you have a business continuity and disaster recovery plan, and is it tested?**
+
+Partly. The written plan sets a recovery time objective (RTO) of 8 hours and a recovery point objective (RPO) of 1 hour. In August 2026 we restored the production database from backup to a new instance in 47 minutes. A full failover to the second region has not been tested yet; that test is planned for Q2 2027.
+
+- **Status** *Partial*
+- **Evidence available** Business Continuity Plan; restore test record
+- **SOC 2** `A1.3` `CC9.1`
+- **NIST CSF 2.0** `ID.IM-04` `PR.DS-11`
+
+</div>
 </div>
 
 ## Who it's for

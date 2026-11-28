@@ -54,8 +54,10 @@
   font-size: 1.1rem;
   max-width: 40rem;
 }
-.jts-hero .md-button {
+.md-typeset .jts-hero .md-button {
   margin: 0.4rem 0.5rem 0.4rem 0;
+  padding-left: 1.4em;
+  padding-right: 1.4em;
 }
 @media screen and (max-width: 600px) {
   .jts-hero h1 { font-size: 1.7rem; }
@@ -81,4 +83,203 @@
 /* Print: hide site chrome so a page prints as a clean document */
 @media print {
   .md-header, .md-tabs, .md-sidebar, .md-footer, .md-top { display: none !important; }
+}
+
+/* ---------- Homepage character ----------
+   The homepage opens on a real answered question from the sample questionnaire,
+   set as a sheet of paper on a faint spreadsheet grid. Colours follow the theme. */
+:root {
+  --jts-ink: #1b2140;
+  --jts-rule: #d5d9e6;
+  --jts-tint: #f2f4f9;
+  --jts-paper: #ffffff;
+  --jts-grid: rgba(64, 81, 181, 0.10);
+  --jts-partial-bg: #fdf1d7;
+  --jts-partial-fg: #7a4e00;
+}
+[data-md-color-scheme="slate"] {
+  --jts-ink: #e6e8f2;
+  --jts-rule: #2c3144;
+  --jts-tint: #151823;
+  --jts-paper: #181b27;
+  --jts-grid: rgba(150, 165, 255, 0.09);
+  --jts-partial-bg: #3d3014;
+  --jts-partial-fg: #f2cf85;
+}
+
+/* Spreadsheet grid behind the top of the homepage, fading out down the page */
+.md-main:has(.jts-hero) {
+  background-image:
+    linear-gradient(to bottom, transparent 0, var(--md-default-bg-color) 34rem),
+    linear-gradient(to right, var(--jts-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--jts-grid) 1px, transparent 1px);
+  background-size: 100% 100%, 7rem 1.9rem, 7rem 1.9rem;
+  background-repeat: no-repeat, repeat, repeat;
+}
+
+.jts-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  padding: 2rem 0 2.5rem;
+  align-items: center;
+}
+@media screen and (min-width: 60em) {
+  .jts-hero {
+    grid-template-columns: minmax(0, 11fr) minmax(0, 9fr);
+    gap: 3rem;
+    padding: 3rem 0 3.5rem;
+  }
+}
+.md-typeset .jts-hero h1 {
+  color: var(--jts-ink);
+  font-size: 2.5rem;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  margin: 0 0 1rem;
+}
+@media screen and (max-width: 600px) {
+  .md-typeset .jts-hero h1 { font-size: 1.8rem; }
+}
+
+/* The answered question, as a sheet from a longer document */
+.md-typeset .jts-sheet {
+  position: relative;
+  background: var(--jts-paper);
+  border: 1px solid var(--jts-rule);
+  border-radius: 3px;
+  font-size: 0.72rem;
+  line-height: 1.55;
+  box-shadow:
+    5px 5px 0 -1px var(--jts-paper), 5px 5px 0 0 var(--jts-rule),
+    10px 10px 0 -1px var(--jts-paper), 10px 10px 0 0 var(--jts-rule),
+    0 18px 40px -18px rgba(27, 33, 64, 0.35);
+}
+.md-typeset .jts-sheet > p,
+.md-typeset .jts-sheet > ul {
+  font-size: inherit;
+  max-width: none;
+  margin: 0.8rem 1.1rem;
+}
+.md-typeset .jts-sheet > p:first-of-type {
+  color: var(--jts-ink);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.md-typeset .jts-sheet__head {
+  background: var(--jts-tint);
+  border-bottom: 1px solid var(--jts-rule);
+  padding: 0.45rem 1.1rem;
+}
+.md-typeset .jts-sheet__head p {
+  font-size: 0.68rem;
+  margin: 0;
+  max-width: none;
+}
+.md-typeset .jts-sheet > ul {
+  list-style: none;
+  border-top: 1px solid var(--jts-rule);
+  margin: 1rem 0 0;
+  padding: 0;
+}
+.md-typeset .jts-sheet > ul > li {
+  position: relative;
+  margin: 0;
+  padding: 0.4rem 1.1rem 0.4rem 10.2rem;
+  border-bottom: 1px solid var(--jts-rule);
+}
+.md-typeset .jts-sheet > ul > li:last-child { border-bottom: 0; }
+.md-typeset .jts-sheet > ul > li > strong {
+  position: absolute;
+  left: 1.1rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset .jts-sheet em {
+  font-style: normal;
+  font-weight: 600;
+  background: var(--jts-partial-bg);
+  color: var(--jts-partial-fg);
+  border-radius: 2px;
+  padding: 0 0.45rem;
+}
+.md-typeset .jts-sheet code {
+  background: none;
+  padding: 0;
+  margin-right: 0.6rem;
+  font-size: 0.95em;
+  color: var(--jts-ink);
+}
+
+/* "Who it's for": three ruled columns instead of boxed cards */
+.md-typeset:has(.jts-hero) .grid.cards > ul > li {
+  border: 0;
+  border-top: 3px solid var(--md-primary-fg-color);
+  border-radius: 0;
+  padding: 0.9rem 0 0;
+  box-shadow: none;
+}
+.md-typeset:has(.jts-hero) .grid.cards > ul > li:hover {
+  border-color: var(--md-primary-fg-color);
+  box-shadow: none;
+}
+.md-typeset:has(.jts-hero) .grid.cards > ul > li > hr { display: none; }
+.md-typeset:has(.jts-hero) .grid.cards { gap: 2rem; }
+
+/* "How it works": the three steps side by side, with large numerals */
+.md-typeset:has(.jts-hero) > ol {
+  list-style: none;
+  counter-reset: jts-step;
+  display: grid;
+  gap: 1.5rem 2rem;
+  margin-left: 0;
+  padding: 0;
+}
+@media screen and (min-width: 60em) {
+  .md-typeset:has(.jts-hero) > ol { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.md-typeset:has(.jts-hero) > ol > li {
+  counter-increment: jts-step;
+  margin: 0;
+}
+.md-typeset:has(.jts-hero) > ol > li::before {
+  content: counter(jts-step);
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 0.5rem;
+}
+.md-typeset:has(.jts-hero) > ol > li > strong:first-child { display: block; }
+
+/* Packages: a full-width price list */
+.md-typeset:has(.jts-hero) .md-typeset__table { display: block; }
+.md-typeset:has(.jts-hero) table:not([class]) {
+  display: table;
+  width: 100%;
+  border: 0;
+  border-top: 2px solid var(--jts-ink);
+  border-radius: 0;
+  font-size: 0.75rem;
+}
+.md-typeset:has(.jts-hero) table:not([class]) th {
+  font-weight: 500;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset:has(.jts-hero) table:not([class]) td:last-child {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--jts-ink);
+  font-variant-numeric: tabular-nums;
+}
+@media screen and (max-width: 600px) {
+  .md-typeset:has(.jts-hero) table:not([class]) td:last-child { white-space: normal; }
+}
+
+/* Section headings on the homepage: a little more room and weight */
+.md-typeset:has(.jts-hero) > h2 {
+  color: var(--jts-ink);
+  font-weight: 600;
+  margin-top: 3rem;
 }
