@@ -10,11 +10,12 @@
 | --- | --- |
 | Document ID | SOP-00N |
 | Version | 0.1 (Draft) |
-| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
-| Milestone | Network+ Fundamentals / Subnetting & VLANs / Security+ Frameworks / Network Operations & Troubleshooting |
+| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
 | Review cycle | [e.g. Every 6 months, or after any upgrade or new failure mode] |
 | Classification | Internal / Portfolio sample |
 | Related | [SOP-00X Title; ...] |
+
+_When the document is Approved, set Version to 1.0 or later with no status in brackets, and add `Status` (Draft, Reviewed or Approved), `Effective date` and `Next scheduled review` rows. A Draft carries its status in the Version cell, as above._
 
 ## 2. Purpose and Scope
 

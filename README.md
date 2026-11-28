@@ -1,40 +1,49 @@
-# Johnson Technical Systems | Security Documentation, Technical Writing & Homelab
+# Johnson Technical Systems | Security Documentation for Small Firms
 
-> **Work in progress: every document in this repository is a Draft.** Nothing has been verified against primary sources or retested in the lab yet. Do not rely on any document as authoritative until its status reads Reviewed.
+Source for [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com), the portfolio and service site of Johnson Technical Systems (johnsontechnicalsystems LLC).
 
-Security documentation, technical writing, and the lab work behind them, by Lloyd Johnson, Johnson Technical Systems LLC.
+## What I do
 
-Site: [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com)
+Written security documentation for small firms: startups, small finance firms, MSPs and vCISO partners.
 
-I build it, document it, and map it to controls. The procedures here come from systems I configured, faults I diagnosed, and study scenarios written while preparing for CompTIA Network+ and Security+. Each one follows the same structure and is mapped to NIST SP 800-53, ISO/IEC 27001:2022, and SOC 2 where a control applies.
+- **Security questionnaires**: answered accurately, with evidence for each answer
+- **Starter policy packs and public security pages**
+- **FTC Safeguards Rule WISP packs** for small financial firms
+- **Cyber insurance renewal packs**
+- **AI use policies**
+- **Partner overflow work** for MSPs and vCISOs
+- **Automation** around the tools a firm already uses
 
-## What the site offers
+Every client document is checked by hand against primary sources and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2 where a control applies.
 
-The site at [johnsontechnicalsystems.com](https://johnsontechnicalsystems.com) leads with written security documentation for small firms (startups, small finance firms, MSPs and vCISO partners): security questionnaires, starter policy packs and public security pages, with pages for partner overflow work, FTC Safeguards Rule WISP packs, cyber insurance renewal packs, AI use policies and automation. The SOPs below are published there under Samples as illustrative examples.
+## Portfolio samples
 
-## Index
+The site publishes worked samples under Samples, each for a fictional business: a completed security questionnaire, an AI use policy with an AI tool inventory, a public security page, a cyber insurance renewal pack, an access control policy, a WISP for a tax practice, and the standard operating procedures below. They are illustrative examples, not client work.
 
-| Document | Milestone | Status | Version | Sources |
-| --- | --- | --- | --- | --- |
-| [SOP-001: Secure Remote Access to Windows Workstations](docs/sops/sop-001-secure-remote-access.md) | Security+ Frameworks | Draft | 0.2 | Microsoft Remote Desktop documentation, NIST SP 800-53, ISO/IEC 27001:2022, CIS Controls v8, AICPA SOC 2 |
-| [SOP-002: Local LLM Inference Stack: Operation & Troubleshooting](docs/sops/sop-002-local-llm-inference-stack.md) | Network Operations & Troubleshooting | Draft | 0.2 | Ollama, Open WebUI, and Tailscale documentation, NIST SP 800-53, ISO/IEC 27001:2022 |
-| [SOP-003: Network Troubleshooting Runbook](docs/sops/sop-003-network-troubleshooting-runbook.md) | Network Operations & Troubleshooting | Draft | 0.2 | CompTIA Network+ N10-009 objectives, NIST SP 800-53, ISO/IEC 27001:2022 |
-| [SOP-004: Cat6 Cable Termination and Testing (T568B)](docs/sops/sop-004-cat6-termination-and-testing.md) | Network+ Fundamentals | Draft | 0.1 | ANSI/TIA-568, ANSI/TIA-606, NIST SP 800-53 |
-| [SOP-005: VLAN Creation and Segmentation on a Managed Switch](docs/sops/sop-005-vlan-creation-and-segmentation.md) | Subnetting & VLANs | Draft | 0.2 | Cisco IOS documentation, NIST SP 800-53, AICPA SOC 2 |
-| [SOP-006: Endpoint Isolation During a Suspected Compromise](docs/sops/sop-006-endpoint-isolation.md) | Security+ Frameworks | Draft | 0.2 | NIST SP 800-61 Rev. 3, NIST SP 800-53, AICPA SOC 2 |
+> **Check each document's status before relying on it.** Approved documents have been checked against primary sources and confirmed by the owner. Drafts have not, so do not rely on a Draft as authoritative.
 
-## Milestones
+### SOP index
 
-- **Network+ Fundamentals**: core network layers, physical topology, cabling standards
-- **Subnetting & VLANs**: logical network segmentation, multi-VLAN design
-- **Security+ Frameworks**: incident response, endpoint isolation, NIST/SOC 2 alignment
-- **Network Operations & Troubleshooting**: running, maintaining, and diagnosing live systems (Network+ N10-009 domains 3.0 and 5.0)
+The status and version of each SOP come from the SOP's own Document Control table. `scripts/sync_status.py` copies them here, and the CI check fails if this list falls out of step.
+
+<!-- sop-index:start -->
+
+| Document | Status | Version | Sources |
+| --- | --- | --- | --- |
+| [SOP-001: Secure Remote Access to Windows Workstations](docs/sops/sop-001-secure-remote-access.md) | Approved | 1.0 | Microsoft Remote Desktop documentation, NIST SP 800-53, ISO/IEC 27001:2022, CIS Controls v8, AICPA SOC 2 |
+| [SOP-002: Local LLM Inference Stack: Operation & Troubleshooting](docs/sops/sop-002-local-llm-inference-stack.md) | Draft | 0.2 | Ollama, Open WebUI, and Tailscale documentation, NIST SP 800-53, ISO/IEC 27001:2022 |
+| [SOP-003: Network Troubleshooting Runbook](docs/sops/sop-003-network-troubleshooting-runbook.md) | Draft | 0.2 | Structured troubleshooting practice (OSI-based), NIST SP 800-53, ISO/IEC 27001:2022 |
+| [SOP-004: Cat6 Cable Termination and Testing (T568B)](docs/sops/sop-004-cat6-termination-and-testing.md) | Draft | 0.1 | ANSI/TIA-568, ANSI/TIA-606, NIST SP 800-53 |
+| [SOP-005: VLAN Creation and Segmentation on a Managed Switch](docs/sops/sop-005-vlan-creation-and-segmentation.md) | Draft | 0.2 | Cisco IOS documentation, NIST SP 800-53, AICPA SOC 2 |
+| [SOP-006: Endpoint Isolation During a Suspected Compromise](docs/sops/sop-006-endpoint-isolation.md) | Approved | 1.0 | NIST SP 800-61 Rev. 3, NIST SP 800-53, AICPA SOC 2 |
+
+<!-- sop-index:end -->
 
 ## Review process
 
-- **Draft**: written and internally consistent, but not yet checked against primary sources. Every document is currently a Draft.
+- **Draft**: written and internally consistent, but not yet checked against primary sources.
 - **Reviewed**: every command, step, and control reference checked by the author against primary sources (NIST SP 800-53, AICPA SOC 2 Trust Services Criteria, ISO/IEC 27001:2022, vendor documentation).
-- **Published**: reviewed, given version 1.0 or later, and featured on the landing pages.
+- **Approved**: reviewed, the environment it describes confirmed by the owner, and issued as version 1.0 or later with an effective date and next review date.
 
 A document moves up a status through a pull request that records what was checked. First drafts are produced with AI assistance (a local model via Ollama and Open WebUI, and Claude Code), and nothing leaves Draft until the author has verified it. Details are in [docs/about/review-process.md](docs/about/review-process.md).
 
@@ -52,7 +61,8 @@ docs/                 Site content (built with Zensical from mkdocs.yml)
   security.md, legal/   Data handling, Terms and Privacy
   sops/               SOP-001 to SOP-006
   about/              Review process, AI use, and limits
-.github/workflows/    Lint and build checks; deploys the site from main
+.github/workflows/    Lint, build and status-sync checks; deploys the site from main
+scripts/              sync_status.py keeps SOP status lists in step with the SOPs
 archive/              Retired pages, not built into the site
 CHANGELOG.md          What changed and when
 ```

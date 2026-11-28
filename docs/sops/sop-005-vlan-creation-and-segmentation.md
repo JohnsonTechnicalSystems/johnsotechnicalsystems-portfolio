@@ -8,8 +8,7 @@ Sep 29, 2026 · @Lloyd
 | --- | --- |
 | Document ID | SOP-005 |
 | Version | 0.2 (Draft) |
-| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
-| Milestone | Subnetting & VLANs |
+| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
 | Review cycle | Every 6 months, or after any switch platform or IOS upgrade |
 | Classification | Internal / Portfolio sample |
 | Related | SOP-004 Cat6 Cable Termination; SOP-003 Network Troubleshooting Runbook |
@@ -117,7 +116,7 @@ The native VLAN and the parking VLAN are kept separate. If unused ports were par
 
     `ip default-gateway` applies to a layer 2 switch with IP routing disabled. On a layer 3 switch, use a default route instead.
 
-6. Save the configuration: `copy running-config startup-config`.
+6. Return to privileged EXEC mode with `end`, then save the configuration: `copy running-config startup-config`.
 
 ## 6. Verification
 
