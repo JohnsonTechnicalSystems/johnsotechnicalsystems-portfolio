@@ -404,3 +404,17 @@
 @media screen and (min-width: 601px) {
   .md-typeset .jts-prices table:not([class]) td:nth-child(2):not(:last-child) { white-space: nowrap; }
 }
+
+/* The fuller sample answer in the Proof section */
+.md-typeset .jts-sheet--proof {
+  max-width: 36rem;
+  margin: 1.5rem 0 0;
+}
+
+/* "Who it's for": four columns on wide screens, two on tablets */
+@media screen and (min-width: 45em) {
+  .md-typeset:has(.jts-hero) .grid.cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media screen and (min-width: 70em) {
+  .md-typeset:has(.jts-hero) .grid.cards { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
+}

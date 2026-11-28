@@ -63,6 +63,14 @@ With email and password plus optional authenticator-app MFA, or with Sign in wit
 
     [Partner work](partners.md)
 
+- **Tax and small finance firms that need a WISP**
+
+    ---
+
+    You need a written information security program (WISP) under the FTC Safeguards Rule and don't have time to write one.
+
+    [WISP packs](wisp.md)
+
 </div>
 
 ## How it works
@@ -88,6 +96,25 @@ Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) 
 
 - The [sample security questionnaire](sample-questionnaire.md) answers 50 questions for a fictional SaaS company at seed stage. Each answer gives its status, the evidence behind it and the related SOC 2 and NIST CSF 2.0 references, all checked against the source documents.
 - The [sample procedures](samples.md) are six standard operating procedures written to one template and mapped to NIST SP 800-53, ISO/IEC 27001:2022 and SOC 2. They are illustrative examples, not client work.
+
+<!-- Keep this excerpt identical to question 47 in sample-questionnaire.md. -->
+<div class="jts-sheet jts-sheet--proof" markdown>
+<div class="jts-sheet__head" markdown>
+
+[Sample questionnaire](sample-questionnaire.md) for a fictional SaaS company, question 47 of 50
+
+</div>
+
+**Do you have a business continuity and disaster recovery plan, and is it tested?**
+
+Partly. The written plan sets a recovery time objective (RTO) of 8 hours and a recovery point objective (RPO) of 1 hour. In August 2026 we restored the production database from backup to a new instance in 47 minutes. A full failover to the second region has not been tested yet; that test is planned for Q2 2027.
+
+- **Status** *Partial*
+- **Evidence available** Business Continuity Plan; restore test record
+- **SOC 2** `A1.3` `CC9.1`
+- **NIST CSF 2.0** `ID.IM-04` `PR.DS-11`
+
+</div>
 
 ## Why work with me
 
