@@ -16,7 +16,7 @@ For tax preparers, mortgage brokers and small finance firms that need a written 
 - **The rule covers you** The FTC Safeguards Rule (16 CFR Part 314) lists tax preparation services and mortgage brokers among its examples of financial institutions, in [§ 314.2](https://www.law.cornell.edu/cfr/text/16/314.2).
 - **It must be written** [§ 314.3(a)](https://www.law.cornell.edu/cfr/text/16/314.3) requires a comprehensive information security program "written in one or more readily accessible parts", with the elements listed in [§ 314.4](https://www.law.cornell.edu/cfr/text/16/314.4).
 - **The IRS expects it** The IRS and the Security Summit remind tax professionals that federal law requires them to create and maintain a written information security plan ([IR-2026-92](https://www.irs.gov/newsroom/irs-security-summit-remind-tax-pros-they-need-a-written-information-security-plan-to-protect-client-data)).
-- **Breach reporting** Since May 13, 2024, covered firms must notify the FTC no later than 30 days after discovering a security event involving the unencrypted information of at least 500 consumers ([§ 314.4(j)](https://www.law.cornell.edu/cfr/text/16/314.4), [§ 314.5](https://www.law.cornell.edu/cfr/text/16/314.5)).
+- **Breach reporting** Since May 13, 2024, covered firms must notify the FTC as soon as possible, and no later than 30 days after discovery, when unencrypted customer information about at least 500 consumers is acquired without authorization. Information counts as unencrypted if an unauthorized person accessed the encryption key ([§ 314.2(m)](https://www.law.cornell.edu/cfr/text/16/314.2), [§ 314.4(j)](https://www.law.cornell.edu/cfr/text/16/314.4), [§ 314.5](https://www.law.cornell.edu/cfr/text/16/314.5)).
 
 </div>
 

@@ -177,13 +177,13 @@
   border-bottom: 1px solid var(--jts-rule);
 }
 .md-typeset .jts-sheet > ul > li:last-child { border-bottom: 0; }
-.md-typeset .jts-sheet > ul > li > strong {
+.md-typeset .jts-sheet > ul > li > strong:first-child {
   position: absolute;
   left: 1.1rem;
   font-weight: 500;
   color: var(--md-default-fg-color--light);
 }
-.md-typeset .jts-sheet em {
+.md-typeset .jts-sheet > ul > li em {
   font-style: normal;
   font-weight: 600;
   background: var(--jts-partial-bg);
@@ -313,7 +313,7 @@
     padding: 0.1rem 0;
   }
   .md-typeset .jts-sheet > ul > li { padding-left: 1.1rem; }
-  .md-typeset .jts-sheet > ul > li > strong { position: static; display: block; }
+  .md-typeset .jts-sheet > ul > li > strong:first-child { position: static; display: block; }
 }
 
 /* ---------- Shared across pages ---------- */
@@ -352,15 +352,15 @@
   font-weight: 600;
 }
 @media screen and (min-width: 45em) {
+  /* The label floats into the left padding, so a label that wraps still pushes the row taller */
   .md-typeset .jts-ledger > ul > li {
-    position: relative;
+    display: flow-root;
     padding-left: 13rem;
-    min-height: 2.6rem;
   }
   .md-typeset .jts-ledger > ul > li > strong:first-child {
-    position: absolute;
-    left: 0;
+    float: left;
     width: 12rem;
+    margin-left: -13rem;
   }
 }
 
@@ -388,7 +388,8 @@
   color: var(--md-default-fg-color--light);
 }
 @media screen and (max-width: 600px) {
-  .md-typeset .jts-meta > ul > li { padding-left: 8.4rem; }
+  .md-typeset .jts-meta > ul > li { padding-left: 0.9rem; }
+  .md-typeset .jts-meta > ul > li > strong:first-child { position: static; display: block; }
 }
 
 /* Price tables on service pages: the price is the second column */
@@ -396,10 +397,12 @@
   white-space: normal;
   font-weight: 400;
   color: inherit;
+  font-variant-numeric: normal;
 }
 .md-typeset .jts-prices table:not([class]) td:nth-child(2) {
   font-weight: 600;
   color: var(--jts-ink);
+  font-variant-numeric: tabular-nums;
 }
 @media screen and (min-width: 601px) {
   .md-typeset .jts-prices table:not([class]) td:nth-child(2):not(:last-child) { white-space: nowrap; }
