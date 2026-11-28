@@ -8,8 +8,7 @@ Sep 29, 2026 · @Lloyd
 | --- | --- |
 | Document ID | SOP-002 |
 | Version | 0.2 (Draft) |
-| Owner | Lloyd Johnson, Johnson Technical Systems LLC |
-| Milestone | Network Operations & Troubleshooting |
+| Owner | Lloyd Johnson, johnsontechnicalsystems LLC |
 | Review cycle | Every 6 months, or after any stack upgrade or new failure mode |
 | Classification | Internal / Portfolio sample |
 | Related | SOP-001 Secure Remote Access to Windows Workstations |
@@ -31,7 +30,7 @@ Ollama serves models on the host GPU; Open WebUI runs in Docker and reaches Olla
 | Host | Windows 11 Pro, Ryzen 7 7800X3D, RTX 5080 (16 GB) |
 | Inference engine | Ollama, native on host, port 11434 |
 | Interface | Open WebUI container `open-webui`, image pinned to a release tag (record it here), host `127.0.0.1:3001` to container 8080, volume `open-webui` |
-| Primary model | gpt-oss:20b (custom SOP Drafter and Network+ Tutor models built on it) |
+| Primary model | gpt-oss:20b (a custom SOP Drafter model is built on it) |
 | Remote access | Tailscale Serve (`tailscale serve --bg 3001`); UI at `https://<host>.<tailnet>.ts.net` |
 | Auto-start | Docker Desktop at login; container `--restart always`; host power plan never sleeps |
 
@@ -95,7 +94,7 @@ Then rerun step 7 with the previous release tag.
 The stack passes only when every check holds.
 
 - [ ] Existing chats, custom models, and knowledge bases are present after any upgrade
-- [ ] A 10-question quiz prompt to the Network+ Tutor returns all 10 questions, fully formatted
+- [ ] A long-form prompt to the SOP Drafter (for example, a full SOP section) returns a complete, fully formatted answer without truncation
 - [ ] The same prompt works from a remote client over cellular data (Tailscale path, not LAN)
 - [ ] Port 3001 is not reachable from another device on the local network that is not on the tailnet
 - [ ] Port 3001 is not reachable from the public internet (no router port forward exists)
@@ -109,7 +108,7 @@ Observed during operation of this stack. The first row matters most: the error m
 | Symptom | Cause | Resolution |
 | --- | --- | --- |
 | UI shows brief "thinking" then no answer, or long jumbled unformatted text; logs report a CUDA initialization error | NordVPN network filter driver interfering with Ollama runtime startup. GPU and driver were healthy (`nvidia-smi` clean) | Disconnect the VPN and retest with `ollama run`. For permanent coexistence, exclude `ollama.exe` and Docker via split tunneling and retest |
-| Long output stops early (quiz ended at question 9 of 10) | Output cap reached; reasoning tokens consumed the budget | Raise `num_predict` to 8192 and `num_ctx` to 16384 (Section 5) |
+| Long output stops early (an SOP draft stops mid-section) | Output cap reached; reasoning tokens consumed the budget | Raise `num_predict` to 8192 and `num_ctx` to 16384 (Section 5) |
 | `docker cp` of the whole data folder fails with a symlink error | Model cache inside the container uses symlinks that Windows cannot create without admin rights or Developer Mode | Copy only `webui.db`; the cache re-downloads if needed |
 | PowerShell errors on a `docker inspect --format` template containing `\n` | PowerShell escapes differ from bash | Use `{{json ...}}` output instead of a hand-built template |
 | UI unreachable remotely but works on the host | Tailscale Serve not running, or host asleep | Run `tailscale serve status`; if port 3001 is missing, run `tailscale serve --bg 3001`. Set power plan to never sleep. Do not rebind the container to all interfaces |

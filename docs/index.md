@@ -74,7 +74,7 @@ Not sure which you need? [Book a 15-minute call](https://cal.com/lloyd-johnson) 
 
 - **A US-registered business.** johnsontechnicalsystems LLC is a New York LLC with an EIN. US invoicing, W-9 on request.
 - **Overnight turnaround.** I work from Manila, so a questionnaire sent at the end of your US workday is often back the next morning.
-- **A writer who checks.** Trained in English and technical communication, and studying for CompTIA Security+. AI helps with first drafts; every claim and control reference is checked by hand before you see it.
+- **A writer who checks.** Trained in English and technical communication. AI helps with first drafts; every claim and control reference is checked by hand before you see it.
 - **Your documents stay private.** NDA by default, one encrypted folder per client, deleted at the end of the job. See [how I handle your data](security.md).
 - **Veteran-owned.** Run by a US military veteran.
 
